@@ -1,0 +1,12 @@
+body { padding-top: 4rem;}
+
+.starter-template { padding: 2rem 1.5rem;
+            text-align: center; }
+em { display="block"}
+
+pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto; }
+
+xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
+
+.tab-pane.fade { transition: all 10000 ease 1000 }
+.tab-pane.show { transition: all 5000 ease 500 }
