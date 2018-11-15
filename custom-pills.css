@@ -1,0 +1,33 @@
+body { padding-top: 4rem;}
+
+.starter-template { padding: 2rem 1.5rem;
+            text-align: center; }
+em { display="block"}
+
+pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto; }
+
+xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
+
+tab-pane.fade, .show { transition-duration: .5s;}
+
+.navbar { background-color: aliceblue; padding-bottom: 0; }
+
+.nav-pills .nav-link { border-width: 0.05rem; border-color:transparent; }
+
+.nav-pills .nav-link.active, .nav-pills .show >.nav-link { background: white; color: #0063cc; }
+
+.nav-pills .nav-link.active { border-width: 0.05rem; border-color: #0063cc; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom-style: hidden; border-bottom-width: .1rem;}
+
+/* media Queries - tablets and phones */
+/* required to fix navigation */
+@media (min-width:481.1px) and (max-width: 768.8px) {
+  
+  
+}
+
+@media (min-width:212px) and (max-width: 481px) {
+  
+.nav-pills .nav-link { display: inline-block; padding: 10px 5px; }
+  .navbar { padding-bottom: 2.75rem }
+  .nav-pills .nav-link.active { clear: right; position: absolute; bottom: 0; left: 20px; width: 33% }
+}

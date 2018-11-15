@@ -8,11 +8,13 @@ pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto
 
 xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
 
+.tab-pane.fade { transition: all 10000 ease 1000 }
+.tab-pane.show { transition: all 5000 ease 500 }
+.navbar { background-color: aliceblue; padding-bottom: 0; }
+
 /* media Queries - tablets and phones */
 /* required to fix navigation */
 @media (min-width:768px) and (max-width: 1255px) {
-  .tab-pane.fade { transition: all 10000 ease 1000 }
-  .tab-pane.show { transition: all 5000 ease 500 }
-  .navbar-light { background-color: aliceblue }
+  
 }
 

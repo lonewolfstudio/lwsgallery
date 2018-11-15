@@ -1,0 +1,49 @@
+body { padding-top: 4rem;}
+
+.starter-template { padding: 2rem 1.5rem;
+            text-align: center; }
+em { display="block"}
+
+pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto; }
+
+xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
+
+.nav-tabs.centered > li, .nav-pills.centered > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs.centered, .nav-pills.centered {
+    text-align:center;
+}
+.tab-pane.fade { transition: all 10000 ease 1000 }
+.tab-pane.show { transition: all 5000 ease 500 }
+.navbar-light { background-color: aliceblue }
+
+/* media Queries - tablets and phones */
+/* required to fix navigation */
+@media (min-width:768px) and (max-width: 1255px) {
+
+}
+/* @media (min-width: 480px) and (max-width: 767.89px) { 
+    
+  .tab-pane.fade { transition: all 50 ease 50 }
+  
+  .tab-pane.show { transition: all 50 ease 50 }
+  
+  nav.navbar { background-color: white; left: auto }
+  
+  .nav-tabs { display: block; clear: both }
+  
+  a.nav-link {background-color: white; color: rgb(166, 183, 215) }
+
+  .nav-link { padding: 1rem 1.5rem; font-size: 1.25rem }
+  
+  #nav-home-tab { margin-top: 1rem }
+  
+ a.nav-link.active { border: .25rem solid rgb(166, 183, 215) }
+
+  }
+} */
