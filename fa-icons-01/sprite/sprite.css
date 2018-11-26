@@ -1,0 +1,226 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-envelope-o {
+  width: 28px;
+  height: 28px;
+  background-position: 0 0;
+}
+.icon-star {
+  width: 26px;
+  height: 28px;
+  background-position: -44px 0;
+}
+.icon-close {
+  width: 22px;
+  height: 28px;
+  background-position: -88px 0;
+}
+.icon-home {
+  width: 26px;
+  height: 28px;
+  background-position: -132px 0;
+}
+.icon-camera {
+  width: 30px;
+  height: 28px;
+  background-position: -176px 0;
+}
+.icon-chevron-left {
+  width: 21px;
+  height: 28px;
+  background-position: -220px 0;
+}
+.icon-chevron-right {
+  width: 19px;
+  height: 28px;
+  background-position: -264px 0;
+}
+.icon-chevron-up {
+  width: 28px;
+  height: 28px;
+  background-position: -308px 0;
+}
+.icon-chevron-down {
+  width: 28px;
+  height: 28px;
+  background-position: -352px 0;
+}
+.icon-twitter-square {
+  width: 24px;
+  height: 28px;
+  background-position: -396px 0;
+}
+.icon-facebook-square {
+  width: 24px;
+  height: 28px;
+  background-position: -440px 0;
+}
+.icon-linkedin-square {
+  width: 24px;
+  height: 28px;
+  background-position: -484px 0;
+}
+.icon-phone-square {
+  width: 24px;
+  height: 28px;
+  background-position: -528px 0;
+}
+.icon-twitter {
+  width: 26px;
+  height: 28px;
+  background-position: -572px 0;
+}
+.icon-facebook {
+  width: 16px;
+  height: 28px;
+  background-position: -616px 0;
+}
+.icon-bars {
+  width: 24px;
+  height: 28px;
+  background-position: -660px 0;
+}
+.icon-envelope {
+  width: 28px;
+  height: 28px;
+  background-position: 0 -44px;
+}
+.icon-linkedin {
+  width: 24px;
+  height: 28px;
+  background-position: -44px -44px;
+}
+.icon-bolt {
+  width: 14px;
+  height: 28px;
+  background-position: -88px -44px;
+}
+.icon-suitcase {
+  width: 28px;
+  height: 28px;
+  background-position: -132px -44px;
+}
+.icon-html5 {
+  width: 22px;
+  height: 28px;
+  background-position: -176px -44px;
+}
+.icon-file-text {
+  width: 24px;
+  height: 28px;
+  background-position: -220px -44px;
+}
+.icon-dropbox {
+  width: 28px;
+  height: 28px;
+  background-position: -264px -44px;
+}
+.icon-apple {
+  width: 22px;
+  height: 28px;
+  background-position: -308px -44px;
+}
+.icon-windows {
+  width: 26px;
+  height: 28px;
+  background-position: -352px -44px;
+}
+.icon-linux {
+  width: 25px;
+  height: 28px;
+  background-position: -396px -44px;
+}
+.icon-envelope-square {
+  width: 24px;
+  height: 28px;
+  background-position: -440px -44px;
+}
+.icon-wordpress {
+  width: 28px;
+  height: 28px;
+  background-position: -484px -44px;
+}
+.icon-graduation-cap {
+  width: 36px;
+  height: 28px;
+  background-position: -528px -44px;
+}
+.icon-behance {
+  width: 32px;
+  height: 28px;
+  background-position: -572px -44px;
+}
+.icon-behance-square {
+  width: 24px;
+  height: 28px;
+  background-position: -616px -44px;
+}
+.icon-steam {
+  width: 28px;
+  height: 28px;
+  background-position: -660px -44px;
+}
+.icon-steam-square {
+  width: 24px;
+  height: 28px;
+  background-position: 0 -88px;
+}
+.icon-file-pdf-o {
+  width: 24px;
+  height: 28px;
+  background-position: -44px -88px;
+}
+.icon-paper-plane {
+  width: 28px;
+  height: 28px;
+  background-position: -88px -88px;
+}
+.icon-paper-plane-o {
+  width: 28px;
+  height: 28px;
+  background-position: -132px -88px;
+}
+.icon-at {
+  width: 24px;
+  height: 28px;
+  background-position: -176px -88px;
+}
+.icon-paint-brush {
+  width: 28px;
+  height: 28px;
+  background-position: -220px -88px;
+}
+.icon-facebook-official {
+  width: 24px;
+  height: 28px;
+  background-position: -264px -88px;
+}
+.icon-whatsapp {
+  width: 24px;
+  height: 28px;
+  background-position: -308px -88px;
+}
+.icon-get-pocket {
+  width: 27px;
+  height: 28px;
+  background-position: -352px -88px;
+}
+.icon-wikipedia-w {
+  width: 36px;
+  height: 28px;
+  background-position: -396px -88px;
+}
+.icon-television {
+  width: 30px;
+  height: 28px;
+  background-position: -440px -88px;
+}
+.icon-shopping-bag {
+  width: 28px;
+  height: 28px;
+  background-position: -484px -88px;
+}
+

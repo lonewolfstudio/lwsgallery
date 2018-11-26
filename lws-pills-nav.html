@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="Stylesheets/custom-pills.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-pills.css" rel="stylesheet">
     <link href="http://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
 
 </head>
@@ -36,7 +36,7 @@
           <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
         </li>
         <li class="nav-item text-sm-center">
-          <a class="nav-link" id="nav-cases-tab" data-toggle="tab" href="#nav-cases" role="tab" aria-controls="cases" aria-selected="false">Case Studies</a>
+          <a class="nav-link" id="nav-cases-tab" data-toggle="tab" href="#nav-cases" role="tab" aria-controls="cases" aria-selected="false">Cases</a>
         </li>
         <li class="nav-item text-sm-center">
           <a class="nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
@@ -49,38 +49,54 @@
   </div>
 
 <!-- main page content sections in tab panes -->
-  <div class="flex-container mx-5 center">
+  
+  <div class="flex-container mx-4 center">
     <div class="row">
-      <div class="col-xl-12">
+      <div class="col-sm-12">
 <!-- Swapping Tab Contents controlled by nav -->
+<!-- Start Home tab -->
+        
     <div class="tab-content">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
         <main role="main" class="container">
-
-        <div class="starter-template">
+          <div class="starter-template">
           <h1>Bootstrap starter template</h1>
           <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
         </div>
         </main>
-<!-- End - Home Tab /.container -->
       </div>
+      
+  <!-- End - Home Tab /.container -->
+  <!-- Start - Profile Tab -->
+      
       <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="card-deck mb-3 text-center">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h3 class="my-0 font-weight-normal">Good</h3>
+        <main class="mx-2 mt-4">
+          <div class="row">
+          <div class="col-sm-12 mt-4">
+            <div class="h2">
+              <h2>Professional Profiles</h2>
+              <p class="lead">Ranking professional skills by roles and length of experience.</p>
             </div>
-            <div class="card-body">
-              <h2 class="card-title pricing-card-title">UI/UX Design</h2>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Ten years Experience</li>
-                <li>Mutiple eCommerce Launches</li>
-                <li>Full-service Creative</li>
-                <li>Available for Contracts</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Case Studies</button>
             </div>
           </div>
+                  <!-- accordian group -->
+        <div class="accordian" id="gbb">
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h3 class="my-0 font-weight-normal">Good</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title">UI/UX Design</h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Ten years Experience</li>
+                  <li>eCommerce Launches</li>
+                  <li>Full-service Creative</li>
+                  <li>Available for Contracts</li>
+                </ul>
+                <button type="button" class="btn collapsed btn-lg btn-block btn-outline-primary" data-toggle="collapse" data-target="#collapseGood" aria-expanded="false" aria-controls="collapseGood">Summary</button>
+              </div>
+            </div>
           <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <h3 class="my-0 font-weight-normal">Better</h3>
@@ -93,7 +109,7 @@
                 <li>Corporate-level Manager</li>
                 <li>Mentoring to Others</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Sample Gallery</button>
+              <button type="button" class="btn collapsed btn-lg btn-block btn-outline-primary" data-toggle="collapse" data-target="#collapseBetter" aria-expanded="false" aria-controls="collapseBetter">Summary</button>
             </div>
           </div>
           <div class="card mb-4 shadow-sm">
@@ -106,27 +122,269 @@
                 <li>Sematic Web Development</li>
                 <li>HTML5/CSS3/javascript</li>
                 <li>Supports Creatives</li>
-                <li>JVM, LAMP &amp; WebSphere</li>
+                <li>JSP, LAMP &amp; WebSphere</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Presentation</button>
+              <button type="button" class="btn collapsed btn-lg btn-block btn-outline-primary" data-toggle="collapse" data-target="#collapseBest" aria-expanded="false" aria-controls="collapseBest">Summary</button>
             </div>
           </div>
         </div>
-        </div>
-  <!-- End Profile Tab- Main Container-->
-      <div class="tab-pane fade show" id="nav-cases" role="tabpanel" aria-labelledby="cases-tab">
-        <h2>Case Studies</h2>
-          <ul>
-            <li>Message 01</li>
-            <li>Message 02</li>
-            <li>Message 03</li>
-          </ul>
+        
+        <!--GOOD = UI-UX Skills Roles -->
+          
+        <div class="collapse collapsed" id="collapseGood" data-parent="#gbb">
+        <div class="card card-body">
+          <div class="row">
+          <div class="col-sm-8">
+            <h3>User Interface Skills Examples</h3>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-4">
+              <ul class="list-group">
+                <li class="list-group-item">HTML UI designs that are mobile responsive</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <p>image #1</p>
+              </div>
+            <div class="col-sm-4">
+              <p>image #2</p>
+            </div>
+            </div>
+          </div>
+          </div>
+          
+        <!-- Better = Web Design Skills Roles -->
+          
+      <div class="collapse collapsed" id="collapseBetter" data-parent="#gbb">
+        <div class="card card-body">
+          <div class="row">
+          <div class="col-sm-8">
+            <h3>Web Design Skills Examples Since 2000</h3>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-4">
+              <ul class="list-group">
+                <li class="list-group-item">Mobile Responsive</li>
+                <li class="list-group-item">Portal Projects</li>
+                <li class="list-group-item">Learning Management</li>
+                <li class="list-group-item">Forms</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <p>image #3</p>
+              </div>
+            <div class="col-sm-4">
+              <p>image #4</p>
+            </div>
+            </div>
+          </div>
+          </div>
+        
+          <!-- Best = UI Development Skills Roles -->
+          
+      <div class="collapse collapsed" id="collapseBest" data-parent="#gbb">
+        <div class="card card-body">
+          <div class="row">
+          <div class="col-sm-8">
+            <h3>Web Development Roles since 2003</h3>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-sm-4">
+              <ul class="list-group">
+                <li class="list-group-item">Mobile Responsive</li>
+                <li class="list-group-item">Portal Projects</li>
+                <li class="list-group-item">Learning Management</li>
+                <li class="list-group-item">Forms</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <p>image #5</p>
+              </div>
+            <div class="col-sm-4">
+              <p>image #6</p>
+            </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        <!-- end accordian group -->
+        </main>
       </div>
+      
+  <!-- End Profile Tab- Main Container-->
+  <!-- Start Case Studies -->
+      
+      <div class="tab-pane fade show" id="nav-cases" role="tabpanel" aria-labelledby="cases-tab">
+        <main class="mt-3 mx-4">
+          <div class="row">
+            <div class="col-sm-4 mt-3 mb-3">
+              <h2>Case Studies</h2>
+              <p>Demonstrations of the creative and design processes that seem to have worked well the past.</p>
+              <div class="list-group">
+                <a href="One" class="list-group-item list-group-item-action active" type="link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h4>Projects</h4>
+                </a>
+                <a href="Two" class="list-group-item list-group-item-action" type="link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">CatamaranRx Rebranding</a>
+                <a href="Three" class="list-group-item list-group-item-action" type="link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">MacSales.com Rebranding</a>
+                <a href="Four" class="list-group-item list-group-item-action" type="link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Methode.com Relaunch</a>
+                <a href="Five" class="list-group-item list-group-item-action" type="link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">PTA Going Mobile</a>
+              </div>
+            </div>
+          <div class="col-sm-8 mt-3">
+             <div class="row">
+              <div class="col-sm-12">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h4>Examples of Studies</h4> 
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="media">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Success is JOB ONE</h5>
+                            <p>Since 1994, delivering comprehensive design, development and deployment solutions that are easily-maintained, user-focused and cost-effective has been <span class="h5">Job One</span>. </p>
+                            <p>The needs of each project can be vastly different, and the pressures faced in efficient and creative execution can be monumental! The track record of helping clients solve these problems through comprehensive design solutions can be seen in the following Case Studies. These Studies are a small sample of the wide range of successful and creative solutions available.</p>
+                          </div>
+                          <img class="ml-3" src="imgs/cowboy-hat.jpg" alt="cowboy hat place-holder image">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <h5>Prescription Benefits Management Portal Re-Design</h5>
+                          <div class="media">
+                          <div class="media-body">
+                          <h4 class="heading4">PortalRx Development with Catamaran</h4>
+                          <p>This project was a massive effort to bring Catamaran brand-recognition parity with several of the PBM systems such as CVSHealth, OptumRx and BCBS.</p>
+                          </div>
+                            <img class="ml-3 figure-img img-fluid rounded" src="content/images/art1/catamaranLogo.png" alt="catamaran logo">
+                          </div><hr>
+                        <div class="row">
+                          <div class="col-md-12"><h4>Prescription Management Portal Redesign (2014)</h4></div>
+                          <div class="col-md-4 col-sm-12">
+                            <figure class="figure">
+                              <img src="content/images/ux-mycat-dev-ss/Slide01.jpg" class="figure-img img-fluid rounded" alt="slide of myPortalRx UI Solutions presentation" title="Data from 15K members of direct access portal application was compiled to create a comprehensive solution">
+                              <figcaption class="figure-caption">User Experience study from click-through data (2014)</figcaption>
+                            </figure>
+                          </div>
+                          <div class="col-md-4 col-sm-12 mt-md-4">
+                            <figure class="figure">
+                              <img src="content/images/art1/ux-mycat-wf-v2-home.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image" title="Web Portal User Interface Developer myCatamaranRx&reg; Prescription Benefits Management Portal Application">
+                              <figcaption class="fig-caption">CatamaranRx Customer Portal UI (2014)
+                              </figcaption>
+                            </figure>
+                          </div>
+                          <div class="col-md-4 col-sm-12 mt-md-3">
+                            <figure class="figure">
+                              <img src="content/images/art1/ui-mycat-hw-ldng-pg.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image" title="Template for Client Portal Application Landing Page and Login Screen">
+                              <figcaption class="fig-caption">Client PBM Portal Design Template (2015)
+                             </figcaption>
+                            </figure>
+                          </div>
+                          </div>
+                          <p class="lead"><strong>Drug Tends &ldquo;Insights&rdquo; Presentation</strong> (2015)</p>
+                        <div class="row">
+                          <div class="col-md-4 col-sm-12">
+                          <figure class="figure">
+                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
+                          <figcaption class="figure-caption">Graphical layouts for prescription drug trends presentations (click to enlarge)</figcaption>
+                          </figure>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                          <figure class="figure">
+                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
+                          <figcaption class="figure-caption">Develop Interactive charts using jQuery and HTML5. A basic chart bar chart with animation</figcaption>
+                          </figure>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                          <figure class="figure">
+                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
+                          <figcaption class="figure-caption">Develop Interactive charts using jQuery and HTML5. A basic chart bar chart with animation</figcaption>
+                          </figure>
+                          </div>
+                        </div>
+                        <p>Donut Hole graphical charts</p>
+                        <p>Infographics with interactive elements</p>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <h5>Creating an eCommerce machine @ OWC</h5>
+                        <strong>Other World Computing (2004)</strong>
+                        <p><a href="http://eshop.macsales.com">Other World Computing</a> is a reseller and OEM dealer of computing components specializing in Apple Computing acccessories and everything mobile. OWC had been a successful ecommerce-only reseller, growing their business quickly through 2003. In 2004 a new advertising effort was launched, which in turn necessitated the task of bringing their sprawling website up to date.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <h5>Corporate Website goes Web 2.0</h5>
+                                        <ul class="media-list">
+                    <li class="media">
+                        <a href="#"><img class="media-object" src="content/images/icons/design.png" width="64px" height="auto" /></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Web Site Design</h4>   
+                        <p>To promote my freelance illustration and design business for clients such as <a href="https://www.revell.com">Revell Monogram</a>, <a href="https://www.sportmart.com">Sportmart</a> in 1992, a website was developed for <a href="https://www.lonewolfstudio.com">Lone Wolf Studio</a>. Originally, the site offered those services plus HTML web authoring for a limited client group. <a href="#">Client List</a></p>
+                    </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-body">
+                        <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-container="body" data-trigger="focus" data-placement="right" title="Web Site Development - 1996-9" data-content="Corporate Home Page - Methode Electronics - 1997"><img class="media-object" width="100%" src="content/images/art1/ui-fop-meth-mn-b4.jpg" alt="Methode Electronics Home Page Version 1 - 1998" title="Redesign Corporate Online Experience 1997-8"></a>
+                      </div>
+                    </li>
+                    <li class="media">
+                        <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-container="body" data-trigger="focus" data-placement="right" title="Mobile-Responsive Apps" data-content="Promotional application for ConAgra Foods - Product Placement screen for Mobile App"><img class="media-object" src="content/images/art1/ui-aspn-frigo-chz-1.jpg" alt="Frigo CheeseHeads Product Placement - 2013" title="Digital Agency Mobile Application Development - 2013"></a>
+                    </li>
+                    <li class="media">
+                        <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-contain  er="body" data-trigger="focus" data-placement="right" title="Mobile-first Responsive Design" data-content="Web-based CMS replacing a client-server application, using Visual mock-ups and functional prototypes using Photoshop &amp; Axure"><img class="media-object" src="content/images/art1/ui-mycat-hw-ldng-pg.jpg" alt="Unlimited Calls Ad Layout - 1997" title="Ad Agency Print Production - 1997"></a>
+                    </li>
+                </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" id="HeadingFive">
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <h5>Mobile Responsive Design - MacArthurPTA</h5>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <!-- accordian 2 -->
+               </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+      
   <!-- End Messages tab - Main Container -->
+  <!-- Start Gallery tab -->
+      
       <div class="tab-pane fade show" id="nav-gallery" role="tabpanel" aria-labelledby="gallery-tab">
-        <h2>About Chris Bourseau</h2>
+      <main class="mx-3 mt-4">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-12 mt-4">
+        <h2>About Chris Bourseau</h2>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
             <ul class="list-group">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -135,7 +393,7 @@
               <li class="list-group-item">Vestibulum at eros</li>
             </ul>
           </div>
-          <div class="col-md-8">
+          <div class="col-sm-8">
             <ul class="list-group">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -145,15 +403,25 @@
             </ul> 
           </div>
         </div>
+        </main>
       </div>
+      
+  <!-- End Gallery tab -->
+  <!-- Start Contact tab -->
+      
       <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="contact-tab">
-        <h2>About Chris Bourseau</h2>
+        <main class="mx-2 mt-2">
+          <div class="row">
+          <div class="col-sm-12 mt-4">
+            <h2>About Chris Bourseau</h2>
+            </div> 
+          </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-4">
           <p>Contact me via email</p>
             <p>Contact me via Skype</p>
           </div>
-          <div class="col-md-8">
+          <div class="col-sm-8 mx-3">
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -172,6 +440,7 @@
             </form>
           </div>
         </div>
+        </main>
       </div>
   <!-- End Contact tab - Main Container -->
     </div>
@@ -187,6 +456,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Added jQuery options -->
-
+    <script type="text/javascript">
+  
+  </script>
 </body>
 </html>

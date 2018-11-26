@@ -1,0 +1,156 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-star {
+  width: 0.9285714285714285em;
+}
+
+.icon-close {
+  width: 0.7857142857142857em;
+}
+
+.icon-home {
+  width: 0.9285714285714285em;
+}
+
+.icon-camera {
+  width: 1.0714285714285714em;
+}
+
+.icon-chevron-left {
+  width: 0.75em;
+}
+
+.icon-chevron-right {
+  width: 0.6785714285714285em;
+}
+
+.icon-twitter-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-facebook-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-linkedin-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-phone-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-twitter {
+  width: 0.9285714285714285em;
+}
+
+.icon-facebook {
+  width: 0.5881428571428571em;
+}
+
+.icon-bars {
+  width: 0.8571428571428571em;
+}
+
+.icon-linkedin {
+  width: 0.8571428571428571em;
+}
+
+.icon-bolt {
+  width: 0.5005714285714286em;
+}
+
+.icon-html5 {
+  width: 0.7857142857142857em;
+}
+
+.icon-file-text {
+  width: 0.8571428571428571em;
+}
+
+.icon-apple {
+  width: 0.7773571428571427em;
+}
+
+.icon-windows {
+  width: 0.9285714285714285em;
+}
+
+.icon-linux {
+  width: 0.8939999999999999em;
+}
+
+.icon-envelope-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-graduation-cap {
+  width: 1.2857142857142856em;
+}
+
+.icon-behance {
+  width: 1.1428571428571428em;
+}
+
+.icon-behance-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-steam-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-file-pdf-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-paper-plane {
+  width: 1.0011428571428571em;
+}
+
+.icon-paper-plane-o {
+  width: 1.0005714285714284em;
+}
+
+.icon-at {
+  width: 0.8571428571428571em;
+}
+
+.icon-paint-brush {
+  width: 0.9988571428571428em;
+}
+
+.icon-facebook-official {
+  width: 0.8571428571428571em;
+}
+
+.icon-whatsapp {
+  width: 0.8571428571428571em;
+}
+
+.icon-get-pocket {
+  width: 0.9597857142857142em;
+}
+
+.icon-wikipedia-w {
+  width: 1.2857142857142856em;
+}
+
+.icon-television {
+  width: 1.0714285714285714em;
+}

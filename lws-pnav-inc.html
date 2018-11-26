@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Tabbed Navigation Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/custom-pills.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
+
+</head>
+  
+<body>
+<!-- navigation controls -->
+  <div class="navbar nav-pills nav-fill flex-xs-column flex-lg-row fixed-top navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="#">"Dude's New Website"</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> -->
+
+    <div class="collapse navbar-collapse" role="navigation" id="navbarsExampleDefault">
+       <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link text-sm-center active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item text-sm-center">
+          <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item text-sm-center">
+          <a class="nav-link" id="nav-cases-tab" data-toggle="tab" href="#nav-cases" role="tab" aria-controls="cases" aria-selected="false">Cases</a>
+        </li>
+        <li class="nav-item text-sm-center">
+          <a class="nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
+        </li>
+          <li class="nav-item text-sm-center">
+          <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- main page content sections in tab panes -->
+  
+  <div class="flex-container mx-4 center">
+    <div class="row">
+      <div class="col-sm-12">
+<!-- Swapping Tab Contents controlled by nav -->
+<!-- Start Home tab -->
+        
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
+        <main role="main" class="container">
+          <div class="starter-template">
+          <h1>Bootstrap starter template</h1>
+          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+        </main>
+      </div>
+      
+  <!-- End - Home Tab /.container -->
+  <!-- Start - Profile Tab -->
+      
+      <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="profile-tab">
+        <main class="mx-2 mt-4">
+          <div class="row">
+          <div class="col-sm-12 mt-4">
+            <div class="h2">
+              <h2>Professional Profiles</h2>
+              <p class="lead">Ranking professional skills by roles and length of experience.</p>
+            </div>
+            </div>
+          </div>
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h3 class="my-0 font-weight-normal">Good</h3>
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title">UI/UX Design</h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Ten years Experience</li>
+                  <li>Mutiple eCommerce Launches</li>
+                  <li>Full-service Creative</li>
+                  <li>Available for Contracts</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary" href="#nav-cases">Case Studies</button>
+              </div>
+            </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h3 class="my-0 font-weight-normal">Better</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title pricing-card-title">Web Designer</h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Twelve years Experience</li>
+                <li>Digital Agency Pro</li>
+                <li>Corporate-level Manager</li>
+                <li>Mentoring to Others</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">Sample Gallery</button>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h3 class="my-0 font-weight-normal">Best</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title pricing-card-title">UI Developer</h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Sematic Web Development</li>
+                <li>HTML5/CSS3/javascript</li>
+                <li>Supports Creatives</li>
+                <li>JVM, LAMP &amp; WebSphere</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">Presentation</button>
+            </div>
+          </div>
+        </div>
+        </main>
+      </div>
+      
+  <!-- End Profile Tab- Main Container-->
+  <!-- Start Case Studies -->
+      
+      <div class="tab-pane fade show" id="nav-cases" role="tabpanel" aria-labelledby="cases-tab">
+        <main class="mt-3 mx-4">
+          <div class="row">
+            <div class="col-sm-3 mt-3">
+              <h2>Case Studies</h2>
+              <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            </div>
+          <div class="col-sm-9 mt-3">
+             <ul>
+                <li>Message 01</li>
+                <li>Message 02</li>
+                <li>Message 03</li>
+              </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+      
+  <!-- End Messages tab - Main Container -->
+  <!-- Start Gallery tab -->
+      
+      <div class="tab-pane fade show" id="nav-gallery" role="tabpanel" aria-labelledby="gallery-tab">
+      <main class="mx-3 mt-4">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+        <h2>About Chris Bourseau</h2>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul> 
+          </div>
+        </div>
+        </main>
+      </div>
+      
+  <!-- End Gallery tab -->
+  <!-- Start Contact tab -->
+      
+      <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="contact-tab">
+        <main class="mx-2 mt-2">
+          <div class="row">
+          <div class="col-sm-12 mt-4">
+            <h2>About Chris Bourseau</h2>
+            </div> 
+          </div>
+        <div class="row">
+          <div class="col-sm-4">
+          <p>Contact me via email</p>
+            <p>Contact me via Skype</p>
+          </div>
+          <div class="col-sm-8 mx-3">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        </main>
+      </div>
+  <!-- End Contact tab - Main Container -->
+    </div>
+  <!-- End tabbed Content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Added jQuery options -->
+
+</body>
+</html>

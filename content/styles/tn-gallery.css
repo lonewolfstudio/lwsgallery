@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document version 1 */
+body { width: 100%; margin: 0 auto; font-size: 15px; line-height: 1.4em; }
+.container { width:100%; max-width: inherit;}
+.clear { clear:both; }
+p { font-size: 15px; line-height: 22px; padding-bottom: 2px}
+dt {font-size: 1.15em; line-height: normal; display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;}
+section { margin: 0px auto 15px auto;}
+/* How do I set section ids to have link destination 40px higher, so the nav doesn't cover up the heading? */
+/* Re-order links; set up new about section; make cases break into articles; have about link to each case */
+.jumbotron {overflow-x: hidden; margin: 0; padding: 0px; min-height: 240px;  background-color: white}
+.jumbtron h1 {font-family: arial,helvetica,san-serif; font-size: 48px; line-height: 51px; font-weight: bold;};
+.jumbotron p {font-size: 18px};
+.jumbotron .container { display:flex; align-items:initial; margin: auto; padding: 0px; overflow-x: hidden;}
+.jumbotron .container .slides1 { display: block; width: auto; height: 390px; overflow-y: hidden; width:500px}
+.slides1 img {height: 420px;}
+.slides2 {display: flex; padding: 5px; margin: 20px -10px; background-repeat: no-repeat; background-position: .2em 2em;}
+.slides2 p:nth-child(1) { position: absolute; left: 15; top: 15}
+.slides2 p:nth-child(2) { font-weight: bold; width: 86%; background-color: aliceblue; font-size: 1.1em; clear:both; position: relative; align-self:flex-end; margin-bottom: -5px; padding: 5px 9px;}
+.slides2 p:nth-child(2) span {font-weight: normal;}
+/* Web Design Timeline Page */
+#webdes {background-image: url(../images/owc_ux/08_ehop-ipod-girl.png); background-attachment:fixed; background-size:1400px; background-position: right; background-repeat: no-repeat;}
+#webdes .title {background-color: cornflowerblue; color: aliceblue; margin: auto; padding: 0 0px 0 20px;}
+.title1 {background-color: cornflowerblue; color: aliceblue; margin: -5px 0 0 0; padding: 0 0 0 20px; line-height: 1.2em}
+.title1 small {color: aliceblue;}}
+#webdes small {color: aliceblue}
+#webdes .title div:nth-child(2) {margin: 5px auto 5px auto;}
+#webdes .panel {background-color: rgba(255,255,255,0.8); margin: 10px 30px; padding: 0; max-width: 400px}
+#subt p {background-color: rgba(255,255,255,0.7); margin: auto -20px; padding: 10px 0 10px 15px;}
+/* UX Page images only */
+#ux1 {background-image: url(../images/review/tims-red-blk-2.png); margin-right: 20px;background-position:50px 40px; width: auto; height: 256px;}
+#ux2 {background-image: url(../images/art1/ux-mycat-wf-3r1-export.jpg); margin-right: 10px; background-position:-20px 30px; width: auto; height: 256px; background-size: auto 400px;
+    background-repeat: no-repeat;}
+#ux3 {background-image: url(../images/owc_ux/ux-show-_0000_xmas-2004-home.png); background-position:-35px 30px; width: auto; height: 256px; background-size: auto 400px;
+    background-repeat: no-repeat;}
+/* Gallery images markup */
+.cntl-content {border-top: solid 3px #009ABB;}
+.ctnl-image {margin: 20px auto; padding: 0px 10px 15px 5px;}
+.ctnl-icon .cntl-center {margin-left: 30px;}
+.cbtnails .thumbnail { font-size: 11px; height: 120px; width: auto; border-color: coral; margin: 5px; background-color: #fff; background-clip: border-box; overflow-y: hidden}
+.fb-like.likebtn1 { position: absolute; top:104px; right:20px; }
+/* a.likebtn { position: absolute; top:102px; right:20px; } Temporary comp */
+.caption {padding: 5px;}
+.caption p {font-size: 12px; line-height: 16px; }
+.caption strong { font-weight: bold; font-size: 14px; line-height: 14px;}
+.caption a {display:inline; line-height: inherit;}
+footer {background: beige; margin: 10px 0px 0px 0px; padding: 10px 30px 20px 30px; }
+footer strong {line-height: 14px; margin: 4px 0px;}
+footer p {font-size: 11px; padding: 0px; margin: 4px 0px; line-height: 14px;}
+footer p span { font-weight: bold }
+/* Table Styles */
+
+/* Color Panels */
+.panel1 {display: block; width: 540px; height: 380px; margin: 10px; padding: 10px; background-image: url("../images/art1/arc_archrsDrm1.jpg"); background-repeat: no-repeat; background-origin: padding-box; background-position: bottom;}

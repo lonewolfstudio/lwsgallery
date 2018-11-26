@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="content/styles/tn-gallery.css">
+    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.min.css">
+
+	<title>Table of LWS Gallery Images</title>
+
+	<!--Main Image Table for LWS Gallery-->
+
+	<style>
+        table {font-size: 10px; color: darkblue; background-color: aliceblue; }
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+        <section>
+        <div class="row">
+            <div class="col-12-md">
+            <h2>JSON Tests</h2>
+            <p>Bible Verse Retrieval Ajax Test</p>
+            <input type="button" value="get data" id="btn" >
+            </div>
+            </div>
+            </section>
+        <section id="gallery" class="cbtnails">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="content/images/art1/art_aBnsFrmHell1.gif" class="thumbnail" target="_preview"><img src="content/images/art1/art_aBnsFrmHell1.gif" alt=""></a>
+                <div class="caption">
+                    <div class="btn-grp">
+                    <a href="#" class="btn btn-primary btn-xs" role="button">Like</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+<section>
+    <div class="panel">
+<table id="myTable" class="table table-responsive">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>category</td>
+            <td>image</td>
+            <td>media</td>
+            <td>title</td>
+            <td>usage</td>
+            <td>date</td>
+            <td>blurb</td>
+            <td>desc</td>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>Characture</td>
+            <td><a href="content/images/art1/art_aBnsFrmHell1.gif" target="_blank">
+                <img src="content/images/art1/art_aBnsFrmHell1_t.gif" width="auto" height="81px"><br>art_aBnsFrmHell1.gif</a></td>
+            <td>Pen &amp; Ink</td>
+            <td>World According to a Bunny From Hell (Part One)</td>
+            <td>Artist Editorial</td>
+            <td>October 1988</td>
+            <td>Creative portrait of the &ldquo;Original Bunny From Hell&rdquo; in the context of co-workers from the <a href="http://www.ambrosi.com">Ambrosi and Associates, circa 1987-89</a></td>
+            <td>My friend, code-name &ldquo;Bunny&rdquo;, was one of my favorite subjects. The characture portrays the production staff, creative artists, management and sales employees with Ambrosi and Associates, circa 1987-89. The principals are carefully individualized portraits, including Nick Ambrosi as &ldquo;Aldo&rdquo;.</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Characture</td>
+            <td><a href="content/images/art1/art_aBnsFrmHell2.gif" target="_blank">
+                <img src="content/images/art1/art_aBnsFrmHell2_t.gif" width="auto" height="81px"><br>art_aBnsFrmHell2.gif</a></td>
+            <td>Pen &amp; Ink</td>
+            <td>World According to a Bunny From Hell (Part Two)</td>
+            <td>Artist Editorial</td>
+            <td>November 1988</td>
+            <td>Second Version of the "Original Bunny From Hell" in the context of co-workers from the <a href="http://www.ambrosi.com">Ambrosi and Associates, circa 1987-89</a></td>
+            <td>As a follow-up to the first installment, the second version portrays the digital production group at Ambrosi and Associates, including myself. The principals are carefully individualized portraits of my fellow &ldquo;Bunnies From Hell&rdquo;.</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_alnAttckRgb.jpg" target="_blank">
+                <img src="content/images/art1/art_alnAttckRgb_t.jpg" width="auto" height="81px"><br>art_alnAttckRgb.jpg</a></td>
+            <td>Pen &amp; Ink</td>
+            <td>Alien Attack</td>
+            <td>Artist Creative</td>
+            <td>August 1976</td>
+            <td>Graphic Novel Concept for "Alien Invasion"</td>
+            <td>First in a series of conceptual illustrations for my graphic novel &ldquo;Alien Invasion&rdquo;. Other illustrations from the concept are black and white pencil art, and the novel remains incomplete. The main protagonist is an "urban resistance fighter".</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_ancntFishRGB.jpg" target="_blank">
+                <img src="content/images/art1/art_ancntFishRGB_t.jpg" width="auto" height="81px"><br>art_ancntFishRGB.jpg</a></td>
+            <td>Lithography</td>
+            <td>Placoderms Attack</td>
+            <td>Artist Creative</td>
+            <td>October 1976</td>
+            <td>Marine Archaeology - Placoderms</td>
+            <td>First in a series of conceptual illustrations depicting ancient predators, including a plesiosaur. Two ancient fish are shown hunting. The stone lithography technique was taught as part of high school art program.</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_animalFarm.jpg" target="_blank">
+                <img src="content/images/art1/art_animalFarm_t.jpg" width="auto" height="81px"><br>art_animalFarm.jpg</a></td>
+            <td>Copper Plate Etching</td>
+            <td>Animal Farm Montage</td>
+            <td>Artist Creative</td>
+            <td>November 1977</td>
+            <td>Montage of George Orwell's &ldquo;Animal Farm&rdquo;</td>
+            <td>Copper plate etching exercise inspired by George Orwell's <a href="https://en.wikipedia.org/wiki/Animal_Farm" target="_blank">&ldquo;Animal Farm&rdquo;</a>, including several portraits.</td>
+        </tr>
+        <tr>
+            <td>006</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_bearsDef1.jpg" target="_blank">
+                <img src="content/images/art1/art_bearsDef1_t.jpg" width="auto" height="81px"><br>art_bearsDef1.jpg</a></td>
+            <td>Illustration</td>
+            <td>Color Markers</td>
+            <td>Artist Editorial</td>
+            <td>August 1986</td>
+            <td>Sports Action Series - Chicago Bears Defense</td>
+            <td>First in a series of sports-related illustrations executed using color markers on paper. Image shows two Chicago Bears defenders (<a href="https://en.wikipedia.org/wiki/Shaun_Gayle" target="_blank">Shaun Gayle</a> and <a href="https://en.wikipedia.org/wiki/Dave_Duerson" target="_blank">Dave Duerson</a>) against Washington Redskins Hall of Fame reciever <a href="http://www.redskins.com/team/history/greatest-redskins/ricky-sanders.html">Ricky Sanders</a> in the <a href="https://en.wikipedia.org/wiki/1987%E2%80%9388_NFL_playoffs#NFC:_Washington_Redskins_21.2C_Chicago_Bears_17" target="_blank">1988 NFC Championship First Round game.</a></td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_bJvsRnLtArt.jpg" target="_blank">
+                <img src="content/images/art1/art_bJvsRnLtArt_t.jpg" width="auto" height="81px"><br>art_bJvsRnLtArt.jpg</a></td>
+            <td>Illustration</td>
+            <td>Color Markers</td>
+            <td>Artist Editorial/td>
+            <td>August 1989</td>
+            <td>Sports Action Series - Bo Jackson</td>
+            <td>Second in a series of sports-related illustrations executed using color markers on paper. Image shows Oakland Raiders <a href="https://en.wikipedia.org/wiki/Bo_Jackson" target="_blank">Bo Jackson</a> against San Francisco 49er Hall of Fame Defensive Back <a href="https://en.wikipedia.org/wiki/Ronny_Lott">Ronny Lott</a> in <a href="http://www.pro-football-reference.com/boxscores/198811130sfo.htm" target="_blank">a November&nbsp;1988</a> game.</td>
+        </tr>
+        <tr>
+            <td>008</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_brbrnAttckBW.jpg" target="_blank">
+                <img src="content/images/art1/art_brbrnAttckBW_t.jpg" width="auto" height="81px"><br>art_brbrnAttckBW.jpg</a></td>
+            <td>Pencil Drawing</td>
+            <td>Barbarians Attack!</td>
+            <td>Artist Creative</td>
+            <td>July 1980</td>
+            <td>Alien Invasion - Outlanders attacking</td>
+            <td>Second in a series of conceptual illustrations for my graphic novel &ldquo;Alien Invasion&rdquo;. Image is a montage of multiple character studies for the &ldquo;Human versus Human&rdquo; part of story. The main characters are depicted fighting with the barbarians with a variety of weapons.</td>
+            </tr>
+        <tr>
+            <td>009</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_brbrnDethPile.jpg" target="_blank">
+                <img src="content/images/art1/art_brbrnDethPile_t.jpg" width="auto" height="81px"><br>art_brbrnDethPile.jpg</a></td>
+            <td>Pen &amp; Ink</td>
+            <td>Barbarian Death Pile</td>
+            <td>Artist Creative</td>
+            <td>June 1976</td>
+            <td>Barbarians - Warrior Victory</td>
+            <td>Early graphic novel illustration of a barbarian warrior among a pile of vanquished foes, inspired by the characters of pulp fiction author <a href="https://en.wikipedia.org/wiki/Robert_E_Howard" target="_blank">Robert E. Howard</a></td>
+            </tr>
+        <tr>
+            <td>010</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_brbrnVkgFgt.jpg" target="_blank">
+                <img src="content/images/art1/art_brbrnVkgFgt_t.jpg" width="auto" height="81px"><br>art_brbrnVkgFgt.jpg</a></td>
+            <td>Pencil Drawing</td>
+            <td>Vikings versus Barbarians</td>
+            <td>Artist Creative</td>
+            <td>July 1979</td>
+            <td>Short Description</td>
+            <td>Early graphic novel illustration of Vikings battling a horde of even more fierce barbarians. Inspired by the characters of pulp fiction author <a href="https://en.wikipedia.org/wiki/Robert_E_Howard" target="_blank">Robert E. Howard</a></td>
+            </tr>
+        <tr>
+            <td>011</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_cavDwlrsBrthMain.jpg" target="_blank">
+                <img src="content/images/art1/art_cavDwlrsBrthBW.jpg" width="auto" height="81px"><br>art_cavDwlrsBrthMain.jpg</a></td>
+            <td>Pencil Illustration</td>
+            <td>Cave Dwellers Birth</td>
+            <td>Artist Creative</td>
+            <td>November 1976</td>
+            <td>Cave Dwellers gather to witness the hatching</td>
+            <td>Student figure studies with fantasy characters added in a subterranean cavern. Inspired by the fiction of <a href="https://en.wikipedia.org/wiki/Robert_A._Heinlein" target="_blank">Robert Heinlein</a> and <a href="https://en.wikipedia.org/wiki/Frank_Herbert" target="_blank">Frank Herbert</a>.</td>
+            </tr>
+        <tr>
+            <td>012</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_cavDwlrsBrth1.jpg" target="_blank">
+                <img src="content/images/art1/art_cavDwlrsBrth1_t.jpg" width="auto" height="81px"><br>art_cavDwlrsBrth1.jpg</a></td>
+            <td>Pencil Illustration</td>
+            <td>Cave Dwellers (Detail)</td>
+            <td>Artist Creative</td>
+            <td>November 1976</td>
+            <td>Detail of Cave Dwellers including figure study</td>
+            <td>Detail of student figure studies with fantasy characters in a subterranean setting. Inspired by the fiction of <a href="https://en.wikipedia.org/wiki/Robert_A._Heinlein" target="_blank">Robert Heinlein</a> and <a href="https://en.wikipedia.org/wiki/Frank_Herbert" target="_blank">Frank Herbert</a>.</td>
+            </tr>
+        <tr>
+            <td>013</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_cavDwlrsBrth2.jpg" target="_blank">
+                <img src="content/images/art1/art_cavDwlrsBrth2_t.jpg" width="auto" height="81px"><br>art_cavDwlrsBrthBW.jpg</a></td>
+            <td>Pencil Illustration</td>
+            <td>Cave Dwellers (Detail)</td>
+            <td>Artist Creative</td>
+            <td>November 1976</td>
+            <td>Detail of Cave Dwellers including figure study</td>
+            <td>Detail of fantasy characters in profile in a subterranean setting. Inspired by the fiction of <a href="https://en.wikipedia.org/wiki/Robert_A._Heinlein" target="_blank">Robert Heinlein</a> and <a href="https://en.wikipedia.org/wiki/Frank_Herbert" target="_blank">Frank Herbert</a>.</td>
+            </tr>
+        <tr>
+            <td>014</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_dethMtchRgb.jpg" target="_blank">
+                <img src="content/images/art1/art_dethMtchRgb_t.jpg" width="auto" height="81px"><br>art_dethMtchRgb.jpg</a></td>
+            <td>Oil on Canvas</td>
+            <td>Chess Match of Death</td>
+            <td>Artist Creative</td>
+            <td>October 1979</td>
+            <td>Queen crushes Pawn in a Chessboard fantasy</td>
+            <td>Image of animated chess pieces including a Killer Queen and her Pawn victim, executed as oil paint on canvas.</td>
+            </tr>
+        <tr>
+            <td>015</td>
+            <td>Miscellaneous Artwork</td>
+            <td><a href="content/images/art1/art_dogCaponPrt.jpg" target="_blank">
+                <img src="content/images/art1/art_dogCaponPrt_t.jpg" width="auto" height="81px"><br>art_dogCaponPrt.jpg</a></td>
+            <td>Oil on Canvas</td>
+            <td>Portrait of Capone</td>
+            <td>Artist Creative</td>
+            <td>July 1984</td>
+            <td>Portrait of Shepherd/Malamute Mix</td>
+            <td>Portrait executed from live pose of Capone, a German Shepherd and Alaskan Malamute mutt with a heart of gold.</td>
+            </tr>
+        <tr>
+            <td>016</td>
+            <td>Student Work</td>
+            <td><a href="content/images/art1/art_dpSeaCnstrtnBW.jpg" target="_blank">
+                <img src="content/images/art1/art_dpSeaCnstrtn_t.jpg" width="auto" height="81px"><br>art_dpSeaCnstrtnBW.jpg</a></td>
+            <td>Lithograph on Paper</td>
+            <td>Welcome to Deep Blue</td>
+            <td>Artist Creative</td>
+            <td>April 1977</td>
+            <td>Marine Construction concept lithograph</td>
+            <td>First in a series of conceptual illustrations depicting future concepts, including the construction of human habitats in the ocean. The stone lithography technique was taught as part of high school art program.</td>
+            </tr>
+        <tr>
+            <td>017</td>
+            <td>Characture</td>
+            <td><a href="content/images/art1/art_groversParty.gif" target="_blank">
+                <img src="content/images/art1/art_groversParty_t.gif" width="auto" height="81px"><br>art_groversParty.gif</a></td>
+            <td>Pen &amp; Ink</td>
+            <td>Welcome to Grover&rsquo;s Party</td>
+            <td>Artist Editorial</td>
+            <td>January 1989</td>
+            <td>Grover&rsquo;s Space Vikings</td>
+            <td>Group portrait depicting the friends of Grover from his bachelor party.</td>
+            </tr>
+        <tr>
+            <td>018</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_mnrdFergBW.jpg" target="_blank">
+                <img src="content/images/art1/art_mnrdFergBW_t.jpg" width="auto" height="81px"><br>art_mnrdFergBW.jpg</a></td>
+            <td>Pencil Drawing</td>
+            <td>Hail to Maynard</td>
+            <td>Artist Creative</td>
+            <td>January 1982</td>
+            <td>Montage of Jazz legend Maynard Fergusen in pencil</td>
+            <td>Montage of portraits of Jazz legend <a href="http://www.maynardferguson.com/" target="_blank">Maynard Ferguesen</a> from supplied photographs and record album cover images.</td>
+            </tr>
+        <tr>
+            <td>019</td>
+            <td>Commissioned Artwork</td>
+            <td><a href="content/images/art1/art_mystryFrstPnl1.jpg" target="_blank">
+                <img src="content/images/art1/art_mystryFrstPnl1_t.jpg" width="auto" height="81px">art_mystryFrstPnl1.jpg</a></td>
+            <td>Acrylic on Canvas</td>
+            <td>Mystery Forest &#40;1&#47;3&#41;</td>
+            <td>Artist Creative</td>
+            <td>December 1980</td>
+            <td>Large Scale Wall Tryptic of the &ldquo;Mystery Forest&rdquo;</td>
+            <td>Panel one in a 54-inch high, 7-foot wide acrylic on canvas tryptic. Commissioned by a petroleum equipment supply company office to show the positive effects of the business. The pumps and controls are coexisting with the forest under a pleasant streetlight.</td>
+            </tr>
+        <tr>
+            <td>020</td>
+            <td>Commissioned Artwork</td>
+            <td><a href="content/images/art1/art_mystryFrstPnl2.jpg" target="_blank">
+                <img src="content/images/art1/art_mystryFrstPnl2_t.jpg" width="auto" height="81px">art_mystryFrstPnl2.jpg</a></td>
+            <td>Acrylic on Canvas</td>
+            <td>Mystery Forest &#40;2&#47;3&#41;</td>
+            <td>Artist Creative</td>
+            <td>January 1981</td>
+            <td>Large Scale Wall Tryptic of the &ldquo;Mystery Forest&rdquo;</td>
+            <td>Panel two in a 54-inch high, 7-foot wide acrylic on canvas tryptic. Commissioned by a petroleum equipment supply company office to show the positive effects of the business. The center section shows the wide meadow and an abandoned road.</td>
+            </tr>
+        <tr>
+            <td>021</td>
+            <td>Commissioned Artwork</td>
+            <td><a href="content/images/art1/art_mystryFrstPnl3.jpg" target="_blank">
+                <img src="content/images/art1/art_mystryFrstPnl3_t.jpg" width="auto" height="81px">art_mystryFrstPnl3.jpg</a></td>
+            <td>Acrylic on Canvas</td>
+            <td>Mystery Forest &#40;3&#47;3&#41;</td>
+            <td>Artist Creative</td>
+            <td>January 1981</td>
+            <td>Large Scale Wall Tryptic of the &ldquo;Mystery Forest&rdquo;</td>
+            <td>Panel three in a 54-inch high, 7-foot wide acrylic on canvas tryptic. Commissioned by a petroleum equipment supply company office to show the positive effects of the business. The right section shows a futuristic city with a new power source, showing the progress toward new energy sources.</td>
+            </tr>
+        <tr>
+            <td>022</td>
+            <td>Illustration</td>
+            <td><a href="content/images/art1/art_nudDancGrl.jpg" target="_blank">
+                <img src="content/images/art1/art_nudDancGrl_t.jpg" width="auto" height="81px"><br><br>art_nudDancGrl.jpg</a></td>
+            <td>Watercolor Drawing</td>
+            <td>Harem Dancer Nude</td>
+            <td>Artist Creative</td>
+            <td>March 1990</td>
+            <td>Study of a dancer in the Persian tradition</td>
+            <td>Figure study of a live model recast as a Dancer clad in silks, veils and gilded lace in the Persian tradition of harem entertainers.</td>
+            </tr>
+        <tr>
+            <td>023</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/ad_bendTrvlOrgn.jpg" target="_blank">
+                <img src="content/images/art1/ad_bendTrvlOrgn.jpg" width="120px" height="auto"><br>ad_bendTrvlOrgn.jpg</a></td>
+            <td>Static Graphic</td>
+            <td>Travel to Bend, Oregon</td>
+            <td>Artist Web Ad</td>
+            <td>April 1999</td>
+            <td>Spot advertisement for travel destinations in Bend, Oregon</td>
+            <td>Part of a student presentation. Created with Adobe CS and oupt at multiple aizes and crop dimensions. Largest version displayed. Software: Adobe Photoshop.</td>
+            </tr>
+        <tr>
+            <td>024</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/ad_conTechLogo1.gif" target="_blank">
+                <img src="content/images/art1/ad_conTechLogo1_t.gif" width="auto" height="81px"><br>ad_conTechLogo1.gif</a></td>
+            <td>Web Logo</td>
+            <td>ConTech Sales Logo</td>
+            <td>Commercial Sample</td>
+            <td>February 1999</td>
+            <td>Logo for Methode Subsidiary</td>
+            <td>Created as part of the launch for the Contech Hardware Sales Division in Carrollton, Texas. Working directly with the senior management, developed and launched full campaign in 10 days. Initially licensed and owned by <a href="http://www.methode.com" target="_blank">Methode Electronics</a>, presumed to be expired after subsidiary spin-off. Software: Adobe Illustrator.</td>
+            </tr>
+        <tr>
+            <td>025</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/ad_ndaKiaPick3.gif" target="_blank">
+                <img src="content/images/art1/ad_ndaKiaPick3_t.gif" width="auto" height="81px"><br>ad_ndaKiaPick3.gif</a></td>
+            <td>Digital Print Ad</td>
+            <td>Kia Pick Three Promo Ad</td>
+            <td>Commercial Sample</td>
+            <td>July 2000</td>
+            <td>Newprint Ad Production</td>
+            <td>Executed as part of contract/temporary assignment with a small Schaumburg Ad agency specializng in retail sales advertising. Software: Macromedia FreeHand.</td>
+            </tr>
+        <tr>
+            <td>026</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/ad_unlmtdLdCalls4c.jpg" target="_blank">
+                <img src="content/images/art1/ad_unlmtdLdCalls4c_t.jpg" width="auto" height="81px"><br>ad_unlmtdLdCalls4c.jpg</a></td>
+            <td>Digital Print Ad</td>
+            <td>Unlimited Local Calls Promo Ad</td>
+            <td>Commercial Sample</td>
+            <td>July 2000</td>
+            <td>Newprint Ad Production</td>
+            <td>Executed as part of contract/temporary assignment with a small Schaumburg Ad agency specializng in retail sales advertising. Software: Macromedia FreeHand.</td>
+            </tr>
+        <tr>
+            <td>027</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/ad_pwpHavBalls.gif" target="_blank">
+                <img src="content/images/art1/ad_pwpHavBalls_t.gif" width="auto" height="81px"><br>ad_pwpHavBalls</a></td>
+            <td>Digital Print/Web Ad</td>
+            <td>Pentwater Has Balls Ad</td>
+            <td>Commercial Sample</td>
+            <td>June 1994</td>
+            <td>Newprint Ad Production</td>
+            <td>Executed as part of commissioned advertising and marketing campaign for Pentwater Wire, Inc. Animated GIF of initial ads for their pallet containment product line. License to client expired. Software: Adobe Illustrator.</td>
+            </tr>
+        <tr>
+            <td>028</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_beachPartyAd.jpg" target="_blank">
+                <img src="content/images/art1/alo_beachPartyAd_t.jpg" width="auto" height="81px"><br>alo_beachPartyAd.jpg</a></td>
+            <td>Marker Layout</td>
+            <td>Beach Party Ad</td>
+            <td>Artist Creative</td>
+            <td>June 1989</td>
+            <td>Colorful beach party scene with teen boy and girl</td>
+            <td>Traditional art marker layout as demonstration for defunct technique of executing detail color layouts for client pitches and film photography. Created as a portfolio sample for agency and client work. Target sector was soft drinks or sports equipment. See American Movie Channel program <a href="http://www.amc.com/shows/mad-men">&ldquo;Madmen&rdquo;</a> for references to this type of ad agency activity.</td>
+            </tr>
+        <tr>
+            <td>029</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_CatRadoCntrl.gif" target="_blank">
+                <img src="content/images/art1/alo_CatRadoCntrl_t.gif" width="auto" height="81px"><br>alo_CatRadoCntrl.gif</a></td>
+            <td>Pencil Layout</td>
+            <td>Radio Control Car Ad</td>
+            <td>Commercial Sample</td>
+            <td>July 1991</td>
+            <td>Catalog page layout of remote-control toy in action</td>
+            <td>Traditional pencil drawing layout for client approval and film photography. Executed as part of then ongoing in-house client work for a promotional product buying catalog for the exclusive use of small and medium-sized businesses. Agency business model similar to airline premium sales flyers and supplanted by more effective e-commerce and promotional ad models.</td>
+            </tr>
+        <tr>
+            <td>030</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_mlrWlcmHmAd1.jpg" target="_blank">
+                <img src="content/images/art1/alo_mlrWlcmHmAd1_t.jpg" width="auto" height="81px"><br>alo_mlrWlcmHmAd1.jpg</a></td>
+            <td>Marker Layout</td>
+            <td>Welcome Home Ad &#40;1&#47;3&#41;</td>
+            <td>Artist Creative</td>
+            <td>June 1987</td>
+            <td>Miller Brewing ad concept showing people with banner</td>
+            <td>Traditional art marker layout with branded product for Miller Brewing, executed as portfolio sample of detailed storyboard layouts for prospective agency clients. This original work was shown as part of a portfolio for five years to multiple agencies. The concept was eventually reproduced almost scene-for-scene for a 1991 TV advertisement by the official Chicago-area agency for the same brand without authorization! See American Movie Channel program <a href="http://www.amc.com/shows/mad-men">&ldquo;Madmen&rdquo;</a> for references to this type of ad agency activity.</td>
+            </tr>
+        <tr>
+            <td>031</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_mlrWlcmHmAd2.jpg" target="_blank">
+                <img src="content/images/art1/alo_mlrWlcmHmAd2_t.jpg" width="auto" height="81px"><br>alo_mlrWlcmHmAd2.jpg</a></td>
+            <td>Marker Layout</td>
+            <td>Welcome Home Ad &#40;2&#47;3&#41;</td>
+            <td>Artist Creative</td>
+            <td>June 1987</td>
+            <td>Miller Brewing ad concept showing veteran in uniform</td>
+            <td>Traditional art marker layout with branded product for Miller Brewing, executed as portfolio sample of detailed storyboard layouts for prospective agency clients. This original work was shown as part of a portfolio for five years to multiple agencies. The concept was eventually reproduced almost scene-for-scene for a 1991 TV advertisement by the official Chicago-area agency for the same brand without authorization! See American Movie Channel program <a href="http://www.amc.com/shows/mad-men">&ldquo;Madmen&rdquo;</a> for references to this type of ad agency activity.</td>
+            </tr>
+        <tr>
+            <td>032</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_xtraComAd.jpg" target="_blank">
+                <img src="content/images/art1/alo_xtraComAd_t.jpg" width="auto" height="81px"><br>alo_xtraComAd.jpg</a></td>
+            <td>Digital Print/Web Ad</td>
+            <td>XtraCom Call Plan Ad</td>
+            <td>Commercial Sample</td>
+            <td>July 1994</td>
+            <td>Digital ad layout in the style of &ldquo;Archie Comics&rdquo; for client pitch book</td>
+            <td>Executed as part of pitch book content for a start-up agency that went out of business, before that was considered a sign of success. License to client expired. Software: Adobe Illustrator.</td>
+            </tr>
+        <tr>
+            <td>033</td>
+            <td>Advertising</td>
+            <td><a href="content/images/art1/alo_TMNTWatches.jpg" target="_blank">
+                <img src="content/images/art1/alo_TMNTWatch_t.jpg" width="auto" height="81px"><br>alo_TMNTWatches.jpg</a></td>
+            <td>Color Marker Layout</td>
+            <td>Teenage Mutant Ninja Turtle branded watches</td>
+            <td>Commercial Sample</td>
+            <td>July 1991</td>
+            <td>Color catalog page layout of licensed product and children in action</td>
+            <td>Traditional marker photo layout, executed as part of then ongoing in-house client work for a promotional product buying catalog for the exclusive use of small and medium-sized businesses. Agency business model similar to airline premium sales flyers and supplanted by more effective e-commerce and promotional ad models.</td>
+            </tr>
+        <tr>
+            <td>Index</td>
+            <td>Category</td>
+            <td>Img Name</td>
+            <td>Media</td>
+            <td>Title</td>
+            <td>Usage</td>
+            <td>Date</td>
+            <td>Short Description</td>
+            <td>Description</td>
+            </tr>
+    </tbody>
+</table>
+    </div>
+        </section>
+	</div>
+    
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="content/js/extract-html-table.js"></script>
+	<script src="content/js/jquery-1.12.0.min.js"></script>
+
+</body>
+
+</html>

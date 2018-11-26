@@ -1,0 +1,268 @@
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+/* Customization from Demo CSS */
+.magnific-gallery {
+    list-style: none; 
+    }
+.magnific-gallery li {float: left; height: 120px; margin: 10px 10px 25px 0; padding-right: 5px;}
+.magnific-gallery img {height: 100%;}
+/* CB - added li-p selector to make caption in thumbnail. - Change to anchor from li to fix height with Bootstrap?? Or, change to div from li to match listafy??? */
+.magnific-gallery li p {clear: both; font-size: 12px; line-height:14px; padding:3px; width: 75%;}
+.magnific-gallery li a {margin: 10px 0; text-decoration: none; text-decoration-color: navy; }
+/* Overlay */
+.mfp-example .mfp-container .mfp-content-container
+{background-color: #fff; min-width: 300px}
+/* Image type */
+.mfp-example .mfp-container.mfp-image-holder .mfp-img {padding: 0; border: 12px solid #fff;}
+.mfp-example .mfp-container.mfp-image-holder .mfp-figure:after {display:none;}
+/* Image type - .mfp-table class added by the extension */
+.mfp-example.mfp-table .mfp-container.mfp-image-holder .mfp-figure > figure
+{display: table;}
+.mfp-example.mfp-table .mfp-container.mfp-image-holder .mfp-header {display: table-caption; caption-side: top;}
+/* Nested tables - only one caption per table is possible */
+.mfp-example.mfp-table .mfp-container.mfp-image-holder .mfp-footer
+{display: table-row;}
+.mfp-example.mfp-table .mfp-container.mfp-image-holder .mfp-figcaption
+{display: table;width: 100%;}
+.mfp-example.mfp-table .mfp-container.mfp-image-holder .mfp-bottom-bar-container
+{display: table-caption; caption-side: top;}
+/* Image type end */
+.mfp-example .mfp-container .mfp-top-bar {padding: 5px 50px 10px 20px; margin-top: 70px; /* decoration always visible */
+    background: darkblue url(../html5_gallery/content/icons/images/lws_logoPaw1.gif) left no-repeat;
+	text-align: center;
+	position: relative;}
+.mfp-example .mfp-container .mfp-top-bar .mfp-title
+{
+	max-height: 92px;
+	padding-right: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.1em;
+	color: #fff;
+	text-align: center;
+	word-break: normal;
+	overflow: hidden;
+}
+
+/* add images for cb, lws and other branding */
+.mfp-example .mfp-container .mfp-top-bar .mfp-decoration
+{
+	position: absolute;
+	left: 0px;
+	top: -69px;
+	width: 364px;
+	height: 78px;
+	background: url(/content/images/ad-banners/images/port-cb-mglry-hdr.png) no-repeat;
+}
+.mfp-example .mfp-container .mfp-bottom-bar
+{
+	padding: 0 12px 10px 12px;
+	margin-top: 0;
+	margin-bottom: 35px; /* decoration always visible */
+	box-sizing: border-box;
+	background-color: #fff;
+	position: relative;
+}
+
+.mfp-example .mfp-container .mfp-bottom-bar .mfp-description
+{
+	font-size: 12px;
+	line-height: 14px;
+	max-height: 66px;
+	overflow: hidden;
+}
+
+.mfp-example .mfp-container .mfp-bottom-bar .mfp-decoration
+{
+	position: absolute;
+	left: 0;
+	bottom: -100px;
+	width: 100%;
+	height: 230px;
+	background: url(/content/images/ad-banners/images/port-cb-mglry-bnr.png) repeat-x;
+}
+
+.mfp-example .mfp-container .mfp-bottom-bar .mfp-counter
+{
+	position: static;
+	display: block;
+	width: 100%;
+	margin-top: -5px;
+
+	text-align: center;
+	color: #999;
+}
+
+.mfp-example .mfp-container .mfp-close
+{
+	text-indent: 200px;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 60px;
+	background: url(/content/images/LWS_Paw1.gif) no-repeat center center;
+}
+
+/* Overlay fadeIn animation */
+.mfp-example.mfp-with-zoom .mfp-container,
+.mfp-example.mfp-with-zoom.mfp-bg
+{
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.mfp-example.mfp-with-zoom.mfp-ready .mfp-container
+{opacity: 1;}
+.mfp-example.mfp-with-zoom.mfp-ready.mfp-bg
+{opacity: 0.8;}
+.mfp-example.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-example.mfp-with-zoom.mfp-removing.mfp-bg
+{opacity: 0;}
+/* Overlay controls */
+.mfp-example .mfp-arrow
+{ background: url(../images/icons/ui.png) no-repeat center 30px;}
+.mfp-example .mfp-arrow:hover
+{background-position: center -370px;}
+.mfp-example .mfp-arrow.mfp-arrow-left
+{background: url(../images/icons/triangle-left.png) no-repeat center 30px;}
+.mfp-example .mfp-arrow.mfp-arrow-right
+{background: url(../images/icons/triangle-right.png) no-repeat center -170px;}
+.mfp-example .mfp-arrow.mfp-arrow-right:hover
+{background-position: center -580px;}
+.mfp-example .mfp-arrow:before,
+.mfp-example .mfp-arrow:after,
+.mfp-example .mfp-arrow .mfp-b,
+.mfp-example .mfp-arrow .mfp-a
+{display: none;}
+@media only screen and (max-width: 1280px)
+{
+	/* Overlay */
+	.mfp-example .mfp-container .mfp-top-bar
+	{
+		line-height: 72px;
+	}
+
+	.mfp-example .mfp-container .mfp-top-bar .mfp-title
+	{
+		max-height: 72px;
+		font-size: 1.5em;
+		line-height: 1.3em;
+		display: inline-block;
+		vertical-align: middle;
+		min-width: 200px;
+	}
+}
+@media only screen and (max-width: 768px)
+{
+	/* Overlay */
+	.mfp-example .mfp-container .mfp-top-bar
+	{	
+		margin-top: 49px; /* decoration always visible */
+		line-height: 52px;
+	}
+
+	.mfp-example .mfp-container .mfp-top-bar .mfp-title
+	{
+		max-height: 52px;
+		font-size: 23px;
+		line-height: 26px;
+	}
+	
+	.mfp-example .mfp-container .mfp-top-bar .mfp-decoration
+	{
+		left: 0;
+		top: -48px;
+
+		width: 360px;
+		height: 68px;
+
+		background-size: 380px 68px;
+	}
+
+	.mfp-example .mfp-container .mfp-bottom-bar
+	{
+		margin-bottom: 46px; /* decoration always visible */
+	}
+
+	.mfp-example .mfp-container .mfp-bottom-bar .mfp-decoration
+	{
+		bottom: -91px;
+
+		width: 100%;
+		height: 91px;
+
+		background-size: auto 91px;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	/* Overlay */
+	.mfp-example .mfp-container .mfp-top-bar
+	{
+		margin-top: 35px; /* decoration always visible */
+		line-height: 42px;
+	}
+
+	.mfp-example .mfp-container .mfp-top-bar .mfp-title
+	{
+		max-height: 42px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.mfp-example .mfp-container .mfp-top-bar .mfp-title
+	{
+		max-height: 42px;
+		font-size: 18px;
+		line-height: 21px;
+
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.mfp-example .mfp-container .mfp-top-bar .mfp-decoration
+	{
+		left: -14px;
+		top: -34px;
+
+		width: 91px;
+		height: 49px;
+		background-size: 91px 49px;
+	}
+
+	.mfp-example .mfp-container .mfp-bottom-bar
+	{
+		margin-bottom: 62px; /* decoration always visible */
+	}
+
+	.mfp-example .mfp-container .mfp-bottom-bar .mfp-decoration
+	{
+		bottom: -65px;
+
+		width: 100%;
+		height: 65px;
+
+		background-size: auto 65px;
+	}
+
+	.mfp-example .mfp-container .mfp-bottom-bar .mfp-counter
+	{margin-top: -3px;}
+}

@@ -8,7 +8,7 @@ pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto
 
 xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
 
-tab-pane.fade, .show { transition-duration: .5s;}
+tab-pane.fade, .show.active { transition-duration: .5s; background-color: beige; margin-top: auto;}
 
 .navbar { background-color: aliceblue; padding-bottom: 0; }
 
@@ -22,12 +22,26 @@ tab-pane.fade, .show { transition-duration: .5s;}
 /* required to fix navigation */
 @media (min-width:481.1px) and (max-width: 768.8px) {
   
+  tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood; }
   
-}
+  .tab-content { margin-top: 2.5rem; margin-left: -1rem; margin-right: -1rem }
+
+  .nav-item .nav-link { background-color: aquamarine; margin-bottom: -1.5rem}
+    
+  .nav-pills .nav-link.active { margin-top: auto }
+    
+  .navbar { padding-bottom: 1.5rem }
+  }
 
 @media (min-width:212px) and (max-width: 481px) {
+
+  tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood }
   
-.nav-pills .nav-link { display: inline-block; padding: 10px 5px; }
+  .tab-content { margin-top: 5.5rem; margin-left: -1rem; margin-right: -1rem }
+  
+  .nav-pills .nav-link { padding: 10px 5px;}
+  
   .navbar { padding-bottom: 2.75rem }
+  
   .nav-pills .nav-link.active { clear: right; position: absolute; bottom: 0; left: 20px; width: 33% }
-}
+  }
