@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS styles for demo document version 2 */
+/* styles for shell page */
+body {font: 100%/1.4 Arial, Helvetica, sans-serif; background: #4E5869; margin: auto 0; padding: 0; color: #000}
+.footer { font-size: 12px; text-align: right; margin: 0 }
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {padding: 0; margin: 0; font-size:.9em; line-height: 1.2em; list-style: square}
+h1, h2, h3, h4, h5, h6 {margin: 5px 0px 5px 0px; padding: 0 15px 0 15px}
+h1 {font-size: 1.4em; color:#309}
+h2 {background:#30F; color:#FC3; font-size:1.2em}
+p { font-size: 0.8em; line-height: 1.2em; margin: 5px 0px 5px 15px; }
+.footer ul { margin: 5px }
+.footer li { font-size: 12px; line-height: 1.2em; margin: 5px; padding: 10px 5px 0px 0px; list-style:none; display:inline }
+.footer p {border-top-style: solid; border-top-width: 3px; border-top-color: #30f; padding: 15px 15px 5px 0px; background-color:#99F; margin: 0}
+a img { border: none}
+a:link {color:#414958; text-decoration: underline}
+a:visited {color: #4E5869; text-decoration: underline;}
+a:hover, a:active, a:focus { text-decoration: none;}
+.container {
+	width: 400px;
+	/* [disabled]max-width: 1260px;*/
+	/* [disabled]min-width: 450px; */
+	background: #FFF;
+	margin: 0 auto
+}
+.content {padding: 10px 0}
+.content ul, .content ol {padding: 0 15px 15px 30px}
+.content p { width: 80%; position:relative }
+.fltrt {  /* float an element right - must precede the element it should be next to on the page. */ float: right; margin-left: 8px}
+.fltlft { /* float an element left - must precede the element it should be next to on the page. */ float: left; margin-right: 8px }
+.clearfloat { /* place on <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+clear:both; height:0; font-size: 1px; line-height: 0px}
+.wins {color: #F00}
+/* styles for subject matter */
+/* Test Chart #1 */
+.chartBox {font-family: Arial, Helvetica, sans-serif; font-size: 16px; border: solid #036 2px; -webkit-border-radius: 10px 15px; -moz-border-radius: 10px 15px; border-radius: 10px 15px; margin: 0px 15px; padding: 5px 10px 47px 10px; position: relative; width: 325px}
+/* behavior: url(pie_files/PIE.htc); */
+/* elliptical, cross platform rounded corners solution wit IE6-9 support with PIE module attached as a behavior. Might not be a best practices solution. http://css3pie.com */
+h3 {font-size: 18px; line-height: 20px; padding: 0px 15px 5px 15px}
+.grphBox {
+	width: 85%;
+	height: 150px;
+	border-bottom: solid 2px #000;
+	border-left: solid 2px #000;
+	display: block;
+	margin: 0px 10px 0px 10px;
+	position: relative;
+	padding-left: 10px
+}
+/* dynamic class for JSON data. Level of abstraction for "Chart Type = Vertical Bar". the bar starts out at 0 and raises or lowers to the full height and bounces */
+.barVertical {bottom: 0%; width:36px; height:0%; display:block; margin: 0px 10px 0px 10px; position:absolute}
+#c0.barVertical {background: fixed #090; left: 5px}
+#c1.barVertical {background: fixed #603; left: 62px}
+#c2.barVertical {background: fixed #33C; left: 118px}
+#c0.bVer {background: fixed #030; left: 5px}
+#c1.bVer {background: fixed #303; left: 62px}
+#c2.bVer {background: fixed #006; left: 118px}
+/* static bars */
+.bar_green { width: 36px; height: 20%; background: fixed #009933; display: block; margin: 0px 10px 0px 10px; position: absolute; bottom: 0px; left: 9px }
+.bar_purple { width: 36px; height: 40%; background: fixed #660033; display: block; margin: 0px 10px 0px 10px; position: absolute; bottom: 0px; left: 68px }
+.bar_blue { width: 36px; height: 25px; background: fixed #3366FF; display: block; margin: 0px 10px 0px 10px; position: absolute; bottom: -25px; left: 126px }
+/* static labels */
+.grphLabel { font-size: 18px; font-weight: bold; bottom: 30px; vertical-align: top; text-align: center; display: inline; color: #039; width: 10%; position: relative; margin: 20px 2px 10px 2px; /* [disabled]visibility: hidden; */ }
+.grphLabel .prct {font-size: 87%; vertical-align: baseline; white-space: normal; padding-left: 1px; display: inline}
+/* Chart Description ststic styles - add size and weight to spans */
+.chrtDscrp {
+	font-size: 12px;
+	width: 90px;
+	left: 66%;
+	margin: 2px 10px 10px 5px;
+	position: absolute;
+	font-style: normal;
+	line-height: 16px
+}
+.chrtDscrp span {font-size: larger; font-weight: bolder; line-height: 1em}
+.barVertPopup {background:#CFC; display:none; float:left; clear:none; position:relative}
+/* jQuery Styles */
+label { display: inline-block; width: 5em; position:relative }
+a.ui-tooltip {
+	font-size: 9px;
+	line-height: 13px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

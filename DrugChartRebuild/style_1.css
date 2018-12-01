@@ -1,0 +1,288 @@
+/******************************
+* Gallery Mod by Chris Bourseau *
+* http://www.lonewolfstudio.com *
+*******************************/
+* {
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+}
+body {
+	background:#000;
+	margin:20px;
+}
+
+#container {
+	clear:both;
+	width:900px;
+	height:494px;
+	min-height:480px;
+	border:1px solid #fff;
+	margin:0 auto 0 auto;
+	background:url("images/bg.jpg") top left repeat-x;
+}
+
+#header {
+	width:900px;
+	margin:0 auto 0 auto;
+}
+
+#header h1 {
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:900;
+	margin:0 0 -50px 0;
+	padding:20px 0 0 0;
+	font-size:18pt;
+	color:#fff;
+	font-weight:normal;
+	width:500px;
+	float:left;
+}
+
+#nav {
+	float:right;
+	display:inline;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+
+#nav a {
+	margin:0 10px 0 10px;
+	padding:0 2px 0 2px;
+	border-top:2px solid #555;
+	color:#fff;
+	text-decoration:none;
+	font-size:10pt;
+	text-transform:lowercase;
+	letter-spacing:.75px;
+}
+
+#nav a:hover {
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:700;
+	border-top:2px solid #ec008c;
+	letter-spacing:0px;
+
+}
+
+/*added from other image gallery example*/
+#right .desc {
+	width:380px;
+	float:left;
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:300;
+	font-size:.75em;
+	padding:0 10px 0 10px;  
+	text-align:left;
+ 	font-weight:normal;
+  	padding:15px;
+	color:#fff;
+}
+
+#right .desc ul {
+	list-style-type:square;
+    list-style-position:inside;
+	margin:5px 0 -15px -35px;
+	line-height:1em;
+}
+
+#left ul {
+    list-style-type:square;
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:700;
+	font-size:1em;
+	list-style-position:inside;
+	line-height:130%;
+
+}
+
+#left li {
+    font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+    font-size:.75em;
+    line-height:133%;
+	
+}
+
+#left {
+	position:relative;
+	width:480px;
+	height:auto;
+	min-height:480px;
+	background:#fff;
+	float:left;
+}
+
+#left p {
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:300;
+	font-size:10pt;
+	padding:0 10px 0 10px;
+}
+
+#vltr h2 i {
+	font-family:'Source Sans Pro', 'Arial Narrow', sans-serif;
+	font-weight:900;
+	font-style:italic;
+}
+
+#left img {
+	margin:15px 15px 0px 15px;
+	position:relative;	
+	z-index:0;
+
+}
+
+#left li {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:9pt;
+	padding:0 0 0 10px;
+	line-height:100%;
+}
+
+h3 {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:400;
+	font-size:12pt;
+	padding:0 0 0 20px;
+	line-height:100%;
+}
+
+h2 {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:900;
+	font-style:italic;
+	font-size:18pt;
+	color:#ec008c;
+}
+
+#vltr {
+	display:block;
+	position:absolute;
+	background-color:#fff;
+	top:20px;
+	left:20px;
+	width:420px;
+	height:40px;
+	z-index:30;
+	/* for IE */
+  	filter:alpha(opacity=60);
+  	/* CSS3 standard */
+  	opacity:0.6;
+	z-index:30;	
+}
+
+#vltr h2 {
+	Position:relative;
+	top:-10px;
+	width:420px;
+	height:40px;
+	padding:0px 10px 0px 10px;
+	color:#ec008c;
+	z-index:40;
+}
+#right {
+	float:right;
+	width:420px;
+}
+
+#right h1 {
+	background:#fff;
+	font-size:16pt;
+	font-weight:normal;
+	margin:60px 0 0 0;
+	height:60px;
+	line-height:60px;
+	text-transform:lowercase;
+	color:#27488C;
+}
+
+#right h1 .info {
+	text-align:right;
+	font-size:8pt;
+	color:#999;
+	text-transform:uppercase;
+	padding-left:110px;
+}
+
+#right .caption { 
+	display:inline;
+	font-size:.75em;
+	height:1.5em;
+	color:#fff;
+}
+
+#right .thumb {
+	display:inline;
+	width:110px;
+	height:85px;
+	padding:15px 15px 30px 15px;
+	float:left;
+}
+
+#right .thumb img {
+	padding:5px;
+	background:#fff;
+	border:0;
+}
+
+#right .thumb a {
+	color:#fff;
+	text-decoration:none;
+}
+
+#right .thumb a:hover {
+	color:#ec008c;
+	text-decoration:none;
+}
+
+#copyright {
+	clear:both;
+	height:1.2em;
+	border-top:1px solid #fff;
+	background:#27488C;
+	color:#fff;
+	font-size:8pt;
+	text-align:right;
+	padding:0 10px 1px 2px;
+}
+
+a {
+	color:#ec008c;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+}
+
+nav a:active {
+    color:#333;
+}
+#pagearrow {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	color: #0033CC;
+	text-align: left;
+	display: block;
+	width: 100px;
+	float: right;
+	text-decoration: none;
+	background-color: #FFCC00;
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	margin-top: -5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+}
+#container #right .desc #pagearrow a img {
+	padding-right: 3px;
+}
+#container #left p {
+	font-size: .75em;
+	font-style: italic;
+	line-height: 1em;
+	margin-top: -10px;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* page styles */
+body { font-family: "Segoe UI", Frutiger,Tahoma,Helvetica,"Helvetica Neue", Arial, sans-serif; }
+table {  border-collapse: collapse; }
+td, th { 
+   text-align: center; 
+   border: 1px solid #ddd; 
+   padding:2px 5px; 
+}   
+caption { margin: 0 0 .5em; font-weight: bold; 
+}
+.salary {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #C30;
+	text-decoration: none;
+}

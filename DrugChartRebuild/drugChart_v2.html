@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animated Comparison Demonstration - Drug Types</title>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+<link href="css/testChart-v2r0.css" rel="stylesheet" type="text/css">
+<link href="blitzer/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+	<h1>Drug Trends Comparisons</h1>
+    <div class="content">
+        <div class="chartBox">
+        	<h3>Injectable Drugs Comparison</h3>
+          <div class="grphBox">
+            <div class="chrtDscrp">Comparison of Injectable Drugs for HIV</div>
+                <a href="#" title="Sales have increased by 20% for self-injecting Anovex&reg; Pen, the latest treatment for HIV patients">
+                <div id="c0"></div><div class="bar_green">
+                	<div class="grphLabel">20<span>%</span></div>
+                    </div></a>
+            	<a href="#" title="Sales have increased for the generic equivalent by 50% for HIV patients">
+            		<div id="c1"></div><div class="bar_purple">
+               			<div class="grphLabel">50<span>%</span></div>
+               		</div></a>
+                <a href="#" title="Sales have fallen for by 30% for the Avonex&reg; Injectable">
+                	<div id="c2"><div class="bar_blue">
+                		<div class="grphLabel">-30<span>%</span></div>
+             		</div>
+           	</div></a>
+       	  </div>
+         </div>
+  </div>
+	<div class="content"><h3>Content Information Proprietary to the Client (Headline)</h3>
+    <p>This widget would have appeared as a dynamic Chart element to illustrate Drug Sales Trends, as it appears on the client's web application. Created in November 2013, this widget was developed prior to a decision to use the HighCharts system for the 2014 edition.</p></div>
+  <div class="footer">
+	<div class="fltlft">
+		<ul>
+        <li><a href="#" title="Home Link - Back to Gallery Home page">home</a></li>
+        <li><a href="#" title="Charts Page - Current Page">charts</a></li>
+        <li><a href="#" title="Contact Link - What do you think of these samples?">contact</a></li></ul></div>
+    	<p>copyright 2014 Lone Wolf Studio</p></div>
+    </div>
+    <div class="barVertPopup"></div>
+    <script type="text/javascript">
+		$(function() {
+			$( document ).tooltip({
+				track: true
+ 			});
+		});
+</script>
+</body>
+</html>

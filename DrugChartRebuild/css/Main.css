@@ -1,0 +1,766 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 21:29:03 Sep 23, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:43:38 Mar 4, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;}body{font:13px/1.231 arial,helvetica,clean,sans-serif;font-size:small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;}pre,code,kbd,samp,tt{font-family:monospace;font-size:108%;line-height:100%;}a:focus,a:hover,a:active{outline:none}sup{font-size:smaller;vertical-align:baseline;position:relative;bottom:0.33em;}.left{float:left;}.right{float:right;}.clear{clear:both;}.none{display:none;}.hidden{visibility:hidden;}.hand{ cursor:pointer;}
+
+body .bodysp {margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;font:13px/1.231 arial,helvetica,clean,sans-serif;font-size:small;}
+html {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-stripes.gif) 0px 65px  repeat-x; z-index:-2;}
+.bkgTest {background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bartest.png') no-repeat left top; 
+width: 726px; height: 40px; 
+z-index:0; position: absolute; top: 69px; *top: 70px; 
+left: 140px; }
+.bkgTestSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bartest.png) top left no-repeat; width: 726px; height: 44px; z-index:0; position: absolute; top: 64px; *top: 65px; left: 140px; }
+.bkgTestTY {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bartest.png) top left no-repeat; width: 726px; height: 44px; z-index:0; position: absolute; top: 65px; *top: 65px; left: 140px; }
+body { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-home.png) top center no-repeat; font-family:Arial, Helvetica, sans-serif; color:#969696; font-size:12px; min-width:1012px; }
+.bodysp { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-homeSP.png) top center no-repeat; font-family:Arial, Helvetica, sans-serif; color:#969696; font-size:12px; min-width:1012px; }
+#girlHide {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/girlHide.png) top left no-repeat; width: 150px; height: 45px; z-index:1; position: absolute; top: 64px; *top: 64px; left: 742px;}
+#girlHideSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/girlHide.png) top left no-repeat; width: 150px; height: 45px; z-index:1; position: absolute; top: 64px; *top: 64px; left: 742px;}
+.internalPage {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-internal.png) top center no-repeat;}
+.thankYouNoGirl{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-home.png) top center no-repeat; font-family:Arial, Helvetica, sans-serif; color:#969696  ; font-size:12px; min-width:1012px;}
+a {color:#0087be; font-weight:bold; text-decoration:none; cursor:pointer;}
+a:hover {text-decoration:underline;}
+.inline { display: inline;}
+#wrapper { margin:0px auto; width:1015px; position:relative;top: 0px; left: 0px;}
+#wrappersp { margin:0px auto; width:1015px; position:relative;top: 0px; left: 30px; height:1400px;}
+.homesp {}
+h1#logo { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/logo.png) top left no-repeat; width:179px; height:290px; text-indent:-9999px; position:absolute; top:7px; left:47px; z-index:5; }
+h1#logosp { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/logo.png) top left no-repeat; width:179px; height:290px; text-indent:-9999px; position:absolute; top:5px; left:20px; z-index:5; }
+h1#logospty { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/logo.png) top left no-repeat; width:179px; height:290px; text-indent:-9999px; position:absolute; top:5px; left:57px; z-index:5; }
+h1#logomap { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/logo.png) top left no-repeat; width:179px; height:290px; text-indent:-9999px; position:absolute; top:7px; left:47px; z-index:2; }
+h1#logoInternal {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/logo_internal.png) top left no-repeat; width:174px; height:246px; text-indent:-9999px; position:absolute; top:5px; left:10px; z-index:2;}
+#navInternal{Position: absolute; }
+ul#nav { margin:0px 0px 0px 235px; position:relative; top:65px; *top:65px;left: 0px; height: 14px;}
+ul#navSP {margin:0px 0px 0px 195px; position:relative; top:64px; *top:65px; left: 0px; height: 14px;}
+ul#nav li {float:left;}
+ul#nav li a {display:block; height:57px; text-indent:-9999px;}
+ul#nav li a.button1 {width:209px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton1.png) 0px 0px no-repeat;margin-left:3px;}
+ul#nav li a.button1:hover {background-position:-208px 0;}
+ul#nav li a.button2 {width:185px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton2.png) 0px 0px no-repeat; margin-left:-1px;}
+ul#nav li a.button2:hover {background-position:-184px 0;}
+ul#nav li a.button3 {width:152px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton3.png) 0px 0px no-repeat; margin-left:1px;}
+ul#nav li a.button3:hover {background-position:-152px 0;}
+
+ul#navSP {margin:0px 0px 0px 195px; position:relative; top:64px; *top:65px;}
+ul#navSP li {float:left;}
+ul#navSP li a {display:block; height:57px; text-indent:-9999px;}
+ul#navSP li a.button1 {width:209px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton1.png) 0px 0px no-repeat;margin-left:3px;}
+ul#navSP li a.button1:hover {background-position:-208px 0;}
+ul#navSP li a.button2 {width:185px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton2.png) 0px 0px no-repeat; margin-left:-1px;}
+ul#navSP li a.button2:hover {background-position:-184px 0;}
+ul#navSP li a.button3 {width:152px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton3.png) 0px 0px no-repeat; margin-left:1px;}
+ul#navSP li a.button3:hover {background-position:-152px 0;}
+
+ul#navInternal {min-width:500px; margin:0px 0px 0px 235px; padding-top:65px;
+    top: 0px;
+    left: 0px;
+}
+ul#navInternal li {float:left;}
+ul#navInternal li a {display:block; height:57px; text-indent:-9999px;}
+ul#navInternal li a.button1 {width:209px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton1.png) 0px 0px no-repeat; margin-left:4px;}
+ul#navInternal li a.button1:hover {background-position:-208px 0;}
+ul#navInternal li a.button2 {width:185px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton2.png) 0px 0px no-repeat; margin-left:-1px;}
+ul#navInternal li a.button2:hover {background-position:-184px 0;}
+ul#navInternal li a.button3 {width:152px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton3.png) 0px 0px no-repeat; margin-left:1px;}
+ul#navInternal li a.button3:hover {background-position:-152px 0;}
+
+
+.button1Active {width:209px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton1.png) 0px 0px no-repeat; margin-left:4px; background-position:-208px 0;}
+.button2Active {width:185px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton2.png) 0px 0px no-repeat; margin-left:-1px; background-position:-184px 0;}
+.button3Active {width:152px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/navButton3.png) 0px 0px no-repeat; margin-left:1px; background-position:-152px 0;}
+
+#main {height: 1224px;}
+#mainThankYou{ height:1000px; width:100%; }
+#mainInternal {height: 600px;}
+#socialContainer {position:absolute; top:25px; left:510px; width:320px; z-index:5; }
+#socialPosition{ width: 169px; float: left;  }
+#facebook{float:left; width: 83px;  z-index:1000; }
+#facebook3{float:left; display:block !important; width: 179px !important; }
+#facebook2{float:left; width: 190px; height:30px; z-index:1000; text-indent:0; margin: 0px 0 5px 0px; }
+#facebookTY{float:left; width: 83px; position: absolute; top: 283px; left: 494px; *top: 283px; *left: 494px; z-index:1000;}
+#facebookTYSP{float:left; width: 83px; position: absolute; top: 283px; left: 508px; *top: 283px; *left: 508px; z-index:1000;}
+#twitter {float:left; width: 85px;  z-index:1001; }
+#english a {float:left; width: 80px; color:#14b1e7;  font-size:10px; font-weight:normal; z-index:1000; margin:4px 0px 0px 0px; z-index:999; }
+#espanol2 a { float:left;  color:#14b1e7; font-size:10px; font-weight:normal; z-index:1000; margin:4px 0px 0px 0px; position: relative; left: 5px; *left:0px;}
+#espanol2 a:hover { font-weight:bold; text-decoration:none;}
+#espanol a {float:left;  color:#14b1e7; font-size:10px; font-weight:normal; z-index:1000; margin:4px 0px 0px 0px; z-index:1000; }
+#english a:hover {font-weight:bold; text-decoration:none;}
+#espanol a:hover { font-weight:bold; text-decoration:none;}
+.navSpace{ float:left;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/nav_bar.png) top left no-repeat; width:18px; height:20px; z-index:999; }
+
+.navSpace2{ float:left;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/nav_bar.png) top left no-repeat; width:18px; height:20px; z-index:999; position:relative; left: 0px; *left:0px; }
+
+#intro { width:387px; height:77px; position:absolute; top:171px; left:252px; font-size: 30px; color:#969696;}
+.hungerNumber {position:absolute; top:150px; left:267px;float:left; color:#14b1e7; font-size: 50px; font-weight:normal;
+    right: 564px;
+}
+.hungerLine1{ width:387px; height:77px; position:absolute; top:172px; left:457px; font-size: 30px; color:#969696; font-weight:normal;}
+.hungerLine2 {width:420px; height:77px; position:absolute; top:204px; left:269px; font-size: 32px; color:#969696; font-weight:normal;}
+#bar {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bar.png) top left no-repeat; width:447px; height:50px; text-indent:-9999px; position:absolute; top:275px; left:155px;}
+#bar_sp {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bar_sp.png) top left no-repeat; width:447px; height:70px; text-indent:-9999px; position:absolute; top:275px; left:155px;}
+#percentageContainer {height:11px; width:99%; margin:13px 20px 0px 1px;}
+#percentage {height:11px; background:#ed1c24;}
+
+/*Enter Code Text Input & Submit*/
+#blueBox { margin:0px 0px 0px 70px; padding-top:265px; width:825px; position:relative; overflow:hidden; height:645px; top:420px; left:0px;}
+/* New copy for program end styles start here*/
+#blueBox h3 {font-size:18px;color:#14b1e7;font-weight:bold;margin: 0px 0px 5px 25px;}
+#blueBox p { width: 680px;font-size:13px;line-height: 1.5em;margin: 5px 0px 10px 25px;}
+#blueContainer {position:absolute; left:0px; top:0px; width:1100px;}
+
+.fieldHolder{ background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/enterCode.png) top right no-repeat; width:253px; height:253px; float:left; position:relative; margin-right:20px;}
+.fieldHolderSP{ background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/enterCodeSP.png) top right no-repeat; width:253px; height:253px; float:left; position:relative; margin-right:20px;}
+
+.textInput {width: 185px; height: 27px; background: #FFF; font-size: 18px; color: #cccccc; float: left; position: absolute; top: 91px; left: 16px;}
+.textInputSP {width: 185px; height: 27px; background: #FFF; font-size: 13px; color: #000 !important;  float: left; position: absolute; top: 91px; left: 16px;}
+.codeSubmit {border: 0; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/submitBtn.jpg) left bottom no-repeat; text-indent: -9999em; width: 35px; height: 31px; float: left; position: absolute; top: 91px; left: 206px; }
+.errorMessage { color:White;  display:block; float:left; position: absolute; top: 221px; left: 0px; z-index:9999; width:241px; height:20px; background-color:Red; padding: 7px 0px 5px 12px;}
+.errorMessageSP { font-size:10px; color:White;  display:block; float:left; position: absolute; top: 221px; left: 0px; z-index:9999; width:240px; height:20px; background-color:Red; padding: 7px 6px 5px 7px;}
+
+
+
+.fieldHolder input[type=text] { line-height:28px; }
+.fieldHolderSP input[type=text] { line-height:25px; }
+
+#blueBox3 { width:253px; height:253px;}
+#blueBox3SP {  width:253px; height:253px;}
+#blueBoxBg { width:253px; height:253px; float:left; margin-right:20px;}
+#blueBoxBgSP { width:253px; height:253px; float:left; margin-right:20px;}
+#filledBox {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueBox-filled.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px;}
+
+#filledBoxSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueBox-filledSP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px;}
+
+#zipEntryBox {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueBox2.png) top left no-repeat; width:253px; height:253px;float:left;}
+#zipEntryBoxSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueBox2SP.png) top left no-repeat; width:253px; height:253px;float:left;}
+
+/*Internal Page Enter Code Text Input & Submit*/
+#blueBoxInternal {margin:0px 0px 0px 0px; padding-top:0px; width:506px; height:535px; position:absolute; overflow:hidden; height:253px; top:0px; left:800px;}
+#blueContainerInternal {position:absolute; left:0px; top:0px; width:546px;}
+.fieldHolderInternal{ background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/enterCodeInternal.png) top right no-repeat; width:185px; height:163px; float:left; position:relative; margin-right:20px; }
+#filledBoxInternal {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueBox-filledInternal.png) top left no-repeat; width:185px; height:163px; float:left; margin-right:20px;}
+#zipEntryBoxInternal {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/enterZipInternal.png) top left no-repeat; width:185px; height:163px;float:left; display:none;}
+.textInputInternal {width: 135px; height: 20px; background: #FFF; font-size: 12px; color: #cccccc;  float: left; position: absolute; top: 70px; left: 16px; line-height:20px !important;}
+px;}
+#footerThankYou{position: relative; left:20px; top: 180px; font-weight:normal;}
+#footerThankYouSP{position: relative; left:-32px; top: 180px; font-weight:normal;}
+#footer2{ padding:0px 0px 0px 65px; color: #969696; font-size:9px; position: relative; top: -20px;}
+#footergreen{padding:20px 0px 0px 10px; position: relative; top: 420px;}
+#footerSP{padding:0px 0px 0px 20px; color: #969696; font-size:9px; position:absolute; top: 1800px; left: -50px; height: auto;  width: 1000px; }
+
+#footer{padding:20px 0px 0px 30px; position:absolute; top: 1300px; left: -20px; height: auto;  width: 1000px;}
+
+#share { float:left; margin:20px 0px 30px 27px; }
+#share li { float:left; margin:0px 5px; }
+#share li a { color:#000; text-decoration:none; font-weight:normal; font-size:11px; }
+#fb { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/fb.gif) top left no-repeat; width:16px; height:17px; display:block; text-indent:-9999px; }
+#tw { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/tw.gif) top left no-repeat; width:16px; height:17px; display:block; text-indent:-9999px; }
+
+#enterCodeFooterLinks { position:absolute; bottom:90px; left:60px; z-index:999; }
+#enterCodeFooterLinks #footerLinks { margin:0px; }
+#enterCodeFooterLinks #footerLinks li a { background:none; }
+#enterCodeFooterLinks #footerLinks li#fLink1 { padding-right:60px;  }
+#enterCodeFooterLinks #footerLinks li#fLink2 a { margin-right:7px; }
+#enterCodeFooterLinks #footerLinks li#fLink3 a { margin-right:4px; }
+#enterCodeFooterLinks #footerLinks li#fLink4 a { margin-right:4px; }
+#enterCodeFooterLinks #footerLinks li#fLink5 a { margin-right:7px; }
+#enterCodeFooterLinks #footerLinks li#fLink6 a { margin-right:9px; }
+#enterCodeFooterLinks #footerLinks li#fLink7 a { margin-right:7px; }
+#enterCodeFooterLinks #footerLinks li#fLink9 { padding-left:51px;  }
+
+a#fLink1 { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/fLink1.gif) left top no-repeat; height:70px; width:114px; display:block; text-indent:-9999px; float:left; margin-left:35px; margin-top:25px; }
+a#fLink11 { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/fLink9.gif) left top no-repeat; height:60px; width:230px; margin-top:25px; display:block; text-indent:-9999px; float:left; }
+#footerLinks { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-footerLinks.gif) top left no-repeat; float:left; margin:10px 45px 10px 45px; width:507px; height:121px; position:relative; z-index:999; }
+#footerLinks li { position:absolute; }
+#footerLinks li a { position:absolute; display:block; text-indent:-9999px; z-index:999; }
+.enterCodeLink { height:20px; width:100px; text-indent:-9999px; position:absolute; top:716px; left:297px; z-index:999; }
+#footerLinks li#fLink2 a { top:8px; left:1px; height:47px; width:85px; }
+#footerLinks li#fLink3 a { top:2px; left:110px; height:55px; width:75px;}
+#footerLinks li#fLink4 a { top:10px; left:215px; height:45px; width:80px;}
+#footerLinks li#fLink5 a { top:0px; left:325px; height:58px; width:90px;}
+#footerLinks li#fLink6 a { top:7px; left:432px; height:45px; width:80px;}
+#footerLinks li#fLink7 a { top:75px; left:42px; height:43px; width:90px;}
+#footerLinks li#fLink8 a { top:68px; left:158px; height:52px; width:70px;}
+#footerLinks li#fLink9 a { top:75px; left:265px; height:40px; width:90px;}
+#footerLinks li#fLink10 a { top:65px; left:380px; height:55px; width:80px;}
+
+.legal { margin:10px 0px;  color:#999999; }
+.legal a { color:#999999  ; text-decoration:none; font-weight:none; }
+.footerLegal { margin:15px 35px 10px 35px; }
+.footerLegal a { color:#999999; text-decoration:underline; }
+.footerLegal a:hover { text-decoration:none; }
+#subFooterLinks { font-size:10px; margin:20px 0px 35px 194px; }
+#subFooterLinks li { border-right:1px solid #969696  ; float:left; }
+#subFooterLinks li.last { border-right:none; }
+#subFooterLinks a { color:#969696  ; text-decoration:none; margin:0px 15px; }
+#subFooterLinks a:hover { color:#969696; }
+.copy { font-size:10px; color:#969696  ; text-align:center; margin-bottom:5px; }
+
+/* Map Page */
+#mapContainer { width:600px; margin:100px 0px 0px 230px;  }
+h2#map { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/title-map.gif) top left no-repeat; height:28px; width:434px; margin-bottom:15px; margin-top:20px; text-indent:-99999px; }
+
+/* Homepage Slideshow/Cycle CSS */
+/*OurPromise Slideshow/Cycle CSS */
+#sliderMainContainerHomepage { position: relative; margin:-90px 0px 0px 30px; }
+#sliderMainContainerHomepageSP { position: relative; margin:260px 0px 0px -78px; *margin:268px 0px 0px -78px;}
+#sliderMainContainerPromise { position: relative; margin:0px 0px 0px 193px; }
+
+
+/* Inspired Action Slideshow/Cycle CSS */
+#sliderMainContainer {
+	position: relative;
+	margin:69px 0px 0px 0px;
+}
+#sliderMain{width:542px; height: 537px; border:#d3d6d6  solid 1px; position: relative; margin:55px 0px 0px 229px; *margin:69px 0px 0px 229px; padding: 0px 0px 0px 10px;}
+#slideshow {position: absolute; outline:none;
+    left: 13px;
+}
+#slidernav { width: 180px; margin: 0px; outline:none;}
+#slidernav div { width: 180px; float: left; list-style: none; outline:none; }
+#slidernav a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ; outline:none;  }
+#slidernav div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:146px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActive.jpg) top left no-repeat; text-decoration:none;  color:#FFF; outline:none; border:none;}
+#slidernav a:focus { outline: none; }
+#slidernav img { border: none; display: block;  outline:none; }
+.nextButton { display: block; position: absolute; top: 96px; left:335px; z-index:999; width:15px; height:30px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Styles/slideRight.png) top left no-repeat; text-indent:-9999px;}
+.prevButton { display: block; position: absolute; top: 96px; left:0px; z-index:999;width:15px; height:30px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Styles/slideLeft.png) top left no-repeat;text-indent:-9999px;}
+#navContainer {position: absolute; top: 40px; outline:none;}
+.vertical { position:absolute; overflow:hidden;	height: 445px; width: 180px; outline:none;}
+.vertical2 { position:absolute; overflow:hidden;	height: 377px; width: 180px; outline:none;}
+.items {position:absolute; height:20000em; display:block; outline:none; }
+.item {font-size:12px; color:#fff; width: 180px; height:146px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/whiteNoActive.jpg) top left no-repeat; padding:0px 0px 0px 0px; outline:none;   }
+.item img {float:left; height:106px; width:155px; padding:7px 0px 0px 15px; outline:none; }
+.item h3 { margin:0 0 5px 0; font-size:16px; color:#456; font-weight:normal; outline:none; }
+#actions { width:700px; margin:30px 0 10px 0; }
+#actions a { font-size:11px; cursor:pointer; color:#969696  ;}
+#actions a:hover { text-decoration:underline; color:#000; }
+.disabled {visibility:hidden; }
+.scrollPrev{position: absolute; top: 59px; left:370px; z-index:999; cursor:pointer;width:170px; height:13px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/scrollUp.jpg) top left no-repeat;text-indent:-9999px; }
+.scrollNext	{position: absolute; top: 510px; left:370px; z-index:999; cursor:pointer;width:170px; height:13px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/scrollDown.jpg) top left no-repeat;text-indent:-9999px; }
+#sliderNavContainer {position: absolute; left:368px; top: 30px;border: #d3d6d6 solid 1px; width: 172px; height: 493px;}
+#sliderNavContainer2 {position: absolute; left: 362px;top: 72px; }
+.pics{position:absolute; top:30px;}
+.scrollHeader{position: absolute; top: 32px; left:370px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerImage.jpg) top left no-repeat;text-indent:-9999px;}
+.scrollHeaderSP{position: absolute; top: 32px; left:370px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerImageSP.png) top left no-repeat;text-indent:-9999px;}
+.thumbDesc{ font-size:12px; width: 160px; padding: 1px 0px 0px 10px;  text-decoration:none; text-align:center;    }
+.sliderDesc { font-size:12px; width: 328px; color:#969696  ; padding: 6px 0px 0px 5px; line-height:19px;}
+.photoHeader { position: relative; color:#19afe6; width: 358px; font-size:18px; padding: 6px 0px 0px 0px;  }
+.sliderTitle {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/sliderTitleStory.jpg) top left no-repeat; position: relative; color:#19afe6; width: 484px; height:31px; font-size:21px; padding: 3px 0px 0px 0px;text-indent:-9999px;  }
+#sliderMain .sliderTitleSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/sliderTitleStorySP.png) top left no-repeat; position: relative; color:#19afe6; width: 520px; height:31px; font-size:21px; padding: 3px 0px 0px 0px;text-indent:-9999px;  }
+
+#sliderMainVideo{width:750px; height: 463px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideo { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/sliderTitleVideo.jpg) top left no-repeat;text-indent:-9999px; position: relative; width: 741px; height:31px;  }
+.sliderTitleVideoPromise { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#slidernavVideo { width: 180px; margin: 0px }
+#slidernavVideo div { width: 180px; float: left; list-style: none }
+#slidernavVideo a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideo div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideo a:focus { outline: none; }
+#slidernavVideo img { border: none; display: block;  }
+#sliderNavContainerVideo {position: absolute; left:578px; top: 30px;border: #d3d6d6 solid 1px; width: 172px; height: 420px;}
+#sliderNavContainer2Video {position: absolute; left: 572px;top: 59px; }
+.scrollPrevVideo{position: absolute; top: 33px; left:580px; z-index:999; cursor:pointer;width:170px; height:13px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/scrollUp.jpg) top left no-repeat;text-indent:-9999px; }
+.scrollNextVideo	{position: absolute; top: 415px; left:580px; z-index:999; cursor:pointer;width:170px; height:13px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/scrollDown.jpg) top left no-repeat;text-indent:-9999px; }
+.scrollHeaderVideo { position: absolute; top: 32px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+.thumbDescVideo{ width: 148px; height:123px; padding: 0px 0px 0px 18px;  text-decoration:none; text-align:center;  }
+.item2 {font-size:12px; color:#fff; width: 180px; height:123px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/whiteNoActive.jpg) top left no-repeat; padding:0px 0px 0px 0px;    }
+.item2 img {float:left; height:80px; width:141px; padding:7px 0px 4px 22px; }
+.item2 h3 { margin:0 0 5px 0; font-size:16px; color:#456; font-weight:normal; }
+
+/* Artist Video Nav on Inspired Action */
+.videoNav {position:absolute; top: 283px; left:230px;}
+.videoNav li{float: left; padding-right:10px;}
+#ytvideoPlayer{position:absolute; left:237px; top:344px; z-index:2;}
+
+
+
+/* WhatsNewVideos */
+#sliderMainContainerWhatsNew { position: relative; top:50px; margin:0px 0px 0px 193px; }
+#sliderMainVideoWhatsNew{width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoWhatsNew { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoWhatsNew {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoWhatsNew { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoWhatsNew{position: absolute; left: 572px;top: 39px; }
+#slidernavVideoWhatsNew { width: 180px; margin: 0px }
+#slidernavVideoWhatsNew div { width: 180px; float: left; list-style: none }
+#slidernavVideoWhatsNew a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideoWhatsNew div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideoWhatsNew a:focus { outline: none; }
+#slidernavVideoWhatsNew img { border: none; display: block;  }
+
+.navLinks { text-decoration:none; color:#fff; padding-left:9px;}
+.navLinks:hover { text-decoration:none;}
+
+.whatsNewButtonActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/WhatsNewActive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.whatsNewButtonInActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/WhatsNewInactive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.whatsNewButtonInActive:hover {background-position:-113px 0; }
+
+
+
+/* Jewel Videos */
+#sliderMainContainerJewel { position: relative; top:50px; margin:0px 0px 0px 193px; }
+#sliderMainVideoJewel{width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoJewel { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoJewel {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoJewel { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoJewel {position: absolute; left: 572px;top: 39px; }
+#slidernavVideoJewel { width: 180px; margin: 0px }
+#slidernavVideoJewel div { width: 180px; float: left; list-style: none }
+#slidernavVideoJewel a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideoJewel div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideoJewel a:focus { outline: none; }
+#slidernavVideoJewel img { border: none; display: block;  }
+
+.jewelButtonActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/JewelActive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.jewelButtonInActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/JewelInactive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.jewelButtonInActive:hover {background-position:-113px 0;}
+
+/* Jay Sean Video */
+#sliderMainContainerJay { position: relative; top:50px; margin:0px 0px 0px 193px; }
+#sliderMainVideoJay{width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoJay { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoJay {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoJay { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoJay {position: absolute; left: 572px;top: 39px; }
+#slidernavVideoJay { width: 180px; margin: 0px }
+#slidernavVideoJay div { width: 180px; float: left; list-style: none }
+#slidernavVideoJay a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideoJay div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideoJay a:focus { outline: none; }
+#slidernavVideoJay img { border: none; display: block;  }
+
+.jayButtonActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/JayActive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.jayButtonInActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/JayInactive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.jayButtonInActive:hover {background-position:-113px 0;}
+
+/* Owl City Videos */
+#sliderMainContainerOwl { position: relative; top:50px; margin:0px 0px 0px 193px; }
+#sliderMainVideoOwl{width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoOwl { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoOwl {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoOwl { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoOwl {position: absolute; left: 572px;top: 39px; }
+#slidernavVideoOwl { width: 180px; margin: 0px }
+#slidernavVideoOwl div { width: 180px; float: left; list-style: none }
+#slidernavVideoOwl a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideoOwl div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideoOwl a:focus { outline: none; }
+#slidernavVideoOwl img { border: none; display: block;  }
+
+.owlButtonActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/OwlActive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.owlButtonInActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/OwlInactive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.owlButtonInActive:hover {background-position:-113px 0;}
+
+/* More Hope Videos*/
+#sliderMainContainerMoreHope { position: relative; top:50px; margin:0px 0px 0px 193px; }
+#sliderMainVideoMoreHope {width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoMoreHope  { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoMoreHope  {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoMoreHope  { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoMoreHope  {position: absolute; left: 572px;top: 39px; }
+#slidernavVideoMoreHope  { width: 180px; margin: 0px }
+#slidernavVideoMoreHope  div { width: 180px; float: left; list-style: none }
+#slidernavVideoMoreHope  a { width: 180px; height:120px; padding: 0px 0px 0px 0px; display: block; text-decoration:none; color:#969696  ;   }
+#slidernavVideoMoreHope  div.activeSlide a { padding:0px 0px 0px 0px;width: 180px; height:123px;  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/blueActiveVideo.jpg) top left no-repeat; text-decoration:none;  color:#FFF;}
+#slidernavVideoMoreHope  a:focus { outline: none; }
+#slidernavVideoMoreHope  img { border: none; display: block;  }
+
+.moreHopeButtonActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/MoreHopeActive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.moreHopeButtonInActive {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/MoreHopeInactive.png) 0px 0px no-repeat; margin-left:0px; width:103px; height:50px; text-indent:-9999px;}
+.moreHopeButtonInActive:hover {background-position:-113px 0;}
+
+/*Our Promise Video Component */
+#sliderMainVideoPromise{width:750px; height: 442px; border:#d3d6d6 solid 1px; position: relative; margin:138px 0px 0px 36px; padding: 0px 0px 0px 10px;}
+.sliderTitleVideoPromise { text-indent:-9999px; position: relative; width: 741px; height:10px;  }
+#sliderNavContainerVideoPromise {position: absolute; left:578px; top: 10px;border: #d3d6d6 solid 1px; width: 172px; height: 418px;}
+.scrollHeaderVideoPromise { position: absolute; top: 12px; left:580px; z-index:999; cursor:pointer;width:170px; height:26px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/headerVideo.jpg) top left no-repeat;text-indent:-9999px;}
+#sliderNavContainer2VideoPromise {position: absolute; left: 572px;top: 39px; }
+ 
+
+/* 
+ * Homepage Product Number Rollovers
+ */
+ 
+ .chef{position: relative; top: 85px; left: 15px; width: 70px; height: 30px; float: left; }
+ .orville{position: relative; top: 85px; left: 20px; width: 70px; height: 30px; float: left; }
+ .healthy{position: relative; top: 85px; left: 30px; width: 70px; height: 30px; float: left; }
+ .marie{position: relative; top: 110px; left: 15px; width: 70px; height: 30px; float: left; }
+ .hunts{position: relative; top: 110px; left: 20px; width: 70px; height: 30px; float: left; }
+ .banquet{position: relative; top: 110px; left: 30px; width: 70px; height: 30px; float: left; }
+ .snack{position: relative; top: 140px; left: 15px; width: 70px; height: 30px; float: left; }
+ .manwich{position: relative; top: 140px; left: 20px; width: 70px; height: 30px; float: left; }
+ .peter{position: relative; top: 140px; left: 30px; width: 70px; height: 30px; float: left; }
+ 
+#blueBox_chef_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_chef.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px;}
+#blueBox_orville_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_orville.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_healthy_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_healthy.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_marie_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_marie.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_hunts_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_hunts.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_banquet_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_banquet.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_snack_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_snack.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_manwich_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_manwich.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_peter_EN {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_peter.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+
+#blueBox_chef_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_chef_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px;}
+#blueBox_orville_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_orville_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_healthy_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_healthy_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_marie_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_marie_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_hunts_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_hunts_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_banquet_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_banquet_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_snack_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_snack_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_manwich_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_manwich_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+#blueBox_peter_SP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bluebox_peter_SP.png) top left no-repeat; width:253px; height:253px; float:left; margin-right:20px; display:none;}
+   
+/* 
+ * Homepage Slider 
+ */
+#sliderBox { padding-top:30px; background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/home-carousel.png') no-repeat left top; 
+width:374px; height:239px; margin:20px 0px 0px 93px; position: relative;
+    top: 13px;
+    left: 0px;
+}
+a:active {outline:none;}
+#sliderBox .scrollable {position:relative;overflow:hidden;width:300px;height:240px; left:40px; top:5px;}
+#sliderBox .scrollable .items {width:20000em;position:absolute;clear:both;}
+#sliderBox .items div {float:left;width:150px;}
+#sliderBox .item {padding:0px;font-size:12px; }
+#sliderBox .item img {float:left; }
+#sliderBox .scrollable img {float:left;padding:5px;width:141px;height:94px;}
+#sliderBox .scrollable .active {border:2px solid #000;position:relative;cursor:default;}
+#sliderBox .scrollable {float:left; }
+#sliderBox a.browse { display:block; width:30px; height:30px; float:left; cursor:pointer;}
+
+
+#sliderBox a.right { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButton.jpg) no-repeat;width:31px;height:240px; position: absolute; left:349px; *left:351px; top:0px; clear:right; z-index:999;}
+#sliderBox a.right:hover { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButtonHover.jpg) no-repeat; width:31px;height:240px;  }
+#sliderBox a.right:active { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButtonHover.jpg) no-repeat;width:31px;height:240px;  } 
+
+#sliderBox a.left		   { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButton.jpg) no-repeat;width:31px;height:240px; position: absolute;  left:1px;  *left:1px;  top: 0px; z-index:999; } 
+#sliderBox a.left:hover   { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButtonHover.jpg) no-repeat;width:31px;height:240px; }
+#sliderBox a.left:active  {  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButtonHover.jpg) no-repeat;width:31px;height:240px; }
+#sliderBox a.disabled {visibility:hidden !important; } 
+#sliderBox .descHeader{display:block;  float: left; position:relative ; top: 5px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:Bold; width: 140px;font-size:12px; color:#14b1e7;}	
+#sliderBox .desc{display:block;  float: left; position:relative ; top: 15px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:normal; width: 140px;font-size:12px; color:#969696  ; text-decoration:none;}	
+#sliderBox .desc{display:block;  float: left; position:relative ; top: 15px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:normal; width: 140px;font-size:12px; color:#969696  ; text-decoration:none;}
+#sliderBox  a:hover{ text-decoration:none;}
+ 
+/* 
+ * Our Promise Bottom Slider 
+ */
+
+#promiseSliderBox{position: relative; left: 226px; top: 0px;background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/promiseSliderBkg.png) no-repeat;width:481px;height:251px; float:left;}
+a:active {outline:none;}
+#promiseSliderBox .promiseScrollable {position:relative; overflow:hidden; width:481px; height:251px; left:0px; top:0px;}
+#promiseSliderBox .promiseScrollable .items {width:20000em; position:absolute; clear:both;}
+#promiseSliderBox .items div {float:left; width:481px;}
+#promiseSliderBox .item {padding:0px; }
+#promiseSliderBox .item img {float:left; }
+#promiseSliderBox .scrollable img {float:left;width:481px;height:251px;}
+#promiseSliderBox .scrollable .active {border:2px solid #000;position:relative;cursor:default;}
+#promiseSliderBox .scrollable {float:left; }
+#promiseSliderBox a.browse { display:block; width:30px; height:30px; float:left; cursor:pointer;}
+
+
+#promiseSliderBox a.right { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButton.png) no-repeat;width:27px;height:61px; position: absolute; left:454px; *left:456px; top:87px; clear:right; z-index:999;}
+#promiseSliderBox a.right:hover { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButtonHover.png) no-repeat; width:27px;height:61px;  }
+#promiseSliderBox a.right:active { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/rButtonHover.png) no-repeat;width:27px;height:61px;  } 
+
+#promiseSliderBox a.left		   { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButton.png) no-repeat; width:27px;height:61px; position: absolute; left:0px;  top: 87px; z-index:999; } 
+#promiseSliderBox a.left:hover   { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButtonHover.png) no-repeat; width:27px;height:61px; }
+#promiseSliderBox a.left:active  {  background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/lButtonHover.png) no-repeat; width:27px;height:61px; }
+
+#promiseSliderBox a.disabled {visibility:hidden !important; } 
+#promiseSliderBox .descHeader{display:block;  float: left; position:relative ; top: 5px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:Bold; width: 140px;font-size:12px; color:#14b1e7;}	
+#promiseSliderBox .desc{display:block;  float: left; position:relative ; top: 15px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:normal; width: 140px;font-size:12px; color:#969696  ; text-decoration:none;}	
+#promiseSliderBox .desc{display:block;  float: left; position:relative ; top: 15px; left: 4px; font:Arial, Helvetica, sans-serif; font-weight:normal; width: 140px;font-size:12px; color:#969696  ; text-decoration:none;}
+#promiseSliderBox  a:hover{ text-decoration:none;}
+
+.promiseCopy { position:relative; left: 225px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/promiseCopy.jpg) no-repeat;width:575px;height:146px; float:left;  }
+.promiseSlider { position:relative; left: 228px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/promiseSliderTextBkg.jpg) no-repeat;width:280px;height:251px; float:left;  }
+.promiseSliderCopyHeader {font-size:16px; color:#14b1e7; padding:34px 0px 0px 28px; font-weight:bold;}
+.promiseSliderCopy {font-size:12px; padding:24px 0px 0px 28px;}
+/* 
+ * Thank you Page Headers
+ */
+ .map_Headline {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/map_Headline.png) top left no-repeat; display: block; height:50px; width:751px; position: relative; top:275px; *top:269px; left:0px;text-indent:-9999px;}
+ .map_HeadlineSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/map_HeadlineSP.png) top left no-repeat; display: block; height:42px; width:751px; position: relative; top:274px; *top:274px; left:0px;text-indent:-9999px;}
+ .ThankYouMessage { display: block; height:144px; width:575px; position: relative; top:121px; *top:131px; left:220px; z-index:0;}
+ 
+ #downloadBanner{display: block; height:148px; width:754px; position: relative; top:55px; *top:51px; left:0px;}
+ #downloadBannerSP{display: block; height:148px; width:754px; position: relative; top:67px; *top:60px; left:0px;}
+ .downloadThankYouPage{ display:block; height:40px; width:138px; text-indent:-9999px; cursor:pointer; margin:0px 0px 5px -1px; position:absolute; top:395px; *top:398px; left: 585px; }
+ .downloadBanner1{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/download_banner_1.png) top left no-repeat;height:148px; width:754px;}
+ .downloadBanner1SP{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/download_banner_1SP.png) top left no-repeat;height:148px; width:754px;}
+ .downloadBanner2{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/download_banner_2.png) top left no-repeat;height:148px; width:754px;}
+ #watchVideoLink{ display:block; height:30px; width:138px; text-indent:-9999px; cursor:pointer; margin:0px 0px 5px -1px; position:absolute; top:401px; left: 588px; }
+ 
+/* 
+ * Inspired Header
+ */
+ .inspiredHeader {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/inspiredHeader.png) top left no-repeat; display: block; height:144px; width:575px; position: relative; top:125px; *top:125px; left:220px; text-indent:-9999px;}
+/* 
+ * Donation Counter
+ */
+.donationCounter{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/NumbersBkg.jpg) top left no-repeat; display: block; height:110px; width:779px; position: relative; top:38px; *top:38px; left:0px;}
+.counterNumber { color:#14b1e7; font-size:44px; font-weight:bold; float: left; position:relative; top: 5px; left:5px; float:left; padding:0px 10px 0px 0px;}
+.couneterState {color:#14b1e7; font-size:20px;  display: block; float:left; padding:25px 0px 0px 0px; }
+.couneterStateSP {color:#14b1e7; font-size:15px;  display: block; float:left; padding:10px 0px 0px 0px; }
+.couneterStateSP a {color:#14b1e7; font-size:16px; text-decoration:underline; }
+.couneterState a {color:#14b1e7; font-size:16px; text-decoration:underline; }
+.counterLegal {color:#969696  ; font-size:12px; position:relative; top: 10px; left:5px; display: block; width:751px;}
+ 
+
+/* 
+ * Promise Header
+ */
+ .promiseHeader {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/promiseHeader.png) top left no-repeat; display: block; height:144px; width:575px; position: relative; top:125px; *top:125px; left:220px;text-indent:-9999px;}
+
+
+/* 
+ * Internal Page Headers 
+ */
+.realityHeader {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/realityHeader.png) top left no-repeat; display: block; height:144px; width:575px; position: relative; top:125px; *top:125px; left:220px;text-indent:-9999px;}
+
+.realityHeader a {display: block; height:50px; width:275px; position: relative;  top:75px;   left:250px;text-indent:-9999px;}
+
+.realityHungerFacts {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/hungerFacts.jpg) top left no-repeat; display: block; height:485px; width:763px; position: relative; top:10px; left:225px;text-indent:-9999px; padding: 10px 0px 40px 0px;}
+.realityHungerFacts a {display:block; height:25px; width:100px; margin:190px 0px 0px 210px; display:block; text-indent:-9999px;}
+/* 
+ * LeftSideBar 
+ */
+
+.signUp { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/signup.gif) top left no-repeat; display:block; height:57px; width:184px; text-indent:-9999px; cursor:pointer; margin:0px 0px 5px -1px; position:absolute; top:539px; left: 25px; }
+.signUpThankYouPage{ background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/signUpThankYouPage.gif') no-repeat left top; display:block; height:57px; width:184px; text-indent:-9999px; cursor:pointer; margin:0px 0px 5px -1px; position:absolute; top:783px; 
+left: 34px; }
+
+h2#wantToDoMore { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/wantToDoMore.jpg) top left no-repeat; height:259px; width:186px; font-size:6px; text-indent:-9999px; }
+#InvalidCode { height:20px; background-color:#C00; color:#fff; z-index: 999; padding: 5px 3px 0px 3px; margin-left:-5px;}
+.invalidEmail { position:relative !important; float:left !important; top:auto !important; left:10px !important; }
+div.btnSubmit { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn-submit.gif) top left no-repeat; height:26px; width:74px; text-indent:-9999px; border:0px; cursor:pointer; float:left; }
+
+#sideBar { background:#fff; width:145px; padding:0px; padding-bottom:0px; position:absolute; top:280px; left: 24px; }
+#sideBar a{ font-size:12px; color:#969696  ; font-weight:normal; text-decoration:underline;  margin:0px 0px;}
+#sideBar a:hover{color:#969696  ; font-weight:normal;  margin:0px 0px; }
+#sideBar p { margin:0px 0px; position:absolute; top:50px; left: 15px; width:145px; line-height: 19px; }
+#sideBar .dotLine { margin:15px 0px; }
+#sideBar .dottedLine{border-top:#969696   1px dotted; }
+.joinUs { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/joinUs.gif) top left no-repeat; display:block; height:25px; width:81px; text-indent:-9999px; cursor:pointer; margin:0px 0px 5px -1px; position:absolute; top:215px; left: 10px; }
+
+input.standard { border:1px solid #999; width:250px; height:20px; font-size:16px; padding:2px; margin-right:10px; float:left; }
+div.btnSubmit { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn-submit.gif) top left no-repeat; height:26px; width:74px; text-indent:-9999px; border:0px; cursor:pointer; float:left; }
+.finePrint { color:#fff; font-size:10px; }
+.thankYou p { margin:10px 0px; }
+.thankYou h5 { margin-bottom:20px; }
+.checkList { margin:10px 0px 30px 0px; }
+.checkList input { float:left; margin:5px; }
+.checkList label { float:left; display:block; margin:5px 0px; width:480px; }
+
+.thankYou p { margin:10px 0px; }
+.thankYou h5 { margin-bottom:20px; }
+.story1 { width:350px; background-color:transparent !important;}
+
+/* 
+ * Thank You Page Right Column
+ */
+.thanksRightContainer{
+	position: absolute;
+	top: 0px;
+	left: 800px;
+	width: 246px;
+	height: 955px;
+}
+.beInspiredLink { position: absolute; top: 469px; left:0px; width: 246px; height: 310px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/beInspired.png) top left no-repeat;  }
+.inspiredLink{ width:80px; height: 20px; position: relative; top: 278px; left: 40px; z-index:1000; display:block; text-indent:-9999px; }
+
+/* 
+ * Sign Up Overlay Styles 
+ */
+.overlay, #overlay { display:none;	 width:650px;	padding:40px; z-index:10000; position:absolute; top:2px; right:5px; width:35px; height:35px; cursor:pointer; }
+div.externalContent { height:99%; overflow:auto; }
+.simple_overlay, #simple_overlay { display:none; z-index:10000;	background-color:#FFF; width:700px;	min-height:150px; border:1px solid #969696  ; -moz-box-shadow:0 0 90px 5px #000;	-webkit-box-shadow:0 0 90px #000; }
+.simple_overlay .close { background-image:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/tools/close.png);	position:absolute; right:-15px;	top:-15px; cursor:pointer; height:35px; width:35px; }
+.simple_overlay h6 { text-align:center; font-size:12px; font-style:italic; margin-bottom:20px; }
+.simple_overlay h4 { margin-bottom:10px; }
+.simple_overlay p { margin:10px 0px; }
+element.style {position: fixed; top: 400px;}
+
+/* 
+ * Download Overlay Styles 
+ */
+div.externalContent { height:100%; overflow:auto; }
+.simple_overlay2, #simple_overlay { display:none; z-index:10000; width:800px; height:600px; }
+.simple_overlay2 .close { background-image:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/downloadClose.png); position:absolute; right:39px;	top:22px; cursor:pointer; height:13px; width:75px; }
+element.style {position: fixed; top: 400px;}
+
+/*
+ * Childhood Hunger - Food Insecurity in Your County - Replacement Style
+*/
+#wrappergreen { margin:0px auto; width:996px; position:relative; height:1651px; }
+
+/*
+ * ThankYou Page replacement styles
+ */
+.thankYouover{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-thankyou-ovr.png) top center no-repeat; font-family:Arial, Helvetica, sans-serif; color:#969696; font-size:12px; min-width:1012px;}
+.thankYouoverSP{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/bg-thankyou-ovrSP.png) top center no-repeat; font-family:Arial, Helvetica, sans-serif; color:#969696; font-size:12px; min-width:1012px;}
+#flashremContainer { background:transparent; width:760px; height:237px; position:absolute; display: block; top: 770px; left: 80px; }
+#flashremContainer h3 { font-size:18px; line-height: 24px; color:#14b1e7; font-weight:bold; display:block; width:410px; height:24px; position:relative; top:10px; left:60px; padding:5px 20px 2px 20px; }
+#flashremContainer p { font-size:13px;line-height: 1.5em; display:block; width:600px; height:auto; position:relative; top:20px; left:60px; padding:5px 20px 2px 20px; }
+.map_newHeadline {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/map_Headline.png) top left no-repeat; display: block; height:50px; width:751px; position: relative; top:145px; left:0px;text-indent:-9999px;}
+#wrapperTY { margin:0px auto; width:1015px; position:relative; height: 1200px; }
+#socialContainerTY {position:absolute; top:25px; left:480px; width:320px; z-index:5; }
+/* 
+#footerThankYou1{position: relative; left:-32px; top: 40px; font-weight:normal;}//not used // 
+*/
+/* 
+ * Heat Map 
+ */
+ #ConAgraDonationMap { width:750px; height:680px; }
+ #flashContainer {position:relative; top:152px; *top:133px; left:0px; width: 750px; height:816px; *height:771px;  display: block;}
+ /*#noFlash { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/noFlash.png) left top no-repeat; width:760px; height:680px; }
+ #noFlash p { display:block; width:410px; height:120px; position:absolute; top:155px; left:145px; padding:20px; }*/
+ /* 
+ * Social Stuff 
+ */
+.addthis_top_button {float:left !important; display:block; width: 83px !important;}
+.addthis_button_facebook {display:block; position:absolute; top:62px; left:0px;}
+/* From Inspired page in MAR1 */
+/* 
+#twitterContainer { position:absolute; left:800px; top:1061px; width:190px; z-index:1001;  }
+#fbContainer { position:absolute; left:800px; top:855px; width:190px; display: block;  }
+#InspiredActionRightText{background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/InspiredActionRightText.jpg) top left no-repeat; position:absolute; left:804px; top:795px; width:186px;height:60px; display: block; z-index:2;  }
+*/
+/* new index page markup */
+/*.twtrhead   {
+    background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/twitter_hd_hd.png) top left no-repeat;
+    position:absolute;
+    width: 190px;
+    height: 42px;
+    display:block;
+    text-indent: -9999em;
+}
+*/
+#twitterContainer { position:absolute; left:796px; top:539px; width:190px; z-index:1001; }
+#fbContainer { position:absolute; left:795px; top:295px; width:190px; display: block; }
+#HomeRightText{ background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/facebook_hd.png') no-repeat left top; position:absolute; left:799px; top:165px; width:186px; height:126px; display: block; text-indent: -9999px; }
+#HomeRightText h3 { display:block; clear:both; height: 41px;}
+#HomeRightText p { text-indent: 0px; font-size: 12px; line-height: 1 em; display:block; }
+#uj1oue_1 { border-top: 1px solid #d3d6d6 !important;}
+.fbConnectWidgetTopmost { border-top-color: #d3d6d6 !important;}
+h3.twtrhead { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/twitter_hd.png) top left no-repeat;  font-size: 18px; line-height:24px; position:absolute; left:796px; top:495px; width:190px; height:42px; text-indent: -9999px;}
+.twtr-timeline{ font-size:9px !important; }
+.addthis_button_preferred_1 { height:50px !important; width:50px !important;  margin:-13px 0px 0px 385px;}
+.at300bs {background:none !important; display:block; height:50px !important; width:50px !important;}
+
+ .fb_Badge {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/fb_badge.png) top left no-repeat; display: block; height:57px; width:450px; position: relative; top:112px; *top:115px; left:220px;text-indent:-9999px;}
+ .fb_Badge a {display: block; height:50px !important; width:50px !important; position: relative;  top:0px;   left:0px; z-index:100000 !important;}
+ .fb_BadgeSP {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/fb_badgeSP.png) top left no-repeat; display: block; height:57px; width:450px; position: relative; top:112px; *top:112px; left:220px;text-indent:-9999px;}
+ .fb_BadgeSP a {display: block; height:50px !important; width:50px !important; position: relative;  top:0px;   left:0px; z-index:100000 !important;}
+
+ /* 
+ * Homepage Audio Player 1
+ */
+ #fallback {display: none;}
+ #player {display: none; }
+ #smallAudioHeader{ background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/HeresHope.png) top left no-repeat; display: block; height:20px; width:122px; position: absolute; top:25px; left:271px; } 
+ #smallAudioHeaderSP{ background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/HeresHopeSP.png') no-repeat left top; 
+display: block; height:20px; width:122px; position: absolute; top:23px; 
+left:273px;
+} 
+  
+ #audioPlayer1{ position:absolute; left:408px; top: 35px; }
+.audioButton1 {background: url("/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn.png") no-repeat 0 7px;cursor: pointer; margin: 0; padding: 10px 10px 10px 25px; width: 20px; height:20px;}
+.audioButton1.playing {background-position: 0 -73px;}
+.audioButton1.playing:hover {background-position: 0 -113px;}
+.audioButton1:hover {background-position: 0 -33px ;}
+.audioButton1.loading {background-position: 0 -151px;}
+
+#equalizer { width:32px; height:18px; margin-left:3px; position:absolute; left:399px; top: 26px; z-index:100000; }
+.on {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/equalizer.gif) 0px 0px no-repeat;}
+.off {background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/equalizer.gif) -32px 0px no-repeat;}
+
+/* 
+ * Homepage Audio Player 2
+*/
+#audioDoohickey{ background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/audioPlayerBkg.png') no-repeat left top; display: block; height:255px; width:405px; position: absolute; top:997px; left:557px; } 
+#audioDoohickeySP{ background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/audioPlayerBkgSP.png) top left no-repeat; display: block; height:255px; width:500px; position: absolute; top:946px; left:160px;} 
+#audioPlayer2{ position:absolute; left:572px; top: 1164px; z-index:2; } 
+#audioPlayer2SP{ position:absolute; left:227px; top: 1096px; z-index:2; } 
+.audioButton2 {background: url("/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn2.png") no-repeat 0 7px;cursor: pointer; margin: 0; padding: 10px 10px 10px 25px; width: 50px; height:20px;}
+.audioButton2.playing {background-position: 0 -73px;}
+.audioButton2.playing:hover {background-position: 0 -113px;}
+.audioButton2:hover {background-position: 0 -33px;}
+.audioButton2.loading {background-position: 0 -151px;}
+
+ /* 
+ * Homepage Audio Player 3
+*/
+
+#audioPlayer3{ position:absolute; left:704px; top: 1164px; z-index:2; } 
+#audioPlayer3SP{ position:absolute; left:359px; top: 1096px; z-index:2;} 
+.audioButton3 {background: url("/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn2.png") no-repeat 0 7px;cursor: pointer; margin: 0; padding: 10px 10px 10px 25px; width: 50px; height:20px; }
+.audioButton3.playing {background-position: 0 -73px;}
+.audioButton3.playing:hover {background-position: 0 -113px;}
+.audioButton3:hover {background-position: 0 -33px;}
+.audioButton3.loading {background-position: 0 -151px;}
+
+ /* 
+ * Homepage Audio Player 4
+*/
+
+#audioPlayer4{ position:absolute; left:838px; top: 1164px; z-index:2;} 
+#audioPlayer4SP{ position:absolute; left:490px; top: 1096px; z-index:2;} 
+.audioButton4 {background: url("/web/20120923212903/http://www.childhungerendshere.com/Content/Images/btn2.png") no-repeat 0 7px;cursor: pointer; margin: 0; padding: 10px 10px 10px 25px; width: 55px; height:20px; }
+.audioButton4.playing {background-position: 0 -73px;}
+.audioButton4.playing:hover {background-position: 0 -113px;}
+.audioButton4:hover {background-position: 0 -33px;}
+.audioButton4.loading {background-position: 0 -151px;}
+
+
+ /* 
+ * Thank You LeaderBoard
+*/
+.foodBank {   }
+.foodBankBkg {
+	position: absolute;
+	top: 288px;
+	left:24px;
+	width: 200px;
+	height: 783px;
+	background:url('/web/20120923212903/http://www.childhungerendshere.com/Content/Images/foodBankBkg.jpg') no-repeat left top;
+}
+.foodBankBkgSP { position: absolute; top: 475px; left:28px; width: 200px; height: 778px; background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/foodBankBkgSP.jpg) top left no-repeat;  }
+
+.localFoodBankRank { position: relative; top: 94px; left:8px; width: 20px; }
+.localFoodBankContent {  position: relative; top: 77px; left:34px; }
+.localRank { font-weight:bold; color:Red; font-size:13px; }
+.localName {font-weight:bold; color:Red; font-size:13px; width: 161px; }
+.localCity { float:left; color:Red; font-size:12px; }
+.localState {  color:Red; font-size:12px; }
+.localCodeAmount {font-weight:bold; }
+
+.leaderBoardRank {width: 20px;  }
+.leaderBoardContent  {position: relative; top: -16px; *top: -16px; left:22px; width: 145px;  }
+.nationalRank  { font-weight:bold; color:#17b2e9; font-size:13px; padding:5px 0px 0px 8px; }
+.nationalName  {font-weight:bold; color:#17b2e9; font-size:13px; width: 150px; padding:0px 0px 0px 8px; }
+.nationalCity { float:left; color:#17b2e9; font-size:12px; padding:0px 0px 0px 8px; }
+.nationalState {  color:#17b2e9; font-size:12px; }
+.nationalCodeAmount {font-weight:bold; padding:0px 0px 0px 8px; }
+
+.nationalContentContainer {position: absolute; top: 176px; *top: 176px;  left:0px; width: 198px; height: 599px; overflow: auto;}
+#sitemapContainer { width:600px; height: 500px; margin:130px 0px 0px 280px; }
+.sitemapHeader {display: block; height:144px; width:575px; position: relative; top:125px; *top:125px; left:220px;text-indent:-9999px;}
+#sitemapContainer a {color: #969696; font-size:12px; font-weight: normal; text-decoration:underline; padding-left:5px;}
+#sitemapContainer a:hover{ color: #14b1e7; text-decoration:none; }
+
+.inspiredstory { background:url(/web/20120923212903/http://www.childhungerendshere.com/Content/Images/inspiredMeet1School.png) no-repeat; display:block; width: 618px; position: relative; height: 516px; left: 210px; border: none; float: left; margin: 0px 140px 0px 0px; }
+.inspiredstory h3 { display:block; width:618px; height:42px; text-indent: -9999px; }
+.inspiredstory h4 { display: block; width:618px; height:389px; text-indent: -9999px; }
+.inspiredstory p { display: block; width: 618px; height: 85px; text-indent: -9999px; }

@@ -18,6 +18,10 @@ tab-pane.fade, .show.active { transition-duration: .5s; background-color: beige;
 
 .nav-pills .nav-link.active { border-width: 0.05rem; border-color: #0063cc; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom-style: hidden; border-bottom-width: .1rem;}
 
+details { font-size: 0.78rem; }
+
+summary { font-weight: 600; }
+
 /* media Queries - tablets and phones */
 /* required to fix navigation */
 @media (min-width:481.1px) and (max-width: 768.8px) {

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>jQuery Visualize : profitBar</title>
+<script type='text/javascript' src='http://dwpe.googlecode.com/svn/trunk/_shared/EnhanceJS/enhance.js'></script>
+<script type='text/javascript' src='http://dwpe.googlecode.com/svn/trunk/charting/js/excanvas.js'></script>
+<script type='text/javascript' src='http://dwpe.googlecode.com/svn/trunk/_shared/jquery.min.js'></script>
+<script type='text/javascript' src='http://dwpe.googlecode.com/svn/trunk/charting/js/visualize.jQuery.js'></script>
+<link type='text/css' href='http://dwpe.googlecode.com/svn/trunk/charting/css/visualize.css' rel='stylesheet'/>
+<link type='text/css' href='http://dwpe.googlecode.com/svn/trunk/charting/css/visualize-light.css' rel='stylesheet'/>
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+@import url("http://dwpe.googlecode.com/svn/trunk/charting/css/visualize-light.css");
+.dwpeAd {
+	color: #333;
+	background-color: #F4F3Ea;
+	position:fixed;
+	right: 20px;
+	top: 20px;
+	padding: 5px;
+}
+.visualize { 
+	margin: 20px 0 0 30px; 
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+		 $('table').visualize({type: 'bar', height: '260px', width: '420px', appendTitle : true, lineWeight : 4, colors : ['#be1e2d','#666699','#92d5ea','#ee8310','#8d10ee','#5a3b16','#26a4ed','#f45a90','#e9e744']}).appendTo('#jQueryVisualizeChart').trigger('visualizeRefresh');
+		});
+</script>
+<div id="jQueryVisualizeChart"></div>
+<br />
+<table>
+	<caption>
+	Freelance Sales by Year
+	</caption>
+	<thead>
+		<tr>
+			<td></td>
+			<th scope="col">2004</th>
+			<th scope="col">2005</th>
+			<th scope="col">2006</th>
+			<th scope="col">2007</th>
+			<th scope="col">2008</th>
+			<th scope="col">2009</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Illustration</th>
+			<td>1000</td>
+			<td>760</td>
+			<td>888</td>
+			<td>120</td>
+			<td>30</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<th scope="row">Production</th>
+			<td>2200</td>
+			<td>2800</td>
+			<td>3000</td>
+			<td>650</td>
+			<td>500</td>
+			<td>200</td>
+		</tr>
+    <tr>
+			<th scope="row">Design</th>
+			<td>900</td>
+			<td>188</td>
+			<td>320</td>
+			<td>1200</td>
+			<td>25</td>
+			<td>79</td>
+		</tr>
+		<tr>
+			<th scope="row">Web&nbsp;Design</th>
+			<td>100</td>
+			<td>200</td>
+			<td>0</td>
+			<td>3200</td>
+			<td>0</td>
+			<td>240</td>
+		</tr>			
+	</tbody>
+</table>
+</body>
+</html>
