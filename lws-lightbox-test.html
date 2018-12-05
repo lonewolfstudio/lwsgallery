@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lone Wolf Studio Test Lightbox</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="lightbox1/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-pills.css">
+
+    <!-- for documentation only -->
+    <style type="text/css">
+        div.row > div > div.row {
+            margin-bottom: 15px;
+        }
+
+        html {
+            background-color: #02709e;
+        }
+        body {
+            background: #fefefe;
+            padding-bottom: 50px;
+        }
+
+        div.top-container {
+            padding-top:100px;
+            background-color: #02709e;
+            color:#ccc;
+        }
+        div.top-container h1 {
+            color:white;
+        }
+        div.top-container a {
+            color:#ccc;
+            border-bottom:1px dotted white;
+        }
+        div.top-container a:hover {
+            color: white;
+            cursor:pointer;
+            border-bottom:1px solid white;
+            text-decoration: none;
+        }
+        div.top-header {
+            margin-bottom:100px;
+        }
+
+        h2 {
+            background-color:#02709e;
+            color:white;
+            display:inline-block;
+            padding:6px;
+            margin-top:100px;
+        }
+
+        h3 {
+            padding-bottom:5px;
+            margin-bottom:10px;
+            border-bottom:1px solid #f2f2f2;
+            margin-top: 50px;
+        }
+
+        h4 {
+            margin-top:25px;
+        }
+
+        figure {
+            position: relative;
+        }
+
+        figure figcaption {
+            font-size: 22px;
+            color: #fff;
+            text-decoration: none;
+            bottom: 10px;
+            right: 20px;
+            position: absolute;
+            background-color: #000;
+        }
+        code[data-code], code.block-code {
+            display:block;
+            overflow:scroll;
+            font-size:12px;
+            white-space: pre;
+        }
+
+        table {
+            font-size:12px;
+        }
+        .footer {
+            text-align: center;
+        }
+        .footer span {
+            margin-top:100px;
+            font-size:12px;
+            background-color:#02709e;
+            color:white;
+            display:inline-block;
+            padding:6px;
+        }
+        .footer span a {
+            color:#ccc;
+            border-bottom:1px dotted white;
+        }
+        .footer span a:hover {
+            cursor:pointer;
+            color: white;
+            border-bottom:1px solid white;
+            text-decoration: none;
+        }
+        a.anchorjs-link {
+            color:black;
+        }
+        a.anchorjs-link:hover {
+            color:#02709e;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col-lg-12 mx-6">
+      <div class="row">
+        <h3 id="image-gallery">Image Gallery</h3>
+        <p>Galleries are created by adding the <code>data-gallery</code> attribute.</p>
+        <div data-code="example-2">
+          <div class="row">
+            <div class="offset-md-2 col-md-8">
+              <div class="row">
+                <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                </a>
+                <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <h3 id="lws-gallery">Web Development&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Site Development including User Interface Design</span></h3>
+      <div data-code="example-3"> 
+        <div class="row">
+          <a href="content/images/owc_ux/03_eshop-04-mw.png" data-toggle="lightbox" data-title="MacSales.com Home Page - Dec 2004" data-gallery="wdl-gallery" data-footer="Other World Computing eCommerce Relaunch with MacWorld Banner Ad" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/03_eshop-04-mw.png" alt="Dec 2004 MacWorld Home Page" title="MacSales.com Home Page - Dec 2004" class="img-fluid">
+            <image-caption><p>MacSales.com Home Page - Dec 2004</p></image-caption>
+            </a>
+          <a href="content/images/owc_ux/01_eshop-05-home.png" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="MacSales.com Home Page - Mar 2005" data-footer="Other World Computing eCommerce Relaunch version 2" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/01_eshop-05-home.png" alt="OWC Old Home Page" title="MacSales.com Home Page - Mar 2005" class="img-fluid">
+            <image-caption><p>MacSales.com Home Page featuring Music Category and News Column - Mar&nbsp;2005</p></image-caption>
+            </a>
+          <a href="content/images/owc_ux/02_nwt-home-04.png" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Newertech.com Home Page - May 2005" data-footer="newertechnology Products Home Relaunch version 1" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/02_nwt-home-04.png" alt="newertech.com Home Page - May 2005" class="img-fluid">
+            <image-caption><p>newertechnology.com Products Home Page - May&nbsp;2005</p></image-caption>
+            </a>
+          <a href="content/images/art1/ui-cheh-home-en.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Aspen Marketing - Conagra Foods PSA" data-footer="Child Hunger Ends Here with Social Media dashboards" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ui-cheh-home-en.jpg" alt="Aspen Marketing - Conagra Foods PSA August 2011" class="img-fluid">
+            <image-caption><p>Aspen Marketing - Conagra Foods PSA - August&nbsp;2011</p></image-caption>
+            </a>
+          <a href="content/images/art1/ui-fop-strts-mn-2k.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Methode Fiber Optic Products Landing Page - Oct 1999" data-footer="Role - Web Development Manager and Content Manager" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ui-fop-strts-mn-2k.jpg" alt="Methode Fiber Optic Products Landing Page - Oct 1999" class="img-fluid">
+            <image-caption><p>Methode Fiber Optic Products Landing Page - Oct&nbsp;1999</p></image-caption>
+            </a>
+          <a href="content/images/art1/ux-pta-home-v1.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="MacArthur PTA Home Page - Jan 2014" data-footer="Role - Site Administrator and Content Manager" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ux-pta-home-v1.jpg" alt="MacArthur PTA Home Page - Jan 2014" class="img-fluid">
+            <image-caption><p>MacArthur PTA Home Page - Site Admin and Content Manager - Jan&nbsp;2012</p></image-caption>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <h4 id="uid-gallery">User Interface Development&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Product and Landing Pages</span></h4>
+      <div data-code="example-3"> 
+        <div class="row">
+          <a href="content/images/owc_ux/03_nwt-prod-bats-04.png" data-toggle="lightbox" data-title="MacSales.com Home Page - Dec 2004" data-gallery="uil-gallery" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/03_nwt-prod-bats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>newertechnology.com Battery Products Landing Page - Dec&nbsp;2005</p></image-caption>
+          </a>
+          <a href="content/images/owc_ux/05_eshop-05-fwlp.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="Firewire Products Landing Page Version 1 - Feb 2005" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/05_eshop-05-fwlp.png" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>Firewire Products Landing Page - February&nbsp;2005</p></image-caption>
+          </a>
+           <a href="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com Home Page - May 2005" data-footer="Firewire Products Landing Page with live-pricing and Amazon-inpired features" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" alt="OWC Old Home Page" class="img-thumbnail">
+             <image-caption><p>Firewire Products Landing Page - May&nbsp;2005</p></image-caption>
+          </a>
+          <a href="content/images/owc_ux/04_nwt-ipodbats-04.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com iPod Battery Products Landing Page" data-footer="Live-price options for category links" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/04_nwt-ipodbats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>newertech.com iPod Battery Products Landing Page June&nbsp;2005</p></image-caption>
+          </a>
+          <a href="content/images/owc_ux/05_nwt-prd-mm-04.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com macMini Accessories Landing Page" data-footer="miniStack and macMini stands" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/05_nwt-prd-mm-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>newertech.com macMini Accessories Landing Page July&nbsp;2005</p></image-caption>
+          </a>
+          <a href="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" data-toggle="lightbox" data-gallery="uil-gallery" data-title="Citibank ThankYou Points Facebook Sign-up Kiosk Landing Page" data-footer="ThankYou Points Facebook Sign-up Kiosk Landing Page" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>Citibank ThankYou Points Kiosk Project - July&nbsp;2011</p></image-caption>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <h4 id="print-gallery">Print Ad Designs&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Product advertising for national publications</span></h4>
+      <div class="row">
+        <a href="content/images/owc_ux/00_eshop-mtg-bu.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 1" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <img src="content/images/owc_ux/00_eshop-mtg-bu.png" alt="OWC Old Home Page" class="img-thumbnail">
+          <image-caption><p>OWC Mercury On the Go Product Ad - Data Backup Solutions</p></image-caption>
+        </a>
+        <a href="content/images/owc_ux/01_eshop-mtg-safe.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 2" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <img src="content/images/owc_ux/01_eshop-mtg-safe.png" alt="OWC Old Home Page" class="img-thumbnail">
+          <image-caption><p>OWC Mercury On the Go Product Ad - Data Safety Solutions</p></image-caption>
+          </a>
+        <a href="content/images/owc_ux/02_eshop-mtg-loss.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 3" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <img src="content/images/owc_ux/02_eshop-mtg-loss.png" alt="OWC Old Home Page" class="img-thumbnail">
+          <image-caption><p>OWC Mercury On the Go Product Ad - Data Mobility Solutions</p></image-caption>
+          </a>
+        <a href="content/images/owc_ux/09_ehop-mus-ad-girl.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC iPod and Music Products Category Spot Ad" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <img src="content/images/owc_ux/09_ehop-mus-ad-girl.png" alt="OWC iPod Products" class="img-thumbnail">
+          <image-caption><p>OWC Music Category Ad - Apple&reg; GarageBand Accessories</p></image-caption>
+          </a>
+        <a href="content/images/owc_ux/10_eshop-ipod-baby.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC iPod Battery Products Category Ad image" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+          <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="OWC iPod Battery Ad image" class="img-thumbnail">
+          <image-caption><p>OWC iPod Replacement Batteries Ad - Apple&reg; iPod Accessories</p></image-caption>
+          </a>
+          </div>
+        </div>
+      <div class="row">
+          <h4 id="wbbr-gallery">Web Banner Ads&nbsp;<span class="lead">|</span><span class="lead">&nbsp;On-site and remote banner ads for rotation</span></h4>
+        <div class="row">
+          <a href="content/images/ad-banners/150_100804_fastermacnet_4.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="FasterMac Ad Banner" data-footer="FasterMac Web-hosting Services - Designer" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_100804_fastermacnet_4.gif" alt="OWC Animated Web Banner" class="img-thumbnail">
+            <image-caption><p>FasterMac Web-hosting Services - October&nbsp;2004</p></image-caption></a>
+          <a href="content/images/ad-banners/150_100804_fastmem_2.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ad Banner - DRAM for Macs" data-footer="DRAM Ads Designer for OWC Products" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_100804_fastmem_2.gif" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>OWC Ad Banner - Faster DRAM Memory Products for Mac Computers</p></image-caption></a>
+          <a href="content/images/ad-banners/150_100804_ipodbatts_1.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech Animated Ad Banner - Batteries" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_100804_ipodbatts_1.gif" alt="newerTech Replacement Batteries for iPods" class="img-thumbnail">
+            <image-caption><p>Ad for newerTech Replacement Batteries for iPods</p></image-caption></a>
+          <a href="content/images/ad-banners/150_100804_pbbatts_3.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech Animated Ad Banner - Batteries" data-footer="Role - Ad Designer for Web Banner Ads" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_100804_pbbatts_3.gif" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>newerTech Animated Ad Banner - Mac Laptop Replacement Batteries</p></image-caption></a>
+          <a href="content/images/ad-banners/150_110204_merc-fw_5.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="Mercury On the Go Mobile Drive Solutions - Designer" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_110204_merc-fw_5.gif" alt="Animated Ad Banner - MOTG" class="img-thumbnail">
+            <image-caption><p>Mercury On the Go Mobile Drive Solutions - Designer</p></image-caption></a>
+          <a href="content/images/ad-banners/150_111104_sds-dvd1_7.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="Optical Drive System Upgrades Products - Illustrator" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_111104_sds-dvd1_7.gif" alt="Optical Drive System Upgrades Products - Illustrator" class="img-thumbnail">
+            <image-caption><p>Optical Drive System Upgrades Products - Illustrator</p></image-caption></a>
+          <a href="content/images/ad-banners/150_111104_vid_6.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="ATI Graphic System Upgrades Products - Illustrator" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/ad-banners/150_111104_vid_6.gif" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>ATI Graphic System Upgrades Products - Illustrator</p></image-caption></a>
+          <a href="content/images/art1/ad-nwr-mstck-hero.jpg" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech iStack Beauty Ad Image" data-footer="Role - Ad Designer and Photo-retouching" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ad-nwr-mstck-hero.jpg" alt="OWC Old Home Page" class="img-thumbnail">
+            <image-caption><p>newerTech iStack Beauty Ad Image composite for placement ads</p></image-caption></a>
+          <a href="content/images/owc_ux/08_ehop-ipod-girl.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Product Support Image" data-footer="Role - Art Director, Photo-retouching and Compositing" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/08_ehop-ipod-girl.png" alt="iPod Girl Close-up Composite" class="img-thumbnail">
+            <image-caption><p>iPod accessories ad placement composite</p></image-caption></a>
+          <a href="content/images/owc_ux/10_eshop-ipod-baby.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="iPod Replacement Batteries Ad Image" data-footer="Role - Art Director, photographer and Photo-retouching" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="Baby Piper on the iPod Screen Composite" class="img-thumbnail">
+            <image-caption><p>iPod Replacement Battery image for ad banners</p></image-caption></a>
+          <a href="content/images/art1/ui-aspn-frigo-chz-1.jpg" data-toggle="lightbox" data-gallery="pad-gallery" data-title="Conagra Foods Mobile Ad Banner" data-footer="Frigo Cheese Products Production" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+            <img src="content/images/art1/ui-aspn-frigo-chz-1.jpg"  alt="OWC Old Home Page" class="img-thumbnail cb-clip">
+            <image-caption><p>Frigo Cheese Products Mobile Ads Production</p></image-caption></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <p class="footer"><span>Built by me, <a href="https://ashleyd.ws">ashleydw</a></span></p>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="lightbox1/ekko-lightbox.min.js"></script>
+
+      <!-- for documentation only -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function ($) {
+              // delegate calls to data-toggle="lightbox"
+              $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+                  event.preventDefault();
+                  return $(this).ekkoLightbox({
+                      onShown: function() {
+                          if (window.console) {
+                              return console.log('Checking our the events huh?');
+                          }
+                      },
+                      onNavigate: function(direction, itemIndex) {
+                          if (window.console) {
+                              return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                          }
+                      }
+                  });
+              });
+
+              //Programmatically call
+              $('#open-image').click(function (e) {
+                  e.preventDefault();
+                  $(this).ekkoLightbox();
+              });
+              $('#open-youtube').click(function (e) {
+                  e.preventDefault();
+                  $(this).ekkoLightbox();
+              });
+
+              // navigateTo
+              $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                  event.preventDefault();
+
+                  return $(this).ekkoLightbox({
+                      onShown: function() {
+
+                          this.modal().on('click', '.modal-footer a', function(e) {
+
+                              e.preventDefault();
+                              this.navigateTo(2);
+
+                          }.bind(this));
+
+                      }
+                  });
+              });
+
+
+              /**
+               * Documentation specific - ignore this
+               */
+              anchors.options.placement = 'left';
+              anchors.add('h3');
+              $('code[data-code]').each(function() {
+
+                  var $code = $(this),
+                      $pair = $('div[data-code="'+$code.data('code')+'"]');
+
+                  $code.hide();
+                  var text = $code.text($pair.html()).html().trim().split("\n");
+                  var indentLength = text[text.length - 1].match(/^\s+/)
+                  indentLength = indentLength ? indentLength[0].length : 24;
+                  var indent = '';
+                  for(var i = 0; i < indentLength; i++)
+                      indent += ' ';
+                  if($code.data('trim') == 'all') {
+                      for (var i = 0; i < text.length; i++)
+                          text[i] = text[i].trim();
+                  } else  {
+                      for (var i = 0; i < text.length; i++)
+                          text[i] = text[i].replace(indent, '    ').replace('    ', '');
+                  }
+                  text = text.join("\n");
+                  $code.html(text).show();
+
+              });
+          });
+    </script>
+  </body>
+</html>

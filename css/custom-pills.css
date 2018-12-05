@@ -1,14 +1,14 @@
 body { padding-top: 4rem;}
 
-.starter-template { padding: 2rem 1.5rem;
-            text-align: center; }
+.starter-template { padding: 2rem 1.5rem; text-align: center; }
+
 em { display="block"}
 
 pre { line-height: .5em; background-color: aliceblue; padding: 1em; margin: auto; }
 
 xmp { font-size: 8pt; margin: 0; padding: 1em; line-height: 1em;}
 
-tab-pane.fade, .show.active { transition-duration: .5s; background-color: beige; margin-top: auto;}
+tab-pane.fade, .show.active { transition-duration: .5s; margin-top: auto;}
 
 .navbar { background-color: aliceblue; padding-bottom: 0; }
 
@@ -22,9 +22,18 @@ details { font-size: 0.78rem; }
 
 summary { font-weight: 600; }
 
+image-caption p { margin-top: .55rem}
+
+a image-caption { text-decoration: none; font-size: .87rem; font-style: normal; color: black; line-height: 1.2rem}
+
+a:hover { text-decoration: none}
+a.bpic {display: block; margin:auto; width: 50%; height: auto}
+
 /* media Queries - tablets and phones */
 /* required to fix navigation */
 @media (min-width:481.1px) and (max-width: 768.8px) {
+  
+  .media .bpic { display: block; float: left; width: 200px}
   
   tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood; }
   
@@ -38,6 +47,8 @@ summary { font-weight: 600; }
   }
 
 @media (min-width:212px) and (max-width: 481px) {
+  
+  .media .bpic { width: 140px}
 
   tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood }
   

@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/custom-pills.css" rel="stylesheet">
+    <link href="lightbox1/ekko-lightbox.css" rel="stylesheet">
+    <link href="css/custom-pills.css" rel="stylesheet">
     <link href="http://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
-
+  
+  <!-- Lightbox javascript import -->
+  <!-- ekko lightbox js script import, followed by click event controller -->
+  <script src="lightbox1/ekko-lightbox.min.js"></script>
+  <script src="lightbox1/ekko-lightbox.min.js.map"></script>
+  
 </head>
   
 <body>
@@ -50,14 +56,76 @@
 
 <!-- main page content sections in tab panes -->
   
-  <div class="flex-container mx-4 center">
-    <div class="row">
-      <div class="col-sm-12">
+  <div class="flex-container center">
 <!-- Swapping Tab Contents controlled by nav -->
-<!-- Start Home tab -->
         
     <div class="tab-content">
+      <!-- Start Home Page TAB -->
+      
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
+        
+        <div id="myCarousel" class="mb-2 carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="first-slide embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://www.lonewolfstudio.com/moderngallery_v5/" allowfullscreen></iframe>
+        </div>
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="p-1 mr-0 bd-highlight text-right float-right" style="max-width: 400px">
+                <h1>Mobile Responsive Web Apps</h1>
+                <p>Fifteen years of creativity in the style of the current President. Exciting!</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="tooltip" title="Look and learn you scoundrel!" data-placement="top">Browse</a></p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="imgs/img_parallax.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Step Back Through Time</h1>
+                <p>Complete history of the world <br>in the time it takes to order a hamburger and fries. Great!</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="tooltip" title="Put on the pretense of an open mind" data-placement="top">Discover</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="imgs/istockphoto-598085390-1024x1024.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Imparting Wisdom &amp; Saving Money</h1>
+                <p>Egocentric convictions &amp; random thoughts. Real web sites. Staggering!</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="tooltip" title="Defy the sourge of dementia and pay attention!" data-placement="top">Learn</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="fourth-slide" src="imgs/istockphoto-821331110-1024x1024.jpg" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Had Enough Yet?</h1>
+                <p>Look at some illustrations. Wow!</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="tooltip" title="Visions of loveliness and other Fake Media" data-placement="top">Visions</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev mr-0" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next ml-0" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <!-- end mycarousel - jumbotron section -->
         <main role="main" class="container">
           <div class="starter-template">
           <h1>Bootstrap starter template</h1>
@@ -72,7 +140,7 @@
       <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="profile-tab">
         <main class="mx-2 mt-4">
           <div class="row">
-          <div class="col-sm-12 mt-4">
+          <div class="col-sm-12 mx-3 mt-4">
             <div class="h2">
               <h2>Professional Profiles</h2>
               <p class="lead">Ranking professional skills by roles and length of experience.</p>
@@ -81,7 +149,7 @@
           </div>
                   <!-- accordian group -->
         <div class="accordian" id="gbb">
-          <div class="card-deck mb-3 text-center">
+          <div class="card-deck mx-3 mb-3 text-center">
             <div class="card mb-4 shadow-sm">
               <div class="card-header">
                 <h3 class="my-0 font-weight-normal">Good</h3>
@@ -243,24 +311,34 @@
              <div class="row">
               <div class="col-sm-12">
                 <div class="accordion" id="accordionExample">
-                  <div class="card">
+                  <div class="card" id="HeadingOne">
                     <div class="card-header" id="headingOne">
                       <h4>Examples of Studies</h4> 
                       </div>
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                           <div class="media">
+                            <img class="mr-3" src="content/images/icons/lws_logoPaw1.gif" alt="LWS Logo red paw">
                             <div class="media-body">
                             <h5 class="mt-0 mb-1">Success is JOB ONE</h5>
-                            <p>Since 1994, delivering comprehensive design, development and deployment solutions that are easily-maintained, user-focused and cost-effective has been <span class="h5">Job One</span>. </p>
-                            <p>The needs of each project can be vastly different, and the pressures faced in efficient and creative execution can be monumental! The track record of helping clients solve these problems through comprehensive design solutions can be seen in the following Case Studies. These Studies are a small sample of the wide range of successful and creative solutions available.</p>
+                              <p>Since 1994, delivering comprehensive design, development and deployment solutions that are easily-maintained, user-focused and cost-effective has been <span class="h5">Job One</span>.</p>
+                              <p>The needs of each project can be vastly different, and the pressures faced in efficient and creative execution can be monumental! The track record of helping clients solve these problems through comprehensive design solutions can be seen in the following Case Studies. These Studies are a small sample of the wide range of successful and creative solutions available.</p>
+                            </div>
                           </div>
-                            <img class="ml-3" src="imgs/cowboy-hat.jpg" alt="cowboy hat place-holder image">
+                          <div class="row">
+                          <h4 class="mt-1 col-md-12"><img class="align-self-center" src="content/images/icons/design.png" width="50px" height="auto" >&nbsp;Web Site Design</h4>
+                          </div>
+                              <div class="row">
+                                <div class="col-lg-4 col-md-5">
+                                   <p>To promote my freelance illustration and design business for clients such as <a href="https://www.revell.com" target="_blank" class="h6">Revell Monogram</a> Plastic Hobby kits, <span class="h6">Sportmart Sporting Goods Company</span>, and O'Meara Publications <a href="https://www.lakelandboating.com" target="_blank" class="h6">Lakeland Boating Magazine</a>, a website was developed for <a href="https://www.lonewolfstudio.com" target="_blank" class="H6">Lone Wolf Studio</a>. Originally, the site offered Illustration and graphics services, plus HTML web authoring for a limited client group.</p>
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-12">
+                                <img class="img-fluid" src="content/images/art1/lws_webCardDsgn01.gif" alt="Lone wolf Studio Web Presentation">
+                              </div>
                             </div>
                         </div>
-                      </div>
                     </div>
-                  <div class="card">
+                  <div class="card" id="HeadingTwo">
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                       <div class="card-body">
                         <h5>Prescription Benefits Management Portal Re-Design</h5>
@@ -301,54 +379,42 @@
                             </figure>
                           </div>
                           </div>
-                          <p class="lead"><strong>Drug Tends &ldquo;Insights&rdquo; Presentation</strong> (2015)</p>
-                        <div class="row">
-                          <div class="col-md-4 col-sm-12">
-                          <figure class="figure">
-                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
-                          <figcaption class="figure-caption">Graphical layouts for prescription drug trends presentations (click to enlarge)</figcaption>
-                          </figure>
+                         <div class="row mx-1">
+                          <h5 id="ctx-gallery">UI/UX Development&nbsp;<span class="lead">|</span><span class="lead">&nbsp;myPortalRx UX Study &amp; Redesign Proposal</span></h5>
+                          <p>A 2013 Presentation proposal for sweeping changes to the private portal and distributed portal applications for CatamaranRx Customers and client companies.</p>
+                          <div data-code="example-4"> 
+                            <div class="row">
+                              <a href="content/images/ux-mycat-dev-ss/Slide06.jpg" data-toggle="lightbox" data-title="myPortalRx Solutions Presentation" data-gallery="catux-gallery" data-footer="Marketing Data including click-through was used for part 1" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide06.jpg" alt="Dec 2004 MacWorld Home Page" title="myPortalRx Solutions Presentation Slide 6" class="img-fluid">
+                                <image-caption><p>Research into current PortalRx layout template</p></image-caption>
+                                </a>
+                              <a href="content/images/ux-mycat-dev-ss/Slide07.jpg" data-toggle="lightbox" data-gallery="catux-gallery" data-title="myPortalRx Solutions Presentation" data-footer="Other World Computing eCommerce Relaunch version 2" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide07.jpg" alt="OWC Old Home Page" title="myPortalRx Solutions Presentation Slide 7" class="img-fluid">
+                                <image-caption><p>Competitive Business Details - CVS/Caremark</p></image-caption>
+                                </a>
+                              <a href="content/images/ux-mycat-dev-ss/Slide08.jpg" data-toggle="lightbox" data-gallery="catux-gallery" data-title="myPortalRx Solutions Presentation" data-footer="Competitive Business Details - CVS/Caremark" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide08.jpg" alt="myPortalRx Solutions Presentation Slide 8" class="img-fluid">
+                                <image-caption><p>Competitive Business Details - Express Scripts</p></image-caption>
+                                </a>
+                              <a href="content/images/ux-mycat-dev-ss/Slide10.jpg" data-toggle="lightbox" data-gallery="catux-gallery" data-title="myPortalRx Solutions Presentation" data-footer="Competitive Business Details - OptumRx" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide10.jpg" alt="myPortalRx Solutions Presentation" class="img-fluid">
+                                <image-caption><p>Competitive Business Details - OptumRx</p></image-caption>
+                                </a>
+                              <a href="content/images/ux-mycat-dev-ss/Slide13.jpg" data-toggle="lightbox" data-gallery="catux-gallery" data-title="myPortalRx Solutions Presentation" data-footer="Application Framework Proposal - Data Flow" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide13.jpg" alt="myPortalRx Solutions Presentation" class="img-fluid">
+                                <image-caption><p>Application Framework Proposal - Data Flow</p></image-caption>
+                                </a>
+                              <a href="content/images/ux-mycat-dev-ss/Slide14.jpg" data-toggle="lightbox" data-gallery="catux-gallery" data-title="myPortalRx Solutions Presentation" data-footer="Application Framework Proposal - Data Flow" class="col-sm-6 col-md-4 mb-3">
+                                <img src="content/images/ux-mycat-dev-ss/Slide14.jpg" alt="myPortalRx Solutions Presentation" class="img-fluid">
+                                <image-caption><p>Application Framework Proposal - Data Flow</p></image-caption>
+                                </a>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-md-4 col-sm-12">
-                          <figure class="figure">
-                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
-                          <figcaption class="figure-caption">Develop Interactive charts using jQuery and HTML5. A basic chart bar chart with animation</figcaption>
-                          </figure>
-                          </div>
-                          <div class="col-md-4 col-sm-12">
-                          <figure class="figure">
-                          <img src="imgs/cowboy-hat.jpg" class="figure-img img-fluid rounded" alt="cowboy hat place-holder image">
-                          <figcaption class="figure-caption">Develop Interactive charts using jQuery and HTML5. A basic chart bar chart with animation</figcaption>
-                          </figure>
-                          </div>
-                        </div>
-                        <p>Donut Hole graphical charts</p>
-                        <p>Infographics with interactive elements</p>
-                          </div>
-                        </div>
-                      </div>
-                  <div class="card">
-                    <div class="modal fade" id="owcModal" tabindex="-1" role="dialog" aria-labelledby="owcModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="owcModalLabel">Other World Computing Home Page (2004)</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <figure class="figure">
-                            <img src="content/images/owc_ux/02_eshop-04-xmas.png" class="figure-img img-fluid rounded" alt="OWC Home page in 2003">
-                            <figcaption class="figure-caption">
-                              <h4>MacWorld Holiday Specials (2004)</h4>
-                              <p>Complete details appear here.</p>
-                              </figcaption>
-                            </figure>
                           </div>
                         </div>
                       </div>
-                    </div>
+                  <div class="card" id="HeadingThree">
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" title="MacSales.com Project Study">
                       <div class="card-body">
                         <h5>Creating an eCommerce machine @ OWC</h5>
@@ -357,8 +423,8 @@
                         <div class="row">
                           <div class="col-sm-6 col-lg-3">
                             <figure class="figure">
-                              <a type="link" data-toggle="modal" data-target="#owcModal" data-date="2004" data-name="Old Home Page">
-                                <img src="content/images/owc_ux/00_eshop-b4-home.png" class="figure-img img-fluid rounded" alt="Original Home Page as of 2002" title="Original Home Page"></a>
+                              <a href="content/images/owc_ux/00_eshop-b4-home.png" data-toggle="lightbox" data-gallery="owc-gallery" data-title="OWC MacSales.com Home Page - 2002" data-footer="Old Home Page">
+                              <img src="content/images/owc_ux/00_eshop-b4-home.png" class="figure-img img-fluid rounded" alt="Original Home Page as of 2002" title="Original Home Page"></a>
                               <figcaption class="figure-caption">
                                 <details>
                                   <summary>MacSales.com Home Page (2002)</summary>
@@ -368,9 +434,9 @@
                               </figure>
                             </div>
                           <div class="col-sm-6 col-lg-3">
-                            <a type="link" data-toggle="modal" data-target="#owcModal" data-date="2004" data-name="Xmas Home Page">
                             <figure class="figure">
-                              <img src="content/images/owc_ux/02_eshop-04-xmas.png" class="figure-img img-fluid rounded" alt="OWC Home page in 2003">
+                            <a href="content/images/owc_ux/02_eshop-04-xmas.png" data-toggle="lightbox" data-gallery="owc-gallery" data-title="OWC MacSales.com Home Page - Dec 2004" data-footer="Old Home Page">
+                              <img src="content/images/owc_ux/02_eshop-04-xmas.png" class="figure-img img-fluid rounded" alt="OWC Xmas Specials Banner Home Page Dec 2004" data-title="OWC Xmas Specials Banner Home Page Dec 2004"></a>
                               <figcaption class="figure-caption">
                                 <details>
                                   <summary>MacWorld Holiday Specials (2004)</summary>
@@ -378,11 +444,11 @@
                                   </details>
                                 </figcaption>
                               </figure>
-                            </a>
                             </div>
                           <div class="col-sm-6 col-lg-3">
                             <figure class="figure">
-                              <img src="content/images/owc_ux/01_eshop-05-home.png" class="figure-img img-fluid rounded" alt="Best version of home page with News Section Update" title="Best version of home page with News Section Update">
+                              <a href="content/images/owc_ux/01_eshop-05-home.png" data-toggle="lightbox" data-gallery="owc-gallery" data-title="OWC MacSales.com Product Categories Grid - May 2005" data-footer="OWC Music, iPod and Apple Computer Accessories and Upgrades">
+                              <img src="content/images/owc_ux/01_eshop-05-home.png" class="figure-img img-fluid rounded" alt="OWC MacSales.com Product Categories Grid - May 2005" data-title="OWC MacSales.com Product Categories Grid - May 2005"></a>
                               <fig-caption class="figure-caption">
                                 <details>
                                   <summary>MacSales Home Page with Categories Grid (2005)</summary>
@@ -393,7 +459,8 @@
                             </div>
                           <div class="col-sm-6 col-lg-3">
                             <figure class="figure">
-                              <img src="content/images/owc_ux/05_eshop-05-fwlp.png" class="figure-img img-fluid rounded" alt="Best version of home page with News Section Update" title="Best version of home page with News Section Update">
+                              <a href="content/images/owc_ux/05_eshop-05-fwlp.png" data-toggle="lightbox" data-gallery="owc-gallery" data-title="OWC MacSales.com Firewire Products Landing Page - April 2005" data-footer="OWC MacSales.com Firewire Products Accessories and Upgrades">
+                              <img src="content/images/owc_ux/05_eshop-05-fwlp.png" class="figure-img img-fluid rounded" alt="OWC MacSales.com Firewire Products Accessories and Upgrades" data-title="OWC MacSales.com Product Categories Grid - May 2005"></a>
                               <fig-caption class="figure-caption">
                                 <details>
                                   <summary>OWC Product Section Update (2004)</summary>
@@ -407,39 +474,96 @@
                         </div>
                       </div>
                     </div>
-                  <div class="card">
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <h5>Corporate Website goes Web 2.0</h5>
-                        <ul class="media-list">
-                          <li class="media">
-                            <a href="#"><img class="media-object" src="content/images/icons/design.png" width="64px" height="auto" /></a>
-                            <div class="media-body">
-                              <h4 class="media-heading">Web Site Design</h4>   
-                              <p>To promote my freelance illustration and design business for clients such as <a href="https://www.revell.com">Revell Monogram</a>, <a href="https://www.sportmart.com">Sportmart</a> in 1992, a website was developed for <a href="https://www.lonewolfstudio.com">Lone Wolf Studio</a>. Originally, the site offered those services plus HTML web authoring for a limited client group. <a href="#">Client List</a></p>
-                            </div>
-                          </li>
-                          <li class="media">
-                            <div class="media-body">
-                              <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-container="body" data-trigger="focus" data-placement="right" title="Web Site Development - 1996-9" data-content="Corporate Home Page - Methode Electronics - 1997"><img class="media-object" width="100%" src="content/images/art1/ui-fop-meth-mn-b4.jpg" alt="Methode Electronics Home Page Version 1 - 1998" title="Redesign Corporate Online Experience 1997-8"></a>
-                            </div>
-                          </li>
-                          <li class="media">
-                              <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-container="body" data-trigger="focus" data-placement="right" title="Mobile-Responsive Apps" data-content="Promotional application for ConAgra Foods - Product Placement screen for Mobile App"><img class="media-object" src="content/images/art1/ui-aspn-frigo-chz-1.jpg" alt="Frigo CheeseHeads Product Placement - 2013" title="Digital Agency Mobile Application Development - 2013"></a>
-                          </li>
-                          <li class="media">
-                            <a href="#" class="media-left" tabindex="0" type="link" data-toggle="popover" data-contain  er="body" data-trigger="focus" data-placement="right" title="Mobile-first Responsive Design" data-content="Web-based CMS replacing a client-server application, using Visual mock-ups and functional prototypes using Photoshop &amp; Axure"><img class="media-object" src="content/images/art1/ui-mycat-hw-ldng-pg.jpg" alt="Unlimited Calls Ad Layout - 1997" title="Ad Agency Print Production - 1997"></a>
-                            </li>
-                          </ul>
-                          </div>
+                  <div class="card" id="HeadingFour">
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h4 class="card-title">Methode.com Relaunch <span class="pipe">|</span> <span class="lead">Corporate Manufacturer Aims for Web 2.0 Upgrade</span></h4>
+                      <a href="content/images/art1/ui-fop-meth-mn-b4.jpg" class="bpic mb-1 ml-2 float-md-right float-sm-none" data-gallery="fop-gallery" data-toggle="lightbox" data-title="Web Site Development - 1996-9" data-footer="Corporate Home Page - Methode Electronics - 1997">
+                        <img class="mr-2 img-fluid" src="content/images/art1/ui-fop-meth-mn-b4.jpg" alt="Methode Electronics Home Page Version 1 - 1998" title="Redesign Corporate Online Experience 1997-8">
+                      <image-caption><p>Original Methode.com Home page - 1996</p></image-caption>
+                      </a>
+                      <h5 class="card-subtitle mt-3 ml-1"><img class="align-self-center" src="content/images/icons/design.png" width="50px" height="auto" >&nbsp;Web Site Design</h5>
+                      <div class="card-text">
+                        <p>Fourteen divisions of Methode Electrtonics needed a new look and feel in anticipation of the growth of eCommerce in the era of "Web 2.0".</p>
+                        <h6>Web-site Steering Committee</h6>
+                        <p>First steps in the process included inclusion in a Steering Commitee, and creation of a mission statement. Selection of team leads and the setting of mission parameters were a "concensus" of the executive staff of the commitee.</p>
+                        <h6>Mission Statement</h6>
+                        <blockquote>Seek the most efficient upgrade path to enabling Methode.com to be a sales tool for online product information, sales promotion and product advertising materials.</blockquote> <p>A web-store application was also proposed as a separate case study, and later dropped.</p>
                         </div>
+                      <h5 class="card-subtitle">&nbsp;<img class="align-self-center mr-2" src="content/images/icons/ui.png" width="50px" height="auto" />User Interface Development</h5>
+                      <div class="card-text">
+                        <p>Pilot projects for the most dynamic business units were started in 1997, with the Fiber Optic Products Division, Opto-electronics Group, dataMate Connectors Group, and the independent testing division participating.
+                        </p>
+                       <h6>Product Landing Pages</h6>
+                        <p>The Example shown is the Stratos Lightwave site upon it's joining the corporate group in 1997, and the update launched at the close of 1999.</p>
                       </div>
+                       <div class="row mt-3">
+                          <a href="content/images/art1/ui-fop-mdi-home-b4.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="fop-gallery" data-title="Compare MDI Products Landing Page - May 1997" data-footer="Role - Web Development and Content Manager">
+                          <img src="content/images/art1/ui-fop-mdi-home-b4.jpg" alt="Stratos Optic Products Landing Page - July 1997" class="img-fluid">
+                            <image-caption><p>Compare: MDI Magnalastic Products Landing Page - July&nbsp;1997</p></image-caption></a>
+                          <a href="content/images/art1/ui-fop-mdi-home-b4.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="fop-gallery" data-title="MDI Products Landing Page - December 1999" data-footer="Role - Web Development and Content Manager" >
+                          <img src="content/images/art1/ui-fop-mdi-home-b4.jpg" alt="Stratos Fiber Optic Product Landing page 1999" class="img-fluid">
+                            <image-caption><p>MDI Magnalastic Products Landing Page - Dec&nbsp;1999</p></image-caption></a>
+                          <a href="content/images/art1/ui-fop-strts-mn-b4.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="fop-gallery" data-title="Compare Stratos Optic Products Landing Page - July 1997" data-footer="Role - Web Development and Content Manager">
+                          <img src="content/images/art1/ui-fop-strts-mn-b4.jpg" alt="Stratos Optic Products Landing Page - July 1997" class="img-fluid">
+                            <image-caption><p>Compare: Stratos Optic Products Landing Page - July&nbsp;1997</p></image-caption></a>
+                          <a href="content/images/art1/ui-fop-strts-mn-2k.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="fop-gallery" data-title="Stratos Optic Products Landing Page - December 1999" data-footer="Role - Web Development and Content Manager" >
+                          <img src="content/images/art1/ui-fop-strts-mn-2k.jpg" alt="Stratos Fiber Optic Product Landing page 1999" class="img-fluid">
+                            <image-caption><p>Stratos Optic Products Landing Page - Dec&nbsp;1999</p></image-caption></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
                     <div class="card" id="HeadingFive">
                       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                         <div class="card-body">
-                          <h5>Mobile Responsive Design - MacArthurPTA</h5>
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          <h4 class="card-title">Mobile Responsive Design</h4>
+                          <h5 class="card-subtitle mb-2 text-muted">MacArthurPTA Web Site</h5>
+                          <a href="content/images/art1/ux-pta-home-v1.jpg" class="bpic mb-1 ml-2 float-md-right float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Home Page - Jan 2013" data-footer="Role - Site Administrator and Content Manager" >
+                            <img src="content/images/art1/ux-pta-home-v1.jpg" alt="MacArthur PTA Home Page - Jan 2013" class="img-fluid">
+                            <image-caption><p>MacArthur PTA Home Page - Site Admin and Content Manager - Jan&nbsp;2013</p></image-caption></a>
+                          <p class="card-text">Complete redesign for the PHP-based PTA site at MacArthur Elementary School in Hoffman Estates Illinois was a side-project for the academic years 2010 though 2013.</p>
+                              <H5>Mission and Goals</H5>
+                              <ul>
+                                <li>Update content for main content pages</li>
+                                <li>Administrate User Accounts and access</li>
+                                <li>Development for a planned move to a mobile-capable or mobile-responsive site</li>
+                                <li>Choose a distributed framework for active-media content such as Wordpress or Drupal</li>
+                                </ul>
+                              <h5>Audience and User Profiles</h5>
+                              <ul>
+                                <li>Not-for-Profit organization with self-governing stakeholder group with School District oversight and shared resources</li>
+                                <li>Two nominally equal User Groups; Parents and Teachers</li>
+                                <li>The Parents are usually the most active and are elected on an annual or bi-annual basis</li>
+                                <li>Content is driven by scheduling for school-related events, fund-raising efforts and student activities</li>
+                                <li>Initially required weekly and monthly updates with only minimum automation capabilities</li>
+                              </ul>
+                          <h5>Mobile-Responsive User Interface Design</h5>
+                          <p>The Design of the mobile-responsive site started with the UI design for mobile phone devices, because that was the greatest need. The content could easily be refactored into a Wordpress database, or more likely, a series of jQuery calls to secure lists.</p>
+                          <div class="row mt-3">
+                          <a href="content/images/mpta-ux/mpta_01_PTAMobiLanding_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile Landing Screen" data-footer="Role - UX Designer and UI Developer">
+                          <img src="content/images/mpta-ux/mpta_01_PTAMobiLanding_1.jpg" alt="MacArthur PTA Mobile Landing Screen" class="img-fluid">
+                            <image-caption><p>MacArthur PTA Mobile Landing Screen</p></image-caption></a>
+                          <a href="content/images/mpta-ux/mpta_04_PTAMobiHome_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Home Page - Jan 2014" data-footer="Role - Site Administrator and Content Manager" >
+                          <img src="content/images/mpta-ux/mpta_04_PTAMobiHome_1.jpg" alt="MacArthur PTA Mobile myPTA login Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile myPTA Home Screen</p></image-caption></a>
+                          <a href="content/images/mpta-ux/mpta_02_PTAMobiCalMnthVw_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile Monthly Event Calendar Screen" data-footer="Role - UX Designer and UI Developer" >
+                          <img src="content/images/mpta-ux/mpta_02_PTAMobiCalMnthVw_1.jpg" alt="PTA Mobile Monthly Event Calendar Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile Monthly Event Calendar Screen</p></image-caption></a>
+                          <a href="content/images/mpta-ux/mpta_05_PTAMobiForms_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile Forms Screen" data-footer="Role - UX Designer and UI Developer" >
+                            <img src="content/images/mpta-ux/mpta_05_PTAMobiForms_1.jpg" alt="MacArthur PTA Mobile Forms Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile Forms Screen</p></image-caption></a>
+                            <a href="content/images/mpta-ux/mpta_06_PTAMobiNews_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile News Compilation Screen" data-footer="Role - UX Designer and UI Developer" >
+                            <img src="content/images/mpta-ux/mpta_06_PTAMobiNews_1.jpg" alt="MacArthur PTA Mobile News Compilation Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile News Compilation Screen</p></image-caption></a>
+                            <a href="content/images/mpta-ux/mpta_07_PTAMobiComs_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile List of Committees Screen" data-footer="Role - UX Designer and UI Developer" >
+                            <img src="content/images/mpta-ux/mpta_07_PTAMobiComs_1.jpg" alt="MacArthur PTA Mobile List of Committees Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile List of Committees Screen</p></image-caption></a>
+                            <a href="content/images/mpta-ux/mpta_03_PTAMobiCalWkVw_1.jpg" class="d-inline-block w-25 p-xl-4 p-lg-1 p-md-2 p-sm-1 float-md-left float-sm-none" data-toggle="lightbox" data-gallery="pta-gallery" data-title="MacArthur PTA Mobile Weekly Calendar Screen" data-footer="Role - UX Designer and UI Developer" >
+                            <img src="content/images/mpta-ux/mpta_03_PTAMobiCalWkVw_1.jpg" alt="MacArthur PTA Mobile Weekly Calendar Screen" class="img-fluid">
+                            <image-caption><p>PTA Mobile Weekly Calendar Screen</p></image-caption></a>
                           </div>
+                          </div> <!-- end card -->
                         </div>
                       </div>
                     </div>
@@ -455,176 +579,154 @@
   <!-- Start Gallery tab -->
       
       <div class="tab-pane fade show" id="nav-gallery" role="tabpanel" aria-labelledby="gallery-tab">
-      <main class="mx-0">
-        <div class="row">
-          <div class="col-md-12 mt-4">
-            <h2 class="h2">Gallery of Examples by Category</h2>
-            </div>
-          </div>
-        <div class="row">
-          <div class="ml-4 mt-2">
-            <h4>Web Design - Landing pages</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/03_eshop-04-mw.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/01_eshop-05-home.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/02_nwt-home-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-cheh-home-en.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-fop-strts-mn-2k.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ux-pta-home-v1.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          </div>
-        <div class="row">
-        <div class="ml-4 mt-2">
-          <h4>Web Design - Product Landing Pages</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/03_nwt-prod-bats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_eshop-05-fwlp.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/04_nwt-ipodbats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_nwt-prd-mm-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-        </div>
-        <div class="row">
-        <div class="ml-4 mt-2">
-          <h4>User Interface Development - Mobile Responsive</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/03_nwt-prod-bats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_eshop-05-fwlp.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/04_nwt-ipodbats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_nwt-prd-mm-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-        </div>
-        <div class="row">
-        <div class="ml-4 mt-2">
-          <h4>Web Site Design - HTML/CSS</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/03_nwt-prod-bats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_eshop-05-fwlp.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/04_nwt-ipodbats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/05_nwt-prd-mm-04.png" alt="OWC Old Home Page" class="img-thumbnail">
-          </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-        </div>
-        <div class="row">
-          <div class="ml-4 mt-2">
-            <h4>Web Banner Ads</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_100804_fastermacnet_4.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_100804_fastmem_2.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_100804_ipodbatts_1.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_100804_pbbatts_3.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_110204_merc-fw_5.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_111104_sds-dvd1_7.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/ad-banners/150_111104_vid_6.gif" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ad-nwr-mstck-hero.jpg" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/08_ehop-ipod-girl.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/art1/ui-aspn-frigo-chz-1.jpg"  alt="OWC Old Home Page" class="img-thumbnail cb-clip">
-            </div>
-          </div>
-        <div class="row">
-          <div class="ml-4 mt-2">
-            <h4>Print Ad Designs</h4>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/00_eshop-mtg-bu.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/01_eshop-mtg-safe.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/02_eshop-mtg-loss.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/09_ehop-mus-ad-girl.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          <div class="col-md-2 col-sm-3 mt-2">
-            <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="OWC Old Home Page" class="img-thumbnail">
-            </div>
-          </div>
-        </main>
+        <main class="mx-4 mt-4">
+          <h2 class="h2">Gallery of Examples by Category</h2>
+            <div class="col-md-12 mt-4">
+              <div class="row">
+              <h3 id="lws-gallery">Web Development&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Site Development including User Interface Design</span></h3>
+                <div data-code="example-3"> 
+                  <div class="row">
+                    <a href="content/images/owc_ux/03_eshop-04-mw.png" data-toggle="lightbox" data-title="MacSales.com Home Page - Dec 2004" data-gallery="wdl-gallery" data-footer="Other World Computing eCommerce Relaunch with MacWorld Banner Ad" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/03_eshop-04-mw.png" alt="Dec 2004 MacWorld Home Page" title="MacSales.com Home Page - Dec 2004" class="img-fluid">
+                      <image-caption><p>MacSales.com Home Page - Dec 2004</p></image-caption>
+                      </a>
+                    <a href="content/images/owc_ux/01_eshop-05-home.png" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="MacSales.com Home Page - Mar 2005" data-footer="Other World Computing eCommerce Relaunch version 2" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/01_eshop-05-home.png" alt="OWC Old Home Page" title="MacSales.com Home Page - Mar 2005" class="img-fluid">
+                      <image-caption><p>MacSales.com Home Page featuring Music Category and News Column - Mar&nbsp;2005</p></image-caption>
+                      </a>
+                    <a href="content/images/owc_ux/02_nwt-home-04.png" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Newertech.com Home Page - May 2005" data-footer="newertechnology Products Home Relaunch version 1" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/02_nwt-home-04.png" alt="newertech.com Home Page - May 2005" class="img-fluid">
+                      <image-caption><p>newertechnology.com Products Home Page - May&nbsp;2005</p></image-caption>
+                      </a>
+                    <a href="content/images/art1/ui-cheh-home-en.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Aspen Marketing - Conagra Foods PSA" data-footer="Child Hunger Ends Here with Social Media dashboards" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/art1/ui-cheh-home-en.jpg" alt="Aspen Marketing - Conagra Foods PSA August 2011" class="img-fluid">
+                      <image-caption><p>Aspen Marketing - Conagra Foods PSA - August&nbsp;2011</p></image-caption>
+                      </a>
+                    <a href="content/images/art1/ui-fop-strts-mn-2k.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="Methode Fiber Optic Products Landing Page - Oct 1999" data-footer="Role - Web Development Manager and Content Manager" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/art1/ui-fop-strts-mn-2k.jpg" alt="Methode Fiber Optic Products Landing Page - Oct 1999" class="img-fluid">
+                      <image-caption><p>Methode Fiber Optic Products Landing Page - Oct&nbsp;1999</p></image-caption>
+                      </a>
+                    <a href="content/images/art1/ux-pta-home-v1.jpg" data-toggle="lightbox" data-gallery="wdl-gallery" data-title="MacArthur PTA Home Page - Jan 2014" data-footer="Role - Site Administrator and Content Manager" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/art1/ux-pta-home-v1.jpg" alt="MacArthur PTA Home Page - Jan 2014" class="img-fluid">
+                      <image-caption><p>MacArthur PTA Home Page - Site Admin and Content Manager - Jan&nbsp;2012</p></image-caption>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <h4 id="uid-gallery">User Interface Development&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Product and Landing Pages</span></h4>
+                <div data-code="example-5"> 
+                  <div class="row">
+                    <a href="content/images/owc_ux/03_nwt-prod-bats-04.png" data-toggle="lightbox" data-title="MacSales.com Home Page - Dec 2004" data-gallery="uil-gallery" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/03_nwt-prod-bats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>newertechnology.com Battery Products Landing Page - Dec&nbsp;2005</p></image-caption>
+                    </a>
+                    <a href="content/images/owc_ux/05_eshop-05-fwlp.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="Firewire Products Landing Page Version 1 - Feb 2005" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/05_eshop-05-fwlp.png" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>Firewire Products Landing Page - February&nbsp;2005</p></image-caption>
+                      </a>
+                       <a href="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com Home Page - May 2005" data-footer="Firewire Products Landing Page with live-pricing and Amazon-inpired features" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <img src="content/images/owc_ux/ux-show-_0007_fw-page-2005.png" alt="OWC Old Home Page" class="img-thumbnail">
+                         <image-caption><p>Firewire Products Landing Page - May&nbsp;2005</p></image-caption>
+                      </a>
+                      <a href="content/images/owc_ux/04_nwt-ipodbats-04.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com iPod Battery Products Landing Page" data-footer="Live-price options for category links" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <img src="content/images/owc_ux/04_nwt-ipodbats-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+                        <image-caption><p>newertech.com iPod Battery Products Landing Page June&nbsp;2005</p></image-caption>
+                      </a>
+                      <a href="content/images/owc_ux/05_nwt-prd-mm-04.png" data-toggle="lightbox" data-gallery="uil-gallery" data-title="newertech.com macMini Accessories Landing Page" data-footer="miniStack and macMini stands" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <img src="content/images/owc_ux/05_nwt-prd-mm-04.png" alt="OWC Old Home Page" class="img-thumbnail">
+                        <image-caption><p>newertech.com macMini Accessories Landing Page July&nbsp;2005</p></image-caption>
+                      </a>
+                      <a href="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" data-toggle="lightbox" data-gallery="uil-gallery" data-title="Citibank ThankYou Points Facebook Sign-up Kiosk Landing Page" data-footer="ThankYou Points Facebook Sign-up Kiosk Landing Page" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                        <img src="content/images/art1/ui-citi-ty-prg-fb-sgnup.jpg" alt="OWC Old Home Page" class="img-thumbnail">
+                        <image-caption><p>Citibank ThankYou Points Kiosk Project - July&nbsp;2011</p></image-caption>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row">
+                  <h4 id="print-gallery">Print Ad Designs&nbsp;<span class="lead">|</span><span class="lead">&nbsp;Product advertising for national publications</span></h4>
+                  <div class="row">
+                    <a href="content/images/owc_ux/00_eshop-mtg-bu.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 1" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/00_eshop-mtg-bu.png" alt="OWC Banner Ads for Mercury Drives" class="img-thumbnail">
+                      <image-caption><p>OWC Mercury On the Go Product Ad - Data Backup Solutions</p></image-caption>
+                    </a>
+                    <a href="content/images/owc_ux/01_eshop-mtg-safe.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 2" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/01_eshop-mtg-safe.png" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>OWC Mercury On the Go Product Ad - Data Safety Solutions</p></image-caption>
+                      </a>
+                    <a href="content/images/owc_ux/02_eshop-mtg-loss.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ads version 3" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/02_eshop-mtg-loss.png" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>OWC Mercury On the Go Product Ad - Data Mobility Solutions</p></image-caption>
+                      </a>
+                    <a href="content/images/owc_ux/09_ehop-mus-ad-girl.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC iPod and Music Products Category Spot Ad" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/09_ehop-mus-ad-girl.png" alt="OWC iPod Products" class="img-thumbnail">
+                      <image-caption><p>OWC Music Category Ad - Apple&reg; GarageBand Accessories</p></image-caption>
+                      </a>
+                    <a href="content/images/owc_ux/10_eshop-ipod-baby.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC iPod Battery Products Category Ad image" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="OWC iPod Battery Ad image" class="img-thumbnail">
+                      <image-caption><p>OWC iPod Replacement Batteries Ad - Apple&reg; iPod Accessories</p></image-caption>
+                      </a>
+                      </div>
+                    </div>
+                <div class="row">
+                  <h4 id="wbbr-gallery">Web Banner Ads&nbsp;<span class="lead">|</span><span class="lead">&nbsp;On-site and remote banner ads for rotation</span></h4>
+                  <div class="row">
+                    <a href="content/images/ad-banners/150_100804_fastermacnet_4.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="FasterMac Ad Banner" data-footer="FasterMac Web-hosting Services - Designer" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_100804_fastermacnet_4.gif" alt="OWC Animated Web Banner" class="img-thumbnail">
+                      <image-caption><p>FasterMac Web-hosting Services - October&nbsp;2004</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_100804_fastmem_2.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Ad Banner - DRAM for Macs" data-footer="DRAM Ads Designer for OWC Products" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_100804_fastmem_2.gif" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>OWC Ad Banner - Faster DRAM Memory Products for Mac Computers</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_100804_ipodbatts_1.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech Animated Ad Banner - Batteries" data-footer="Role - Ad Designer for Publications" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_100804_ipodbatts_1.gif" alt="newerTech Replacement Batteries for iPods" class="img-thumbnail">
+                      <image-caption><p>Ad for newerTech Replacement Batteries for iPods</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_100804_pbbatts_3.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech Animated Ad Banner - Batteries" data-footer="Role - Ad Designer for Web Banner Ads" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_100804_pbbatts_3.gif" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>newerTech Animated Ad Banner - Mac Laptop Replacement Batteries</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_110204_merc-fw_5.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="Mercury On the Go Mobile Drive Solutions - Designer" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_110204_merc-fw_5.gif" alt="Animated Ad Banner - MOTG" class="img-thumbnail">
+                      <image-caption><p>Mercury On the Go Mobile Drive Solutions - Designer</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_111104_sds-dvd1_7.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="Optical Drive System Upgrades Products - Illustrator" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_111104_sds-dvd1_7.gif" alt="Optical Drive System Upgrades Products - Illustrator" class="img-thumbnail">
+                      <image-caption><p>Optical Drive System Upgrades Products - Illustrator</p></image-caption></a>
+                    <a href="content/images/ad-banners/150_111104_vid_6.gif" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Animated Ad Banner" data-footer="ATI Graphic System Upgrades Products - Illustrator" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/ad-banners/150_111104_vid_6.gif" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>ATI Graphic System Upgrades Products - Illustrator</p></image-caption></a>
+                    <a href="content/images/art1/ad-nwr-mstck-hero.jpg" data-toggle="lightbox" data-gallery="pad-gallery" data-title="newerTech iStack Beauty Ad Image" data-footer="Role - Ad Designer and Photo-retouching" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/art1/ad-nwr-mstck-hero.jpg" alt="OWC Old Home Page" class="img-thumbnail">
+                      <image-caption><p>newerTech iStack Beauty Ad Image composite for placement ads</p></image-caption></a>
+                    <a href="content/images/owc_ux/08_ehop-ipod-girl.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="OWC Product Support Image" data-footer="Role - Art Director, Photo-retouching and Compositing" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/08_ehop-ipod-girl.png" alt="iPod Girl Close-up Composite" class="img-thumbnail">
+                      <image-caption><p>iPod accessories ad placement composite</p></image-caption></a>
+                    <a href="content/images/owc_ux/10_eshop-ipod-baby.png" data-toggle="lightbox" data-gallery="pad-gallery" data-title="iPod Replacement Batteries Ad Image" data-footer="Role - Art Director, photographer and Photo-retouching" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/owc_ux/10_eshop-ipod-baby.png" alt="Baby Piper on the iPod Screen Composite" class="img-thumbnail">
+                      <image-caption><p>iPod Replacement Battery image for ad banners</p></image-caption></a>
+                    <a href="content/images/art1/ui-aspn-frigo-chz-1.jpg" data-toggle="lightbox" data-gallery="pad-gallery" data-title="Conagra Foods Mobile Ad Banner" data-footer="Frigo Cheese Products Production" class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="content/images/art1/ui-aspn-frigo-chz-1.jpg"  alt="OWC Old Home Page" class="img-thumbnail cb-clip">
+                      <image-caption><p>Frigo Cheese Products Mobile Ads Production</p></image-caption></a>
+                  </div>
+                </div>
+              </div>
+          </main>
       </div>
+      <!-- Lightbox Modal template -->
+        <div class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+              </div>
+              <div class="modal-body">
+              &nbsp;
+              </div>
+              <div class="modal-footer">
+                <p>Gallery: </p>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
       
   <!-- End Gallery tab -->
   <!-- Start Contact tab -->
@@ -663,39 +765,102 @@
         </main>
       </div>
   <!-- End Contact tab - Main Container -->
-    </div>
   <!-- End tabbed Content -->
       </div>
     </div>
-  </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- Added jQuery options -->
-    <script type="text/javascript">
-      function centerModal() {
-      $(this).css('display', 'block');
-      var $dialog = $(this).find(".modal-dialog");
-      var offset = ($(window).height() - $dialog.height()) / 2;
-    // Center modal vertically in window
-      $dialog.css("margin-top", offset);
-      }
 
-      $('.modal').on('show.bs.modal', centerModal);
-      $(window).on("resize", function () {
-        $('.modal:visible').each(centerModal);
+  <!-- Added jQuery options -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="lightbox1/ekko-lightbox.min.js"></script>
+
+  <!-- for documentation only -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function ($) {
+      // delegate calls to data-toggle="lightbox"
+      $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+          event.preventDefault();
+          return $(this).ekkoLightbox({
+              onShown: function() {
+                  if (window.console) {
+                      return console.log('Checking our the events huh?');
+                  }
+              },
+              onNavigate: function(direction, itemIndex) {
+                  if (window.console) {
+                      return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                  }
+              }
+          });
       });
-      // Modal image insertion v1
-      // $('#owcModal').on('show.bs.modal'), function (event) {
-      // var link = $(event.relatedTarget)
-      // var modal = $(this)
-      // var summary = link.data('name')
-      // modal.find('.modal-title').text('MacSales.com Home Page ' + summary)
-    // })
-    </script>
+
+      //Programmatically call
+      $('#open-image').click(function (e) {
+          e.preventDefault();
+          $(this).ekkoLightbox();
+      });
+      $('#open-youtube').click(function (e) {
+          e.preventDefault();
+          $(this).ekkoLightbox();
+      });
+
+      // navigateTo
+      $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+          event.preventDefault();
+
+          return $(this).ekkoLightbox({
+              onShown: function() {
+
+                  this.modal().on('click', '.modal-footer a', function(e) {
+
+                      e.preventDefault();
+                      this.navigateTo(2);
+
+                  }.bind(this));
+
+              }
+          });
+      });
+
+
+      /**
+       * Documentation specific - ignore this
+       */
+      anchors.options.placement = 'left';
+      anchors.add('h3');
+      $('code[data-code]').each(function() {
+
+        var $code = $(this),
+            $pair = $('div[data-code="'+$code.data('code')+'"]');
+
+        $code.hide();
+        var text = $code.text($pair.html()).html().trim().split("\n");
+        var indentLength = text[text.length - 1].match(/^\s+/)
+        indentLength = indentLength ? indentLength[0].length : 24;
+        var indent = '';
+        for(var i = 0; i < indentLength; i++)
+            indent += ' ';
+        if($code.data('trim') == 'all') {
+            for (var i = 0; i < text.length; i++)
+                text[i] = text[i].trim();
+        } else  {
+            for (var i = 0; i < text.length; i++)
+                text[i] = text[i].replace(indent, '    ').replace('    ', '');
+        }
+        text = text.join("\n");
+        $code.html(text).show();
+
+        });
+    });
+  </script>
 </body>
 </html>
