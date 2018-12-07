@@ -26,8 +26,26 @@ image-caption p { margin-top: .55rem}
 
 a image-caption { text-decoration: none; font-size: .87rem; font-style: normal; color: black; line-height: 1.2rem}
 
+.carousel-caption { padding: 1rem; background-color: aliceblue; color: #2e2e1f; min-width: 300px; box-shadow:7px 7px 5px rgba(61, 61, 41, 0.5)}
+
 a:hover { text-decoration: none}
 a.bpic {display: block; margin:auto; width: 50%; height: auto}
+
+.carousel-inner { background-image:url(../content/images/slideshow/bkg-corkboard.png); background-size: 40%; background-repeat:repeat; }
+
+.prohdr { background-color: aquamarine}
+
+footer { background-color: aquamarine; color: #0063cc; font-size: .84rem;}
+
+/* media query for ex-large views */
+
+@media (min-width:1490.1px) {
+  
+  .carousel-item { max-width: 1490px; overflow-x:hidden;
+  }
+  .carousel-caption { clear: left; right:0; padding: 1rem; background-color: aliceblue; color: #2e2e1f; min-width: 340px; max-width: 400px; box-shadow:7px 7px 5px rgba(61, 61, 41, 0.5)}
+  
+}
 
 /* media Queries - tablets and phones */
 /* required to fix navigation */
@@ -35,28 +53,32 @@ a.bpic {display: block; margin:auto; width: 50%; height: auto}
   
   .media .bpic { display: block; float: left; width: 200px}
   
-  tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood; }
+  tab-pane.fade, .show.active { transition-duration: 0s; background-color:#FFF}
   
+  .prohdr { background-color: aquamarine;}
+
   .tab-content { margin-top: 2.5rem; margin-left: -1rem; margin-right: -1rem }
 
-  .nav-item .nav-link { background-color: aquamarine; margin-bottom: -1.5rem}
+  .nav-item .nav-link { background-color:#2222; margin-bottom: -1.5rem}
     
   .nav-pills .nav-link.active { margin-top: auto }
     
-  .navbar { padding-bottom: 1.5rem }
+  .navbar { padding-bottom: 1.5rem;}
   }
 
 @media (min-width:212px) and (max-width: 481px) {
   
-  .media .bpic { width: 140px}
-
-  tab-pane.fade, .show.active { transition-duration: 0s; background-color:burlywood }
+  .prohdr { background-color: #FFF;}
   
-  .tab-content { margin-top: 5.5rem; margin-left: -1rem; margin-right: -1rem }
+  .media .bpic { width: 140px}
+  
+  tab-pane.fade, .show.active { transition-duration: 0s }
+  
+  .tab-content { margin-top: 3rem; margin-left: -1rem; margin-right: -1rem }
   
   .nav-pills .nav-link { padding: 10px 5px;}
   
-  .navbar { padding-bottom: 2.75rem }
+  .navbar { padding-bottom: 2.5rem }
   
   .nav-pills .nav-link.active { clear: right; position: absolute; bottom: 0; left: 20px; width: 33% }
   }
